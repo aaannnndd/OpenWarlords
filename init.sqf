@@ -1,13 +1,13 @@
 #include "defines.hpp"
 
 if (hasInterface or {isServer}) then {
-	call compileFinal preprocessFileLineNumbers "Common\InitCommon.sqf";
+	call compileFinal preprocessFileLineNumbers "Common\initCommon.sqf";
 };
 if (isServer) then {
-	call compileFinal preprocessFileLineNumbers "Server\InitServer.sqf";
+	call compileFinal preprocessFileLineNumbers "Server\initServer.sqf";
 };
 if (hasInterface) then {
-	call compileFinal preprocessFileLineNumbers "Client\InitClient.sqf";
+	call compileFinal preprocessFileLineNumbers "Client\initClient.sqf";
 };
 
 // :D

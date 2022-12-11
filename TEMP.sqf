@@ -1,7 +1,7 @@
 
 // 0_0
 
-OWL_AllSectors = [];
+OWL_allSectors = [];
 
 {
 	if (typeOf _x == "Logic" and {count synchronizedObjects _x > 0}) then {
@@ -19,7 +19,7 @@ OWL_AllSectors = [];
 			systemChat "trigger is null!";
 			systemChat (str (synchronizedObjects _x));
 		};
-		OWL_AllSectors pushBack [_x, _trigger];
+		OWL_allSectors pushBack [_x, _trigger];
 	};
 } forEach (entities "Logic");
 
@@ -52,7 +52,7 @@ OWL_sectorColors = [
 	_pointerIcon attachTo [_sector, [0,0,0]];
 	_sector enableSimulationGlobal false;
 	_pointerGrp addGroupIcon [OWL_sectorMarker, [0,0]];
-	_pointerGrp setGroupIconParams [OWL_sectorColors # (_sector getVariable "OWL_OwningSide"), "", 1, TRUE];
+	_pointerGrp setGroupIconParams [OWL_sectorColors # (_sector getVariable "OWL_sectorSide"), "", 1, TRUE];
 	
 	private _triggerArea = triggerArea _trigger;
 	_marker = format ["OWL_sectorMarker_%1", _forEachIndex];
@@ -60,5 +60,5 @@ OWL_sectorColors = [
 	_marker setMarkerShapeLocal (["ELLIPSE", "RECTANGLE"] select (_triggerArea#3));
 	_marker setMarkerBrushLocal "Border";
 	_marker setMarkerSizeLocal [_triggerArea#0, _triggerArea#1];
-	_marker setMarkerColorLocal ((["colorIndependent", "colorOPFOR", "colorBLUFOR"]) # (_sector getVariable "OWL_OwningSide"));
-} forEach OWL_AllSectors;
+	_marker setMarkerColorLocal ((["colorIndependent", "colorOPFOR", "colorBLUFOR"]) # (_sector getVariable "OWL_sectorSide"));
+} forEach OWL_allSectors;
