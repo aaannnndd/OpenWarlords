@@ -8,14 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=316;
+		nextID=353;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
 	};
 	class Camera
 	{
-		pos[]={3711.9368,221.33759,9804.9727};
-		dir[]={0.090545513,-0.24137701,0.96620184};
-		up[]={0.022521496,0.97043049,0.24032474};
-		aside[]={0.9956407,1.4373654e-008,-0.093304291};
+		pos[]={14623.852,123.82788,15903.46};
+		dir[]={0.64990872,-0.45215455,0.61088055};
+		up[]={0.32946086,0.89193958,0.30967617};
+		aside[]={0.68489003,0,-0.72864652};
 	};
 };
 binarizationWanted=0;
@@ -23,13 +27,23 @@ sourceName="OpenWarlords";
 addons[]=
 {
 	"A3_Characters_F",
-	"A3_Modules_F"
+	"A3_Modules_F",
+	"A3_Structures_F_Dominants_WIP",
+	"A3_Structures_F_Walls",
+	"A3_Structures_F_Enoch_Industrial_Agriculture",
+	"A3_Props_F_Exp_Civilian_Garbage",
+	"A3_Structures_F_Civ_Garbage",
+	"A3_Props_F_Enoch_Military_Garbage",
+	"A3_Structures_F_Exp_Infrastructure_WaterSupply",
+	"A3_Structures_F_Heli_Civ_Garbage",
+	"A3_Structures_F_Ind_Tank",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=2;
+		items=10;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -44,7 +58,69 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item2
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Structures_F_Enoch_Industrial";
+			name="Arma 3 Contact Platform - Industrial Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Props_F_Exp";
+			name="Arma 3 Apex - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item5
+		{
+			className="A3_Props_F_Enoch";
+			name="Arma 3 Contact Platform - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Structures_F_Exp_Infrastructure";
+			name="Arma 3 Apex - Infrastructure Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Structures_F_Heli";
+			name="Arma 3 Helicopters - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Structures_F_Ind";
+			name="Arma 3 - Industrial Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
+};
+dlcs[]=
+{
+	"Enoch",
+	"Expansion",
+	"Heli"
 };
 randomSeed=11332886;
 class ScenarioData
@@ -77,8 +153,24 @@ class CustomAttributes
 					singleType="ARRAY";
 					class value
 					{
-						items=2;
+						items=4;
 						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Wave";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="MenuInventory";
+							};
+						};
+						class Item2
 						{
 							class data
 							{
@@ -86,7 +178,7 @@ class CustomAttributes
 								value="MenuPosition";
 							};
 						};
-						class Item1
+						class Item3
 						{
 							class data
 							{
@@ -145,7 +237,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=216;
+		items=232;
 		class Item0
 		{
 			dataType="Group";
@@ -4544,6 +4636,284 @@ class Mission
 			id=315;
 			type="Logic";
 			atlOffset=-9.5367432e-007;
+		};
+		class Item216
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15679.956,14.255346,16299.142};
+				angles[]={0,6.1626439,-0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=316;
+			type="Land_WIP_F";
+			atlOffset=0.22804356;
+		};
+		class Item217
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15622.772,15.899475,16294.172};
+				angles[]={0,4.5918388,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=322;
+			type="Land_Canal_Wall_10m_F";
+			atlOffset=3.7840004;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item218
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15625.536,16.459112,16289.132};
+				angles[]={0,6.1626353,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=323;
+			type="Land_Canal_WallSmall_10m_F";
+			atlOffset=3.7019873;
+		};
+		class Item219
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15624.256,16.434834,16299.917};
+				angles[]={0,6.1626353,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=324;
+			type="Land_Canal_WallSmall_10m_F";
+			atlOffset=3.5639992;
+		};
+		class Item220
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15624.034,15.93103,16283.484};
+				angles[]={0,4.5918388,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=325;
+			type="Land_Canal_Wall_10m_F";
+			atlOffset=3.8486137;
+		};
+		class Item221
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15626.915,16.524508,16278.518};
+				angles[]={0,6.1626353,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=326;
+			type="Land_Canal_WallSmall_10m_F";
+			atlOffset=3.2504196;
+		};
+		class Item222
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15626.429,15.086246,16294.964};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=327;
+			type="Land_ManurePile_01_F";
+			atlOffset=0.42498779;
+		};
+		class Item223
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15630.732,14.762897,16284.469};
+				angles[]={0.035984326,1.5400488,6.256525};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=330;
+			type="Land_GarbageHeap_01_F";
+			atlOffset=9.6321106e-005;
+		};
+		class Item224
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15626.793,14.883454,16285.195};
+				angles[]={0.0066682254,1.0214816,0.0080009829};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=331;
+			type="Land_GarbageHeap_03_F";
+		};
+		class Item225
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15628.492,14.626591,16284.73};
+				angles[]={0.035984326,0,6.2618566};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=335;
+			type="Land_JunkPile_F";
+			atlOffset=0.00011062622;
+		};
+		class Item226
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15628.284,14.820822,16288.534};
+				angles[]={0.035984326,0,6.2618566};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=336;
+			type="Land_GarbageBarrel_02_F";
+			atlOffset=-0.00039672852;
+		};
+		class Item227
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15626.306,14.566697,16287.63};
+				angles[]={0.035984326,0,6.2618566};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=337;
+			type="Land_Tyres_F";
+			atlOffset=0.00026607513;
+		};
+		class Item228
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15629.832,16.02179,16281.724};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=338;
+			type="Land_WaterTower_01_ruins_F";
+			atlOffset=-0.60937977;
+		};
+		class Item229
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15629.529,14.707082,16288.612};
+				angles[]={0.035984326,6.2080312,6.2618566};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=339;
+			type="Land_WheelieBin_01_F";
+			atlOffset=-0.00026512146;
+		};
+		class Item230
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15647.503,15.40581,16312.163};
+				angles[]={0.014664836,0.99129379,6.2805333};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=344;
+			type="Land_Tank_rust_F";
+		};
+		class Item231
+		{
+			dataType="Marker";
+			position[]={14097.542,7.4809999,15504.01};
+			name="respawn_west";
+			text="Hello!";
+			type="respawn_unknown";
+			id=351;
+			atlOffset=-0.00020599365;
 		};
 	};
 	class Connections
