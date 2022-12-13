@@ -12,6 +12,7 @@ params ["_side"];
 private _enemySide = (OWL_competingSides - [_side]) # 0;
 private _sideCount = _side countSide allPlayers;
 private _enemyCount = _enemySide countSide allPlayers;
+
 if (_sideCount == 0 && _enemyCount == 0) exitWith {
 	[0, 0];
 };
@@ -23,6 +24,10 @@ private _totalSectorIncome = 0;
 		_totalSectorIncome = _totalSectorIncome + (_x getVariable ["OWL_sectorIncome", 0]);
 	};
 } forEach OWL_allSectors;
+
+if (OWL_paramDefaultIncomeCalculation) exitWith {
+	[_totalSectorIncome, 0];
+};
 
 // If a side is empty, bank gets all the money + avoids divide by 0 error.
 if (_sideCount == 0) exitWith {[0, _totalSectorIncome * OWL_maxPlayersForSide];};

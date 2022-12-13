@@ -1,5 +1,6 @@
 
 // Static Mission Variables
+OWL_paramDefaultIncomeCalculation = true;
 OWL_competingSides = [WEST, EAST];
 OWL_defendingSide = [RESISTANCE];
 OWL_mainBases = [missionNamespace getVariable format ["OWL_mainBase_%1", OWL_competingSides # 0], 
