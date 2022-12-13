@@ -7,7 +7,7 @@ OWL_fnc_buildLinks = {
 
 	private _sector = _chain select (count _chain - 1);
 	{
-		if (! (_x in _chain)) then {
+		if (! (_x in _chain) && typeOf _x == "Logic") then {
 			_chain pushBack _x;
 			[_chain] call OWL_fnc_buildLinks;
 		};
@@ -17,7 +17,6 @@ OWL_fnc_buildLinks = {
 private _chain = [_mainBase];
 [_chain] call OWL_fnc_buildLinks;
 
-// _chain now a list of sectors that are attached to the main base.
 _chain;
 
 
