@@ -6,10 +6,12 @@ private _attackable = [];
 {
 	_sector = _x;
 	{
-		if (_sector != _x && _x getVariable "OWL_sectorSide" != _side) then {
-			_attackable pushBackUnique _x;
+		if (typeOf _x == "Logic") then {
+			if ( _sector != _x && (_x getVariable "OWL_sectorSide") != _side) then {
+				_attackable pushBackUnique _x;
+			};
 		};
-	} forEach _sector synchronizedObjects;
+	} forEach synchronizedObjects _sector;
 } forEach _linked;
 
 _attackable;

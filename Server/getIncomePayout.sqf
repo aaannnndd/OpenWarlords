@@ -9,14 +9,17 @@
 
 params ["_side"];
 
-private _enemySide = (OWL_competingSides - _side) # 0;
+private _enemySide = (OWL_competingSides - [_side]) # 0;
 private _sideCount = _side countSide allPlayers;
 private _enemyCount = _enemySide countSide allPlayers;
+if (_sideCount == 0 && _enemyCount == 0) exitWith {
+	[0, 0];
+};
 // maybe use playersNumber side?
 
 private _totalSectorIncome = 0;
 {
-	if (_x getVariable ["OWL_sectorSide"] == _side) then {_
+	if ( (_x getVariable "OWL_sectorSide") == _side) then {
 		_totalSectorIncome = _totalSectorIncome + (_x getVariable ["OWL_sectorIncome", 0]);
 	};
 } forEach OWL_allSectors;

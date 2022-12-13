@@ -2,7 +2,6 @@
 // 0_0
 
 OWL_allSectors = [];
-
 {
 	if (typeOf _x == "Logic" and {count synchronizedObjects _x > 0}) then {
 		private _trigger = objNull;
@@ -19,7 +18,9 @@ OWL_allSectors = [];
 			systemChat "trigger is null!";
 			systemChat (str (synchronizedObjects _x));
 		};
-		OWL_allSectors pushBack [_x, _trigger];
+
+		_x setVariable ["OWL_sectorArea", triggerArea _trigger];
+		OWL_allSectors pushBack _x;
 	};
 } forEach (entities "Logic");
 
@@ -45,20 +46,21 @@ OWL_sectorColors = [
 ];
 
 {
-	_x params ["_sector", "_trigger"];
+	_sector = _x;
+	_sideIdx = [RESISTANCE, EAST, WEST] find (_sector getVariable "OWL_sectorSide");
 	private _pointerGrp = createGroup CIVILIAN;
 	private _pointerIcon = _pointerGrp createUnit ["Logic", getPosATL _sector, [], 0, "NONE"];
 	_pointerIcon enableSimulationGlobal false;
 	_pointerIcon attachTo [_sector, [0,0,0]];
 	_sector enableSimulationGlobal false;
 	_pointerGrp addGroupIcon [OWL_sectorMarker, [0,0]];
-	_pointerGrp setGroupIconParams [OWL_sectorColors # (_sector getVariable "OWL_sectorSide"), "", 1, TRUE];
+	_pointerGrp setGroupIconParams [OWL_sectorColors # _sideIdx, "", 1, TRUE];
 	
-	private _triggerArea = triggerArea _trigger;
+	_triggerArea = _sector getVariable "OWL_sectorArea";
 	_marker = format ["OWL_sectorMarker_%1", _forEachIndex];
 	createMarkerLocal [_marker, getPosASL _sector];
 	_marker setMarkerShapeLocal (["ELLIPSE", "RECTANGLE"] select (_triggerArea#3));
 	_marker setMarkerBrushLocal "Border";
 	_marker setMarkerSizeLocal [_triggerArea#0, _triggerArea#1];
-	_marker setMarkerColorLocal ((["colorIndependent", "colorOPFOR", "colorBLUFOR"]) # (_sector getVariable "OWL_sectorSide"));
+	_marker setMarkerColorLocal ((["colorIndependent", "colorOPFOR", "colorBLUFOR"]) # _sideIdx);
 } forEach OWL_allSectors;

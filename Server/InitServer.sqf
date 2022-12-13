@@ -29,6 +29,8 @@ OWL_disconnectedFunds = [];
 // [ "UID": [lockedToSide, trasactionID, ...], ... ]
 OWL_playerUIDMap = createHashMap;
 
+OWL_allWarlords = [];
+
 
 /******************************************************
 ***********			Main Game Loop 			***********  
@@ -45,7 +47,7 @@ OWL_mainGameLoopHandle = [] spawn {
 	// is this a good idea?
 	_lastTime = serverTime;
 	while {TRUE} do {
-		_diff = _serverTime - _lastTime;
+		_diff = serverTime - _lastTime;
 		_lastTime = serverTime;
 
 		{
