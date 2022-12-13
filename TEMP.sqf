@@ -21,6 +21,7 @@ OWL_allSectors = [];
 
 		_x setVariable ["OWL_sectorArea", triggerArea _trigger];
 		OWL_allSectors pushBack _x;
+		deleteVehicle _trigger;
 	};
 } forEach (entities "Logic");
 
@@ -63,4 +64,28 @@ OWL_sectorColors = [
 	_marker setMarkerBrushLocal "Border";
 	_marker setMarkerSizeLocal [_triggerArea#0, _triggerArea#1];
 	_marker setMarkerColorLocal ((["colorIndependent", "colorOPFOR", "colorBLUFOR"]) # _sideIdx);
+
+	_mrkrNameLock1 = format ["OWL_sectorMrkrLock1_%1", _forEachIndex];
+	_mrkrNameLock2 = format ["OWL_sectorMrkrLock2_%1", _forEachIndex];
+	_mrkrNameLock3 = format ["OWL_sectorMrkrLock3_%1", _forEachIndex];
+	_mrkrNameLock4 = format ["OWL_sectorMrkrLock4_%1", _forEachIndex];
+	_pos = position _sector;
+	_relPosArr = [[1, 1, 0, 0, 1], [1, -1, 90, 1, 0], [-1, -1, 0, 0, -1], [-1, 1, 90, -1, 0]];
+	{
+		_relPos = _relPosArr # _forEachIndex;
+		_trgSize = ((_sector getVariable ["OWL_sectorArea", [200]]) # 0) / 2;
+		_borderHalf = (_sector getVariable ["OWL_sectorBorderSize", 200]) / 2;
+		_null = createMarkerLocal [_x, [(_pos # 0) + (_trgSize * (_relPos # 3)) + (_borderHalf * (_relPos # 0)), (_pos # 1) + (_trgSize * (_relPos # 4)) + (_borderHalf * (_relPos # 1))]];
+		_x setMarkerShapeLocal "RECTANGLE";
+		_x setMarkerBrushLocal "Solid";
+		_x setMarkerDirLocal (_relPos # 2);
+		_x setMarkerSizeLocal [(_trgSize) + _borderHalf, _borderHalf];
+		_x setMarkerColorLocal ((["colorOPFOR", "colorBLUFOR", "colorIndependent"]) # ([EAST, WEST, RESISTANCE] find (_sector getVariable "OWL_sectorSide")));
+		_x setMarkerAlphaLocal 0.35;
+		if (_sector getVariable "OWL_sectorSide" == side player) then {
+			_x setMarkerAlphaLocal 0;
+		};
+	} forEach [_mrkrNameLock1, _mrkrNameLock2, _mrkrNameLock3, _mrkrNameLock4];
+	_x setVariable ["OWL_sectorLockMrkrs", [_mrkrNameLock1, _mrkrNameLock2, _mrkrNameLock3, _mrkrNameLock4]];
+
 } forEach OWL_allSectors;
