@@ -7,7 +7,7 @@ OWL_fnc_buildLinks = {
 
 	private _sector = _chain select (count _chain - 1);
 	{
-		if (! (_x in _chain) && typeOf _x == "Logic") then {
+		if (! (_x in _chain) && typeOf _x == "Logic" && (_x getVariable "OWL_sectorSide") == (_sector getVariable "OWL_sectorSide")) then {
 			_chain pushBack _x;
 			[_chain] call OWL_fnc_buildLinks;
 		};
