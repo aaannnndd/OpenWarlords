@@ -37,28 +37,34 @@ OWL_allWarlords = [];
 ******************************************************/
 
 OWL_functionUpdateQueue = [
-//  [OWL_fnc_functionToCall, timer, timerResetValue]
-	[OWL_fnc_updateSectors,	1, 		1],
-	[OWL_fnc_updateIncome, 	60, 	60]
+//  ["OWL_fnc_functionToCall",	interval]
+	["OWL_fnc_updateSectors",		1	],
+	["OWL_fnc_updateIncome", 		60	]
 ];
 
-OWL_mainGameLoopHandle = [] spawn {
+[] spawn {
 
 	// is this a good idea?
-	_lastTime = serverTime;
-	while {TRUE} do {
-		_diff = serverTime - _lastTime;
-		_lastTime = serverTime;
-
+	
+	// idk -_-
+	// i improved it a bit
+	
+	
+	{
+		_x pushBack time;	// or you can set it to time + interval (_x#1) in case you don't want it to get executed right away
+	} forEach OWL_functionUpdateQueue;
+	
+	while {true} do {
 		{
-			_x params ["_fnc", "_timer"];
-			_timer = _timer - _diff;
-			if (_diff <= 0) then {
-				call _fnc;
-				_x set [1, _x select 2];
+			_x params ["_fncName", "_interval", "_nextTime"];
+			if (_nextTime <= time) then {
+				call (missionNamespace getVariable [_fncName, {}]);
+				_x set [2, time + _interval];
 			};
 		} forEach OWL_functionUpdateQueue;
 		sleep 1;
 	};
 
 };
+
+missionNamespace setVariable ["OWL_ServerInitialized", true, true];

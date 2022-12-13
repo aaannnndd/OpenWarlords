@@ -21,11 +21,11 @@ if (_sideCount == 0 && _enemyCount == 0) exitWith {
 private _totalSectorIncome = 0;
 {
 	if ( (_x getVariable "OWL_sectorSide") == _side) then {
-		_totalSectorIncome = _totalSectorIncome + (_x getVariable ["OWL_sectorIncome", 0]);
+		_totalSectorIncome = _totalSectorIncome + (_x getVariable ["OWL_sectorParam_income", 0]);
 	};
 } forEach OWL_allSectors;
 
-if (OWL_paramDefaultIncomeCalculation) exitWith {
+if (OWL_useVanillaIncomeCalculation) exitWith {
 	[_totalSectorIncome, 0];
 };
 

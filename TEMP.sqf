@@ -1,6 +1,4 @@
 
-// 0_0
-
 OWL_allSectors = [];
 {
 	if (typeOf _x == "Logic" and {count synchronizedObjects _x > 0}) then {
@@ -20,6 +18,7 @@ OWL_allSectors = [];
 		};
 
 		_x setVariable ["OWL_sectorArea", triggerArea _trigger];
+		_x setVariable ["OWL_sectorSide", [sideEmpty, west, east, resistance] # (_x getVariable "OWL_sectorParam_side")];
 		OWL_allSectors pushBack _x;
 		deleteVehicle _trigger;
 	};
@@ -41,14 +40,15 @@ if (side group player == EAST) then {
 };
 
 OWL_sectorColors = [
-	[profileNamespace getVariable ["Map_Independent_R", 0], profileNamespace getVariable ["Map_Independent_G", 1], profileNamespace getVariable ["Map_Independent_B", 1], 0.8],
+	[0, 0, 0, 0.8],
+	[profileNamespace getVariable ["Map_BLUFOR_R", 0], profileNamespace getVariable ["Map_BLUFOR_G", 1], profileNamespace getVariable ["Map_BLUFOR_B", 1], 0.8],
 	[profileNamespace getVariable ["Map_OPFOR_R", 0], profileNamespace getVariable ["Map_OPFOR_G", 1], profileNamespace getVariable ["Map_OPFOR_B", 1], 0.8],
-	[profileNamespace getVariable ["Map_BLUFOR_R", 0], profileNamespace getVariable ["Map_BLUFOR_G", 1], profileNamespace getVariable ["Map_BLUFOR_B", 1], 0.8]
+	[profileNamespace getVariable ["Map_Independent_R", 0], profileNamespace getVariable ["Map_Independent_G", 1], profileNamespace getVariable ["Map_Independent_B", 1], 0.8]
 ];
 
 {
 	_sector = _x;
-	_sideIdx = [RESISTANCE, EAST, WEST] find (_sector getVariable "OWL_sectorSide");
+	_sideIdx = _sector getVariable "OWL_sectorParam_side";
 	private _pointerGrp = createGroup CIVILIAN;
 	private _pointerIcon = _pointerGrp createUnit ["Logic", getPosATL _sector, [], 0, "NONE"];
 	_pointerIcon enableSimulationGlobal false;
@@ -74,13 +74,13 @@ OWL_sectorColors = [
 	{
 		_relPos = _relPosArr # _forEachIndex;
 		_trgSize = ((_sector getVariable ["OWL_sectorArea", [200]]) # 0) / 2;
-		_borderHalf = (_sector getVariable ["OWL_sectorBorderSize", 200]) / 2;
+		_borderHalf = (_sector getVariable ["OWL_sectorParam_borderSize", 200]) / 2;
 		_null = createMarkerLocal [_x, [(_pos # 0) + (_trgSize * (_relPos # 3)) + (_borderHalf * (_relPos # 0)), (_pos # 1) + (_trgSize * (_relPos # 4)) + (_borderHalf * (_relPos # 1))]];
 		_x setMarkerShapeLocal "RECTANGLE";
 		_x setMarkerBrushLocal "Solid";
 		_x setMarkerDirLocal (_relPos # 2);
 		_x setMarkerSizeLocal [(_trgSize) + _borderHalf, _borderHalf];
-		_x setMarkerColorLocal ((["colorOPFOR", "colorBLUFOR", "colorIndependent"]) # ([EAST, WEST, RESISTANCE] find (_sector getVariable "OWL_sectorSide")));
+		_x setMarkerColorLocal ((["ColorBlack", "ColorWEST", "ColorEAST", "ColorGUER"]) # (_sector getVariable "OWL_sectorParam_side"));
 		_x setMarkerAlphaLocal 0.35;
 		if (_sector getVariable "OWL_sectorSide" == side player) then {
 			_x setMarkerAlphaLocal 0;

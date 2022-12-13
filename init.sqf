@@ -1,5 +1,7 @@
 #include "defines.hpp"
 
+OWL_devMode = true;
+
 // Server
 OWL_fnc_updateSectors = compileFinal preprocessFileLineNumbers "Server\updateSectors.sqf";
 OWL_fnc_handleClientRequest = compileFinal preprocessFileLineNumbers "Server\handleClientRequest.sqf";
@@ -16,7 +18,6 @@ OWL_fnc_calculateLinkedSectors = compileFinal preprocessFileLineNumbers "Common\
 // Client
 OWL_fnc_handleServerUpdate = compileFinal preprocessFileLineNumbers "Client\handleServerUpdate.sqf";
 
-// :D
 call compileFinal preprocessFileLineNumbers "TEMP.sqf";
 
 if (hasInterface or {isServer}) then {
@@ -28,5 +29,3 @@ if (isServer) then {
 if (hasInterface) then {
 	call compileFinal preprocessFileLineNumbers "Client\initClient.sqf";
 };
-
-

@@ -1,11 +1,6 @@
+#include "..\defines.hpp"
 
-// Static Mission Variables
-OWL_paramDefaultIncomeCalculation = true;
-OWL_competingSides = [WEST, EAST];
-OWL_defendingSide = [RESISTANCE];
-OWL_mainBases = [missionNamespace getVariable format ["OWL_mainBase_%1", OWL_competingSides # 0], 
-				 missionNamespace getVariable format ["OWL_mainBase_%1", OWL_competingSides # 1]];
-OWL_maxPlayersForSide = 25;
+call compileFinal preprocessFileLineNumbers "Common\initVars.sqf";
 
 // Changing mission variables
 // Public variables will be sync'd before this is .init'd. The server will init to objNull regardless which means 'vote in progress'
