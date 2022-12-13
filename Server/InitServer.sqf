@@ -7,3 +7,10 @@ if (not isMultiplayer) then {
 		if (player != _x) then { deleteVehicle _x; };
 	} forEach switchableUnits;
 };
+
+// [ ["_transactionID", "_side", "_amount", "_timestamp"], ... ]
+OWL_disconnectedFunds = [];
+
+// [ "UID": [lockToSide, trasactionID, ...], ... ]
+OWL_playerUIDMap = createHashMap;
+
