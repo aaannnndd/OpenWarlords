@@ -1,5 +1,7 @@
 #include "..\defines.hpp"
 
+OWL_devMode = true;
+
 // Common vars
 OWL_competingSides = [[WEST, EAST], [WEST, RESISTANCE], [EAST, RESISTANCE]] # (["Combatants"] call BIS_fnc_getParamValue);
 OWL_defendingSide = [RESISTANCE, EAST, WEST] # (["Combatants"] call BIS_fnc_getParamValue);
@@ -19,7 +21,6 @@ if (isServer) then {
 		};
 	} forEach OWL_competingSides;
 };
-
 
 if (hasInterface) then {
 	// Client side vars

@@ -1,4 +1,4 @@
 #include "..\defines.hpp"
 
-waitUntil { not isNull player };
+waitUntil { !isNull player };
 waitUntil { missionNamespace getVariable ["OWL_ServerInitialized", false] };

@@ -1,5 +1,6 @@
 #include "..\defines.hpp"
 
+call compileFinal preprocessFileLineNumbers "Common\initFunctions.sqf";
 call compileFinal preprocessFileLineNumbers "Common\initVars.sqf";
 
 // Changing mission variables
