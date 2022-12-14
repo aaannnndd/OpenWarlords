@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17404.969,24.936863,13253.046};
-		dir[]={0.7656588,-0.30661702,0.56547958};
-		up[]={0.24664448,0.95183408,0.18215978};
-		aside[]={0.59409583,3.1595118e-007,-0.80440551};
+		pos[]={17459.25,86.952316,13625.656};
+		dir[]={0.41308129,-0.30941939,0.85653114};
+		up[]={0.13441159,0.9509266,0.27870423};
+		aside[]={0.90073532,3.2746902e-007,-0.4343996};
 	};
 };
 binarizationWanted=0;
@@ -213,7 +213,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=233;
+		items=232;
 		class Item0
 		{
 			dataType="Group";
@@ -4893,14 +4893,6 @@ class Mission
 			type="respawn_unknown";
 			id=351;
 			atlOffset=-0.00020599365;
-		};
-		class Item232
-		{
-			dataType="Marker";
-			position[]={17532.363,63.483486,11565.829};
-			name="marker_1";
-			type="mil_dot";
-			id=353;
 		};
 	};
 	class Connections

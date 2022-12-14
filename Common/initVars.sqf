@@ -9,7 +9,6 @@ OWL_defendingSide = [RESISTANCE, EAST, WEST] # (["Combatants"] call BIS_fnc_getP
 OWL_mainBases = [missionNamespace getVariable format ["OWL_mainBase_%1", OWL_competingSides # 0], 
 				 missionNamespace getVariable format ["OWL_mainBase_%1", OWL_competingSides # 1]];
 
-
 if (isServer) then {
 	// Server side vars
 	

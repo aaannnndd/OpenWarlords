@@ -4,7 +4,7 @@
 
 call compileFinal preprocessFileLineNumbers "TEMP.sqf";
 
-if (hasInterface or {isServer}) then {
+if (hasInterface || {isServer}) then {
 	call compileFinal preprocessFileLineNumbers "Common\initCommon.sqf";
 };
 if (isServer) then {

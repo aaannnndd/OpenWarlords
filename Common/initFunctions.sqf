@@ -6,6 +6,13 @@ OWL_fnc_calculateProtectableSectors = compileFinal preprocessFileLineNumbers "Co
 OWL_fnc_calculateSectorRelationships = compileFinal preprocessFileLineNumbers "Common\calculateSectorRelationships.sqf";
 OWL_fnc_calculateLinkedSectors = compileFinal preprocessFileLineNumbers "Common\calculateLinkedSectors.sqf";
 
+OWL_fnc_log = {
+	if (OWL_devMode) then {
+		systemChat _this;
+	};
+	diag_log _this;
+};
+
 if (isServer) then {
 	// Server functions
 	OWL_fnc_updateSectors = compileFinal preprocessFileLineNumbers "Server\updateSectors.sqf";

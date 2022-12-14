@@ -10,5 +10,3 @@ call compileFinal preprocessFileLineNumbers "Common\initVars.sqf";
 		missionNamespace setVariable [format ["OWL_currentSector_%1", _x], objNull];
 	};
 } forEach OWL_competingSides;
-
-
