@@ -73,7 +73,7 @@ OWL_sectorColors = [
 	_relPosArr = [[1, 1, 0, 0, 1], [1, -1, 90, 1, 0], [-1, -1, 0, 0, -1], [-1, 1, 90, -1, 0]];
 	{
 		_relPos = _relPosArr # _forEachIndex;
-		_trgSize = ((_sector getVariable ["OWL_sectorArea", [200]]) # 0);
+		_trgSize = ((_sector getVariable ["OWL_sectorArea", [200]]) # 0) / 2;
 		_borderHalf = (_sector getVariable ["OWL_sectorParam_borderSize", 200]) / 2;
 		_null = createMarkerLocal [_x, [(_pos # 0) + (_trgSize * (_relPos # 3)) + (_borderHalf * (_relPos # 0)), (_pos # 1) + (_trgSize * (_relPos # 4)) + (_borderHalf * (_relPos # 1))]];
 		_x setMarkerShapeLocal "RECTANGLE";
