@@ -24,15 +24,6 @@ OWL_fnc_initMapAlterations = compileFinal preprocessFileLineNumbers "Server\init
 
 
 /******************************************************
-***********		 Init Sector Variables		***********
-******************************************************/
-
-{
-	_x setVariable ["OWL_sectorProtected", true];
-} forEach OWL_allSectors;
-
-
-/******************************************************
 ***********		Init Serverside Globals		***********
 ******************************************************/
 
@@ -58,6 +49,19 @@ OWL_maxPlayersForSide = log 0;
 ***********		Init Sectors Serverside		***********
 ******************************************************/
 
+/* Possible sector parameters
+OWL_sectorParam_canBeBase
+OWL_sectorParam_name
+OWL_sectorParam_useLocationName
+OWL_sectorParam_side
+OWL_sectorParam_income
+OWL_sectorParam_hasHarbour
+OWL_sectorParam_hasHelipad
+OWL_sectorParam_hasRunway
+OWL_sectorParam_fastTravelEnabled
+OWL_sectorParam_borderSize
+*/
+
 OWL_allSectors = [];
 {
 	private _syncedObjects = synchronizedObjects _x;
@@ -70,27 +74,29 @@ OWL_allSectors = [];
 		private _triggerArea = triggerArea _trigger;
 		deleteVehicle _trigger;
 		
-		_triggerPos set [2, 0];
-		_x setPosATL _triggerPos;
-		_x setVariable ["OWL_sectorPos", _triggerPos, true];
-		_x setVariable ["OWL_sectorArea", triggerArea _trigger, true];
+		_triggerPos deleteAt 2;
+		_triggerArea deleteAt 4;
+		_x setPosATL [_triggerPos#0, _triggerPos#1, 0];
+		_x setVariable ["OWL_sectorArea", [_triggerPos] + _triggerArea, true];
 		_x setVariable ["OWL_sectorSide",
 			[sideEmpty, OWL_competingSides#0, OWL_competingSides#1, OWL_defendingSide] # (_x getVariable ["OWL_sectorParam_side", 0]),
 		true];
 		
-		private _sectorIncome = _x getVariable ["OWL_sectorParam_income", -1];
-		if (_sectorIncome < 0) then {
-			// Use weird formula to calculate sector income based on its size
+		private _sectorIncome = _x getVariable "OWL_sectorParam_income";
+		if (isNil "_sectorIncome") then {
+			// If income parameter is undefined use weird formula to calculate sector income based on its size
 			_sectorIncome = (round ((_triggerArea#0 + _triggerArea#1) / 100)) * 5;
 		};
-		
 		_x setVariable ["OWL_sectorIncome", _sectorIncome, true];
 		_x setVariable ["OWL_sectorFastTravelEnabled", _x getVariable ["OWL_sectorParam_fastTravelEnabled", true], true];
+		
+		_x setVariable ["OWL_sectorProtected", true];
 		
 		OWL_allSectors pushBack _x;
 	};
 } forEach (entities "Logic");
 publicVariable "OWL_allSectors";
+
 
 /******************************************************
 ***********			Main Game Loop 			***********

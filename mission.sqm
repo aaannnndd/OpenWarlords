@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=354;
+		nextID=473;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10930.817,44.147007,13571.817};
-		dir[]={-0.52125996,-0.18724044,0.83275324};
-		up[]={-0.099394962,0.98225784,0.1587937};
-		aside[]={0.84775841,-2.0572334e-006,0.53064996};
+		pos[]={3744.3975,207.0376,10112.106};
+		dir[]={0.10471644,-0.44059399,0.89159417};
+		up[]={0.051393937,0.89770687,0.43758965};
+		aside[]={0.99318582,3.770092e-007,-0.11664881};
 	};
 };
 binarizationWanted=0;
@@ -27,7 +27,6 @@ sourceName="OpenWarlords";
 addons[]=
 {
 	"A3_Characters_F",
-	"A3_Modules_F",
 	"A3_Structures_F_Dominants_WIP",
 	"A3_Structures_F_Walls",
 	"A3_Structures_F_Enoch_Industrial_Agriculture",
@@ -37,7 +36,8 @@ addons[]=
 	"A3_Structures_F_Exp_Infrastructure_WaterSupply",
 	"A3_Structures_F_Heli_Civ_Garbage",
 	"A3_Structures_F_Ind_Tank",
-	"A3_Ui_F"
+	"A3_Ui_F",
+	"A3_Modules_F"
 };
 class AddonsMetaData
 {
@@ -53,64 +53,64 @@ class AddonsMetaData
 		};
 		class Item1
 		{
-			className="A3_Modules_F";
-			name="Arma 3 Alpha - Scripted Modules";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item2
-		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item3
+		class Item2
 		{
 			className="A3_Structures_F_Enoch_Industrial";
 			name="Arma 3 Contact Platform - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item3
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item4
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item5
 		{
 			className="A3_Structures_F_Exp_Infrastructure";
 			name="Arma 3 Apex - Infrastructure Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item6
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item7
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item9
+		class Item8
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -135,7 +135,9 @@ class ScenarioData
 		gameType="Warlords";
 		maxPlayers=100;
 	};
+	wreckManagerMode=1;
 	wreckRemovalMaxTime=3600;
+	corpseManagerMode=1;
 };
 class CustomAttributes
 {
@@ -237,12 +239,14 @@ class Mission
 					};
 					id=1;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=0;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item1
 		{
@@ -266,12 +270,14 @@ class Mission
 					};
 					id=3;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=2;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item2
 		{
@@ -295,12 +301,14 @@ class Mission
 					};
 					id=5;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=4;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item3
 		{
@@ -324,12 +332,14 @@ class Mission
 					};
 					id=7;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=6;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item4
 		{
@@ -353,12 +363,14 @@ class Mission
 					};
 					id=9;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=8;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item5
 		{
@@ -382,12 +394,14 @@ class Mission
 					};
 					id=11;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=10;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item6
 		{
@@ -411,12 +425,14 @@ class Mission
 					};
 					id=13;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=12;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item7
 		{
@@ -440,12 +456,14 @@ class Mission
 					};
 					id=15;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=14;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item8
 		{
@@ -469,12 +487,14 @@ class Mission
 					};
 					id=17;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=16;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item9
 		{
@@ -498,12 +518,14 @@ class Mission
 					};
 					id=19;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=18;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item10
 		{
@@ -527,12 +549,14 @@ class Mission
 					};
 					id=21;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=20;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item11
 		{
@@ -556,12 +580,14 @@ class Mission
 					};
 					id=23;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=22;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item12
 		{
@@ -585,12 +611,14 @@ class Mission
 					};
 					id=25;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=24;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item13
 		{
@@ -614,12 +642,14 @@ class Mission
 					};
 					id=27;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=26;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item14
 		{
@@ -643,12 +673,14 @@ class Mission
 					};
 					id=29;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=28;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item15
 		{
@@ -672,12 +704,14 @@ class Mission
 					};
 					id=31;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=30;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item16
 		{
@@ -701,12 +735,14 @@ class Mission
 					};
 					id=33;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=32;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item17
 		{
@@ -730,12 +766,14 @@ class Mission
 					};
 					id=35;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=34;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item18
 		{
@@ -759,12 +797,14 @@ class Mission
 					};
 					id=37;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=36;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item19
 		{
@@ -788,12 +828,14 @@ class Mission
 					};
 					id=39;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=38;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item20
 		{
@@ -817,12 +859,14 @@ class Mission
 					};
 					id=41;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=40;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item21
 		{
@@ -846,12 +890,14 @@ class Mission
 					};
 					id=43;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=42;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item22
 		{
@@ -875,12 +921,14 @@ class Mission
 					};
 					id=45;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=44;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item23
 		{
@@ -904,12 +952,14 @@ class Mission
 					};
 					id=47;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=46;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item24
 		{
@@ -933,12 +983,14 @@ class Mission
 					};
 					id=49;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=48;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item25
 		{
@@ -962,12 +1014,14 @@ class Mission
 					};
 					id=51;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=50;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item26
 		{
@@ -991,12 +1045,14 @@ class Mission
 					};
 					id=53;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=52;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item27
 		{
@@ -1020,12 +1076,14 @@ class Mission
 					};
 					id=55;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=54;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item28
 		{
@@ -1049,12 +1107,14 @@ class Mission
 					};
 					id=57;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=56;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item29
 		{
@@ -1078,12 +1138,14 @@ class Mission
 					};
 					id=59;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=58;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item30
 		{
@@ -1107,12 +1169,14 @@ class Mission
 					};
 					id=61;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=60;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item31
 		{
@@ -1136,12 +1200,14 @@ class Mission
 					};
 					id=63;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=62;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item32
 		{
@@ -1165,12 +1231,14 @@ class Mission
 					};
 					id=65;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=64;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item33
 		{
@@ -1194,12 +1262,14 @@ class Mission
 					};
 					id=67;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=66;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item34
 		{
@@ -1223,12 +1293,14 @@ class Mission
 					};
 					id=69;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=68;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item35
 		{
@@ -1252,12 +1324,14 @@ class Mission
 					};
 					id=71;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=70;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item36
 		{
@@ -1281,12 +1355,14 @@ class Mission
 					};
 					id=73;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=72;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item37
 		{
@@ -1310,12 +1386,14 @@ class Mission
 					};
 					id=75;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=74;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item38
 		{
@@ -1339,12 +1417,14 @@ class Mission
 					};
 					id=77;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=76;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item39
 		{
@@ -1368,12 +1448,14 @@ class Mission
 					};
 					id=79;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=78;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item40
 		{
@@ -1397,12 +1479,14 @@ class Mission
 					};
 					id=81;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=80;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item41
 		{
@@ -1426,12 +1510,14 @@ class Mission
 					};
 					id=83;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=82;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item42
 		{
@@ -1455,12 +1541,14 @@ class Mission
 					};
 					id=85;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=84;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item43
 		{
@@ -1484,12 +1572,14 @@ class Mission
 					};
 					id=87;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=86;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item44
 		{
@@ -1513,12 +1603,14 @@ class Mission
 					};
 					id=89;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=88;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item45
 		{
@@ -1542,12 +1634,14 @@ class Mission
 					};
 					id=91;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=90;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item46
 		{
@@ -1571,12 +1665,14 @@ class Mission
 					};
 					id=93;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=92;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item47
 		{
@@ -1600,12 +1696,14 @@ class Mission
 					};
 					id=95;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=94;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item48
 		{
@@ -1629,12 +1727,14 @@ class Mission
 					};
 					id=97;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=96;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item49
 		{
@@ -1658,12 +1758,14 @@ class Mission
 					};
 					id=99;
 					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=98;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item50
 		{
@@ -3117,1403 +3219,6 @@ class Mission
 		};
 		class Item100
 		{
-			dataType="Trigger";
-			position[]={3749.52,15.065611,10330.4};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=200;
-			type="EmptyDetector";
-		};
-		class Item101
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={3749.52,15.065609,10330.4};
-			};
-			name="OWL_mainBase_WEST";
-			init="this setVariable [""OWL_sectorParam_canBeBase"", true];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=201;
-			type="Logic";
-			atlOffset=-1.9073486e-006;
-		};
-		class Item102
-		{
-			dataType="Trigger";
-			position[]={24771.301,16.731209,23158.301};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=202;
-			type="EmptyDetector";
-		};
-		class Item103
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={24771.301,16.731209,23158.301};
-			};
-			name="OWL_mainBase_EAST";
-			init="this setVariable [""OWL_sectorParam_canBeBase"", true];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 2];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=203;
-			type="Logic";
-		};
-		class Item104
-		{
-			dataType="Trigger";
-			position[]={26993,21.652548,24672.801};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=204;
-			type="EmptyDetector";
-		};
-		class Item105
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={26993,21.652548,24672.801};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=205;
-			type="Logic";
-		};
-		class Item106
-		{
-			dataType="Trigger";
-			position[]={27001.301,20.652349,23186.699};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=206;
-			type="EmptyDetector";
-		};
-		class Item107
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={27001.301,20.652349,23186.699};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=207;
-			type="Logic";
-		};
-		class Item108
-		{
-			dataType="Trigger";
-			position[]={26725.4,15.328559,21209.301};
-			class Attributes
-			{
-				sizeA=125;
-				sizeB=125;
-				isRectangle=1;
-			};
-			id=208;
-			type="EmptyDetector";
-		};
-		class Item109
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={26725.4,15.328559,21209.301};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=209;
-			type="Logic";
-		};
-		class Item110
-		{
-			dataType="Trigger";
-			position[]={25688.4,20.239233,21338.6};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=210;
-			type="EmptyDetector";
-		};
-		class Item111
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={25688.4,20.239233,21338.6};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=211;
-			type="Logic";
-		};
-		class Item112
-		{
-			dataType="Trigger";
-			position[]={25396.301,9.6301346,20333.1};
-			class Attributes
-			{
-				sizeA=125;
-				sizeB=125;
-				isRectangle=1;
-			};
-			id=212;
-			type="EmptyDetector";
-		};
-		class Item113
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={25396.301,9.6301346,20333.1};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_13""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=213;
-			type="Logic";
-		};
-		class Item114
-		{
-			dataType="Trigger";
-			position[]={23948.9,14.677764,20160.301};
-			class Attributes
-			{
-				sizeA=125;
-				sizeB=125;
-				isRectangle=1;
-			};
-			id=214;
-			type="EmptyDetector";
-		};
-		class Item115
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={23948.9,14.677764,20160.301};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=215;
-			type="Logic";
-		};
-		class Item116
-		{
-			dataType="Trigger";
-			position[]={23567.1,92.435188,21099.5};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=216;
-			type="EmptyDetector";
-		};
-		class Item117
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={23567.1,92.435188,21099.5};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_12""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=217;
-			type="Logic";
-		};
-		class Item118
-		{
-			dataType="Trigger";
-			position[]={21907.699,23.704601,21033.199};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=218;
-			type="EmptyDetector";
-		};
-		class Item119
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={21907.699,23.704601,21033.199};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_10""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=219;
-			type="Logic";
-		};
-		class Item120
-		{
-			dataType="Trigger";
-			position[]={23211.301,13.839722,19960.4};
-			class Attributes
-			{
-				sizeA=125;
-				sizeB=125;
-				isRectangle=1;
-			};
-			id=220;
-			type="EmptyDetector";
-		};
-		class Item121
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={23211.301,13.839722,19960.4};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=221;
-			type="Logic";
-		};
-		class Item122
-		{
-			dataType="Trigger";
-			position[]={20946.199,43.776089,16955.1};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=222;
-			type="EmptyDetector";
-		};
-		class Item123
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={20946.199,43.776089,16955.1};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 100];" \n "";
-			id=223;
-			type="Logic";
-		};
-		class Item124
-		{
-			dataType="Trigger";
-			position[]={21387.4,19.170893,16339.8};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=224;
-			type="EmptyDetector";
-		};
-		class Item125
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={21387.4,19.170893,16339.8};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 100];" \n "";
-			id=225;
-			type="Logic";
-		};
-		class Item126
-		{
-			dataType="Trigger";
-			position[]={19254.4,34.517487,17589.699};
-			class Attributes
-			{
-				sizeA=125;
-				sizeB=125;
-				isRectangle=1;
-			};
-			id=226;
-			type="EmptyDetector";
-		};
-		class Item127
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={19254.4,34.517487,17589.699};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=227;
-			type="Logic";
-		};
-		class Item128
-		{
-			dataType="Trigger";
-			position[]={18813.4,31.489239,16631.4};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=228;
-			type="EmptyDetector";
-		};
-		class Item129
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={18813.4,31.489239,16631.4};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=229;
-			type="Logic";
-		};
-		class Item130
-		{
-			dataType="Trigger";
-			position[]={18180.199,26.808235,15306.6};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=230;
-			type="EmptyDetector";
-		};
-		class Item131
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={18180.199,26.808235,15306.6};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=231;
-			type="Logic";
-		};
-		class Item132
-		{
-			dataType="Trigger";
-			position[]={19407.9,38.95145,13250.8};
-			class Attributes
-			{
-				sizeA=150;
-				sizeB=150;
-				isRectangle=1;
-			};
-			id=232;
-			type="EmptyDetector";
-		};
-		class Item133
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={19407.9,38.95145,13250.8};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=233;
-			type="Logic";
-		};
-		class Item134
-		{
-			dataType="Trigger";
-			position[]={16828.5,22.541981,12705.3};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=234;
-			type="EmptyDetector";
-		};
-		class Item135
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={16828.5,22.541981,12705.3};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=235;
-			type="Logic";
-		};
-		class Item136
-		{
-			dataType="Trigger";
-			position[]={20262.301,51.314915,11691.2};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=236;
-			type="EmptyDetector";
-		};
-		class Item137
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={20262.301,51.314915,11691.2};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=237;
-			type="Logic";
-		};
-		class Item138
-		{
-			dataType="Trigger";
-			position[]={20442,35.422977,8841.3701};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=238;
-			type="EmptyDetector";
-		};
-		class Item139
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={20442,35.422977,8841.3701};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=239;
-			type="Logic";
-		};
-		class Item140
-		{
-			dataType="Trigger";
-			position[]={21699.5,15.0616,7566.8999};
-			class Attributes
-			{
-				sizeA=150;
-				sizeB=150;
-				isRectangle=1;
-			};
-			id=240;
-			type="EmptyDetector";
-		};
-		class Item141
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={21699.5,15.0616,7566.8999};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=241;
-			type="Logic";
-		};
-		class Item142
-		{
-			dataType="Trigger";
-			position[]={20796.199,36.491802,6736.3398};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=242;
-			type="EmptyDetector";
-		};
-		class Item143
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={20796.199,36.491802,6736.3398};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=243;
-			type="Logic";
-		};
-		class Item144
-		{
-			dataType="Trigger";
-			position[]={16671.1,17.660427,16104.6};
-			class Attributes
-			{
-				sizeA=150;
-				sizeB=150;
-				isRectangle=1;
-			};
-			id=244;
-			type="EmptyDetector";
-		};
-		class Item145
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={16671.1,17.660427,16104.6};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=245;
-			type="Logic";
-		};
-		class Item146
-		{
-			dataType="Trigger";
-			position[]={16252.4,16.862637,17130};
-			class Attributes
-			{
-				sizeA=400;
-				sizeB=400;
-				isRectangle=1;
-			};
-			id=246;
-			type="EmptyDetector";
-		};
-		class Item147
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={16252.4,16.862637,17130};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 40];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=247;
-			type="Logic";
-		};
-		class Item148
-		{
-			dataType="Trigger";
-			position[]={15420.3,4.1190624,16114};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=248;
-			type="EmptyDetector";
-		};
-		class Item149
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={15420.3,4.1190624,16114};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_9""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=249;
-			type="Logic";
-		};
-		class Item150
-		{
-			dataType="Trigger";
-			position[]={15196.5,17.916002,17318.4};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=250;
-			type="EmptyDetector";
-		};
-		class Item151
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={15196.5,17.916002,17318.4};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_8""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=251;
-			type="Logic";
-		};
-		class Item152
-		{
-			dataType="Trigger";
-			position[]={14309.8,19.85198,16243.5};
-			class Attributes
-			{
-				sizeA=175;
-				sizeB=175;
-				isRectangle=1;
-			};
-			id=252;
-			type="EmptyDetector";
-		};
-		class Item153
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={14309.8,19.85198,16243.5};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_7""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=253;
-			type="Logic";
-		};
-		class Item154
-		{
-			dataType="Trigger";
-			position[]={14488.5,20.915617,17670.6};
-			class Attributes
-			{
-				sizeA=175;
-				sizeB=175;
-				isRectangle=1;
-			};
-			id=254;
-			type="EmptyDetector";
-		};
-		class Item155
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={14488.5,20.915617,17670.6};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=255;
-			type="Logic";
-		};
-		class Item156
-		{
-			dataType="Trigger";
-			position[]={14028.7,26.7547,18666.5};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=256;
-			type="EmptyDetector";
-		};
-		class Item157
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={14028.7,26.7547,18666.5};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=257;
-			type="Logic";
-		};
-		class Item158
-		{
-			dataType="Trigger";
-			position[]={14627.8,47.612316,20780.199};
-			class Attributes
-			{
-				sizeA=150;
-				sizeB=150;
-				isRectangle=1;
-			};
-			id=258;
-			type="EmptyDetector";
-		};
-		class Item159
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={14627.8,47.612316,20780.199};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=259;
-			type="Logic";
-		};
-		class Item160
-		{
-			dataType="Trigger";
-			position[]={12824.1,43.355743,19641.5};
-			class Attributes
-			{
-				sizeA=150;
-				sizeB=150;
-				isRectangle=1;
-			};
-			id=260;
-			type="EmptyDetector";
-		};
-		class Item161
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={12824.1,43.355743,19641.5};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=261;
-			type="Logic";
-		};
-		class Item162
-		{
-			dataType="Trigger";
-			position[]={12358.7,23.912498,15674.8};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=262;
-			type="EmptyDetector";
-		};
-		class Item163
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={12358.7,23.912498,15674.8};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=263;
-			type="Logic";
-		};
-		class Item164
-		{
-			dataType="Trigger";
-			position[]={11779.8,52.353275,18323};
-			class Attributes
-			{
-				sizeA=175;
-				sizeB=175;
-				isRectangle=1;
-			};
-			id=264;
-			type="EmptyDetector";
-		};
-		class Item165
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={11779.8,52.353275,18323};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=265;
-			type="Logic";
-		};
-		class Item166
-		{
-			dataType="Trigger";
-			position[]={10330.5,126.55415,19060.801};
-			class Attributes
-			{
-				sizeA=150;
-				sizeB=150;
-				isRectangle=1;
-			};
-			id=266;
-			type="EmptyDetector";
-			atlOffset=7.6293945e-006;
-		};
-		class Item167
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={10330.5,126.55415,19060.801};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=267;
-			type="Logic";
-			atlOffset=7.6293945e-006;
-		};
-		class Item168
-		{
-			dataType="Trigger";
-			position[]={9441.79,124.77596,20285.301};
-			class Attributes
-			{
-				sizeA=175;
-				sizeB=175;
-				isRectangle=1;
-			};
-			id=268;
-			type="EmptyDetector";
-		};
-		class Item169
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={9441.79,124.77596,20285.301};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=269;
-			type="Logic";
-		};
-		class Item170
-		{
-			dataType="Trigger";
-			position[]={4611.46,296.69479,21415.6};
-			class Attributes
-			{
-				sizeA=150;
-				sizeB=150;
-				isRectangle=1;
-			};
-			id=270;
-			type="EmptyDetector";
-		};
-		class Item171
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={4611.46,296.69479,21415.6};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=271;
-			type="Logic";
-		};
-		class Item172
-		{
-			dataType="Trigger";
-			position[]={12502.1,13.325788,14378.2};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=272;
-			type="EmptyDetector";
-		};
-		class Item173
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={12502.1,13.325788,14378.2};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=273;
-			type="Logic";
-		};
-		class Item174
-		{
-			dataType="Trigger";
-			position[]={11010.2,26.359692,13442.4};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=274;
-			type="EmptyDetector";
-		};
-		class Item175
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={11010.2,26.359692,13442.4};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=275;
-			type="Logic";
-		};
-		class Item176
-		{
-			dataType="Trigger";
-			position[]={10671.1,16.721733,12257.7};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=276;
-			type="EmptyDetector";
-		};
-		class Item177
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={10671.1,16.721733,12257.7};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=277;
-			type="Logic";
-		};
-		class Item178
-		{
-			dataType="Trigger";
-			position[]={11620.9,22.953327,11845.7};
-			class Attributes
-			{
-				sizeA=150;
-				sizeB=150;
-				isRectangle=1;
-			};
-			id=278;
-			type="EmptyDetector";
-		};
-		class Item179
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={11620.9,22.953327,11845.7};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=279;
-			type="Logic";
-		};
-		class Item180
-		{
-			dataType="Trigger";
-			position[]={12294.9,123.99193,8893.8799};
-			class Attributes
-			{
-				sizeA=100;
-				sizeB=100;
-				isRectangle=1;
-			};
-			id=280;
-			type="EmptyDetector";
-		};
-		class Item181
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={12294.9,123.99193,8893.8799};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_5""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=281;
-			type="Logic";
-		};
-		class Item182
-		{
-			dataType="Trigger";
-			position[]={9055.8496,21.954548,11979.4};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=282;
-			type="EmptyDetector";
-		};
-		class Item183
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={9055.8496,21.954548,11979.4};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=283;
-			type="Logic";
-		};
-		class Item184
-		{
-			dataType="Trigger";
-			position[]={7403.3101,26.288723,12116.3};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=284;
-			type="EmptyDetector";
-		};
-		class Item185
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={7403.3101,26.288723,12116.3};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=285;
-			type="Logic";
-		};
-		class Item186
-		{
-			dataType="Trigger";
-			position[]={5098.1899,48.952263,11241.7};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=286;
-			type="EmptyDetector";
-		};
-		class Item187
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={5098.1899,48.952263,11241.7};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=287;
-			type="Logic";
-		};
-		class Item188
-		{
-			dataType="Trigger";
-			position[]={4152.4302,52.537334,11744.3};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=288;
-			type="EmptyDetector";
-		};
-		class Item189
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={4152.4302,52.537334,11744.3};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=289;
-			type="Logic";
-		};
-		class Item190
-		{
-			dataType="Trigger";
-			position[]={3553.8401,8.7105865,13000.4};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=290;
-			type="EmptyDetector";
-		};
-		class Item191
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={3553.8401,8.7105865,13000.4};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=291;
-			type="Logic";
-		};
-		class Item192
-		{
-			dataType="Trigger";
-			position[]={3823,17.05407,13711.7};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=292;
-			type="EmptyDetector";
-		};
-		class Item193
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={3823,17.05407,13711.7};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=293;
-			type="Logic";
-		};
-		class Item194
-		{
-			dataType="Trigger";
-			position[]={4228.0298,18.060003,15042.5};
-			class Attributes
-			{
-				sizeA=125;
-				sizeB=125;
-				isRectangle=1;
-			};
-			id=294;
-			type="EmptyDetector";
-		};
-		class Item195
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={4228.0298,18.060003,15042.5};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_1""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=295;
-			type="Logic";
-		};
-		class Item196
-		{
-			dataType="Trigger";
-			position[]={4908.5098,77.693558,16147.8};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=296;
-			type="EmptyDetector";
-		};
-		class Item197
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={4908.5098,77.693558,16147.8};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=297;
-			type="Logic";
-		};
-		class Item198
-		{
-			dataType="Trigger";
-			position[]={6171.4702,43,16227.1};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=298;
-			type="EmptyDetector";
-		};
-		class Item199
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={6171.4702,43,16227.1};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_2""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=299;
-			type="Logic";
-		};
-		class Item200
-		{
-			dataType="Trigger";
-			position[]={7118.2402,114.22603,16449.699};
-			class Attributes
-			{
-				sizeA=200;
-				sizeB=200;
-				isRectangle=1;
-			};
-			id=300;
-			type="EmptyDetector";
-		};
-		class Item201
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={7118.2402,114.22603,16449.699};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=301;
-			type="Logic";
-		};
-		class Item202
-		{
-			dataType="Trigger";
-			position[]={8629.54,180.76244,18282};
-			class Attributes
-			{
-				sizeA=150;
-				sizeB=150;
-				isRectangle=1;
-			};
-			id=302;
-			type="EmptyDetector";
-		};
-		class Item203
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8629.54,180.76244,18282};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=303;
-			type="Logic";
-		};
-		class Item204
-		{
-			dataType="Trigger";
-			position[]={10438,83.826675,17238.6};
-			class Attributes
-			{
-				sizeA=125;
-				sizeB=125;
-				isRectangle=1;
-			};
-			id=304;
-			type="EmptyDetector";
-		};
-		class Item205
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={10438,83.826675,17238.6};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=305;
-			type="Logic";
-		};
-		class Item206
-		{
-			dataType="Trigger";
-			position[]={9335.8496,119.895,15883.7};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=306;
-			type="EmptyDetector";
-		};
-		class Item207
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={9335.8496,119.895,15883.7};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=307;
-			type="Logic";
-		};
-		class Item208
-		{
-			dataType="Trigger";
-			position[]={14280.3,4.7059116,13030.4};
-			class Attributes
-			{
-				sizeA=100;
-				sizeB=100;
-				isRectangle=1;
-			};
-			id=308;
-			type="EmptyDetector";
-		};
-		class Item209
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={14280.3,4.7059116,13030.4};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_4""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=309;
-			type="Logic";
-		};
-		class Item210
-		{
-			dataType="Trigger";
-			position[]={12724.2,59.631893,16516.199};
-			class Attributes
-			{
-				sizeA=300;
-				sizeB=300;
-				isRectangle=1;
-			};
-			id=310;
-			type="EmptyDetector";
-		};
-		class Item211
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={12724.2,59.631893,16516.199};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_6""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 30];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=311;
-			type="Logic";
-		};
-		class Item212
-		{
-			dataType="Trigger";
-			position[]={20856.5,12.724644,19313};
-			class Attributes
-			{
-				sizeA=250;
-				sizeB=250;
-				isRectangle=1;
-			};
-			id=312;
-			type="EmptyDetector";
-		};
-		class Item213
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={20856.5,12.724644,19313};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_11""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=313;
-			type="Logic";
-		};
-		class Item214
-		{
-			dataType="Trigger";
-			position[]={9150.3301,15.976727,21527.9};
-			class Attributes
-			{
-				sizeA=100;
-				sizeB=100;
-				isRectangle=1;
-			};
-			id=314;
-			type="EmptyDetector";
-		};
-		class Item215
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={9150.3301,15.976727,21527.9};
-			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_3""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=315;
-			type="Logic";
-		};
-		class Item216
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -4529,7 +3234,7 @@ class Mission
 			type="Land_WIP_F";
 			atlOffset=0.22804356;
 		};
-		class Item217
+		class Item101
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4563,7 +3268,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item218
+		class Item102
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4580,7 +3285,7 @@ class Mission
 			type="Land_Canal_WallSmall_10m_F";
 			atlOffset=3.7019873;
 		};
-		class Item219
+		class Item103
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4597,7 +3302,7 @@ class Mission
 			type="Land_Canal_WallSmall_10m_F";
 			atlOffset=3.5639992;
 		};
-		class Item220
+		class Item104
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4614,7 +3319,7 @@ class Mission
 			type="Land_Canal_Wall_10m_F";
 			atlOffset=3.8486137;
 		};
-		class Item221
+		class Item105
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4631,7 +3336,7 @@ class Mission
 			type="Land_Canal_WallSmall_10m_F";
 			atlOffset=3.2504196;
 		};
-		class Item222
+		class Item106
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4647,7 +3352,7 @@ class Mission
 			type="Land_ManurePile_01_F";
 			atlOffset=0.42498684;
 		};
-		class Item223
+		class Item107
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4664,7 +3369,7 @@ class Mission
 			type="Land_GarbageHeap_01_F";
 			atlOffset=9.5367432e-005;
 		};
-		class Item224
+		class Item108
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4680,7 +3385,7 @@ class Mission
 			id=331;
 			type="Land_GarbageHeap_03_F";
 		};
-		class Item225
+		class Item109
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4697,7 +3402,7 @@ class Mission
 			type="Land_JunkPile_F";
 			atlOffset=0.00011062622;
 		};
-		class Item226
+		class Item110
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4714,7 +3419,7 @@ class Mission
 			type="Land_GarbageBarrel_02_F";
 			atlOffset=-0.00039672852;
 		};
-		class Item227
+		class Item111
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4731,7 +3436,7 @@ class Mission
 			type="Land_Tyres_F";
 			atlOffset=0.00026607513;
 		};
-		class Item228
+		class Item112
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4747,7 +3452,7 @@ class Mission
 			type="Land_WaterTower_01_ruins_F";
 			atlOffset=-0.60937977;
 		};
-		class Item229
+		class Item113
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4764,7 +3469,7 @@ class Mission
 			type="Land_WheelieBin_01_F";
 			atlOffset=-0.00026512146;
 		};
-		class Item230
+		class Item114
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4780,7 +3485,7 @@ class Mission
 			id=344;
 			type="Land_Tank_rust_F";
 		};
-		class Item231
+		class Item115
 		{
 			dataType="Marker";
 			position[]={14097.542,7.4809999,15504.01};
@@ -4789,6 +3494,1407 @@ class Mission
 			type="respawn_unknown";
 			id=351;
 			atlOffset=-0.00020599365;
+		};
+		class Item116
+		{
+			dataType="Trigger";
+			position[]={3749.52,15.065611,10330.4};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=356;
+			type="EmptyDetector";
+		};
+		class Item117
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3749.52,15.065609,10330.4};
+			};
+			name="OWL_mainBase_WEST";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", true];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=357;
+			type="Logic";
+			atlOffset=-1.9073486e-006;
+		};
+		class Item118
+		{
+			dataType="Trigger";
+			position[]={24771.301,16.731209,23158.301};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=358;
+			type="EmptyDetector";
+		};
+		class Item119
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={24771.301,16.731209,23158.301};
+			};
+			name="OWL_mainBase_EAST";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", true];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 2];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=359;
+			type="Logic";
+		};
+		class Item120
+		{
+			dataType="Trigger";
+			position[]={26993,21.652548,24672.801};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=360;
+			type="EmptyDetector";
+		};
+		class Item121
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={26993,21.652548,24672.801};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=361;
+			type="Logic";
+		};
+		class Item122
+		{
+			dataType="Trigger";
+			position[]={27001.301,20.652349,23186.699};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=362;
+			type="EmptyDetector";
+		};
+		class Item123
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={27001.301,20.652349,23186.699};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=363;
+			type="Logic";
+		};
+		class Item124
+		{
+			dataType="Trigger";
+			position[]={26725.4,15.328559,21209.301};
+			class Attributes
+			{
+				sizeA=125;
+				sizeB=125;
+				isRectangle=1;
+			};
+			id=364;
+			type="EmptyDetector";
+		};
+		class Item125
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={26725.4,15.328559,21209.301};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=365;
+			type="Logic";
+		};
+		class Item126
+		{
+			dataType="Trigger";
+			position[]={25688.4,20.239233,21338.6};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=366;
+			type="EmptyDetector";
+		};
+		class Item127
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={25688.4,20.239233,21338.6};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=367;
+			type="Logic";
+		};
+		class Item128
+		{
+			dataType="Trigger";
+			position[]={25396.301,9.6301346,20333.1};
+			class Attributes
+			{
+				sizeA=125;
+				sizeB=125;
+				isRectangle=1;
+			};
+			id=368;
+			type="EmptyDetector";
+		};
+		class Item129
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={25396.301,9.6301346,20333.1};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_13""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=369;
+			type="Logic";
+		};
+		class Item130
+		{
+			dataType="Trigger";
+			position[]={23948.9,14.677764,20160.301};
+			class Attributes
+			{
+				sizeA=125;
+				sizeB=125;
+				isRectangle=1;
+			};
+			id=370;
+			type="EmptyDetector";
+		};
+		class Item131
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={23948.9,14.677764,20160.301};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=371;
+			type="Logic";
+		};
+		class Item132
+		{
+			dataType="Trigger";
+			position[]={23567.1,92.435188,21099.5};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=372;
+			type="EmptyDetector";
+		};
+		class Item133
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={23567.1,92.435188,21099.5};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_12""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=373;
+			type="Logic";
+		};
+		class Item134
+		{
+			dataType="Trigger";
+			position[]={21907.699,23.704601,21033.199};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=374;
+			type="EmptyDetector";
+		};
+		class Item135
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={21907.699,23.704601,21033.199};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_10""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=375;
+			type="Logic";
+		};
+		class Item136
+		{
+			dataType="Trigger";
+			position[]={23211.301,13.839722,19960.4};
+			class Attributes
+			{
+				sizeA=125;
+				sizeB=125;
+				isRectangle=1;
+			};
+			id=376;
+			type="EmptyDetector";
+		};
+		class Item137
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={23211.301,13.839722,19960.4};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=377;
+			type="Logic";
+		};
+		class Item138
+		{
+			dataType="Trigger";
+			position[]={20946.199,43.776089,16955.1};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=378;
+			type="EmptyDetector";
+		};
+		class Item139
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={20946.199,43.776089,16955.1};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 100];" \n "";
+			id=379;
+			type="Logic";
+		};
+		class Item140
+		{
+			dataType="Trigger";
+			position[]={21387.4,19.170893,16339.8};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=380;
+			type="EmptyDetector";
+		};
+		class Item141
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={21387.4,19.170893,16339.8};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 100];" \n "";
+			id=381;
+			type="Logic";
+		};
+		class Item142
+		{
+			dataType="Trigger";
+			position[]={19254.4,34.517487,17589.699};
+			class Attributes
+			{
+				sizeA=125;
+				sizeB=125;
+				isRectangle=1;
+			};
+			id=382;
+			type="EmptyDetector";
+		};
+		class Item143
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={19254.4,34.517487,17589.699};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=383;
+			type="Logic";
+		};
+		class Item144
+		{
+			dataType="Trigger";
+			position[]={18813.4,31.489239,16631.4};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=384;
+			type="EmptyDetector";
+		};
+		class Item145
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18813.4,31.489239,16631.4};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=385;
+			type="Logic";
+		};
+		class Item146
+		{
+			dataType="Trigger";
+			position[]={18180.199,26.808235,15306.6};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=386;
+			type="EmptyDetector";
+		};
+		class Item147
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18180.199,26.808235,15306.6};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=387;
+			type="Logic";
+		};
+		class Item148
+		{
+			dataType="Trigger";
+			position[]={19407.9,38.95145,13250.8};
+			class Attributes
+			{
+				sizeA=150;
+				sizeB=150;
+				isRectangle=1;
+			};
+			id=388;
+			type="EmptyDetector";
+		};
+		class Item149
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={19407.9,38.95145,13250.8};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=389;
+			type="Logic";
+		};
+		class Item150
+		{
+			dataType="Trigger";
+			position[]={16828.5,22.541981,12705.3};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=390;
+			type="EmptyDetector";
+		};
+		class Item151
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16828.5,22.541981,12705.3};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=391;
+			type="Logic";
+		};
+		class Item152
+		{
+			dataType="Trigger";
+			position[]={20262.301,51.314915,11691.2};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=392;
+			type="EmptyDetector";
+		};
+		class Item153
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={20262.301,51.314915,11691.2};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=393;
+			type="Logic";
+		};
+		class Item154
+		{
+			dataType="Trigger";
+			position[]={20442,35.422977,8841.3701};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=394;
+			type="EmptyDetector";
+		};
+		class Item155
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={20442,35.422977,8841.3701};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=395;
+			type="Logic";
+		};
+		class Item156
+		{
+			dataType="Trigger";
+			position[]={21699.5,15.0616,7566.8999};
+			class Attributes
+			{
+				sizeA=150;
+				sizeB=150;
+				isRectangle=1;
+			};
+			id=396;
+			type="EmptyDetector";
+		};
+		class Item157
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={21699.5,15.0616,7566.8999};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=397;
+			type="Logic";
+		};
+		class Item158
+		{
+			dataType="Trigger";
+			position[]={20796.199,36.491802,6736.3398};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=398;
+			type="EmptyDetector";
+		};
+		class Item159
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={20796.199,36.491802,6736.3398};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=399;
+			type="Logic";
+		};
+		class Item160
+		{
+			dataType="Trigger";
+			position[]={16671.1,17.660427,16104.6};
+			class Attributes
+			{
+				sizeA=150;
+				sizeB=150;
+				isRectangle=1;
+			};
+			id=400;
+			type="EmptyDetector";
+		};
+		class Item161
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16671.1,17.660427,16104.6};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=401;
+			type="Logic";
+		};
+		class Item162
+		{
+			dataType="Trigger";
+			position[]={16252.4,16.862637,17130};
+			class Attributes
+			{
+				sizeA=400;
+				sizeB=400;
+				isRectangle=1;
+			};
+			id=402;
+			type="EmptyDetector";
+		};
+		class Item163
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16252.4,16.862637,17130};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 40];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=403;
+			type="Logic";
+		};
+		class Item164
+		{
+			dataType="Trigger";
+			position[]={15420.3,4.1190624,16114};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=404;
+			type="EmptyDetector";
+		};
+		class Item165
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15420.3,4.1190624,16114};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_9""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=405;
+			type="Logic";
+		};
+		class Item166
+		{
+			dataType="Trigger";
+			position[]={15196.5,17.916002,17318.4};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=406;
+			type="EmptyDetector";
+		};
+		class Item167
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15196.5,17.916002,17318.4};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_8""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=407;
+			type="Logic";
+		};
+		class Item168
+		{
+			dataType="Trigger";
+			position[]={14309.8,19.85198,16243.5};
+			class Attributes
+			{
+				sizeA=175;
+				sizeB=175;
+				isRectangle=1;
+			};
+			id=408;
+			type="EmptyDetector";
+		};
+		class Item169
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14309.8,19.85198,16243.5};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_7""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=409;
+			type="Logic";
+		};
+		class Item170
+		{
+			dataType="Trigger";
+			position[]={14488.5,20.915617,17670.6};
+			class Attributes
+			{
+				sizeA=175;
+				sizeB=175;
+				isRectangle=1;
+			};
+			id=410;
+			type="EmptyDetector";
+		};
+		class Item171
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14488.5,20.915617,17670.6};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=411;
+			type="Logic";
+		};
+		class Item172
+		{
+			dataType="Trigger";
+			position[]={14028.7,26.7547,18666.5};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=412;
+			type="EmptyDetector";
+		};
+		class Item173
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14028.7,26.7547,18666.5};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=413;
+			type="Logic";
+		};
+		class Item174
+		{
+			dataType="Trigger";
+			position[]={14627.8,47.612316,20780.199};
+			class Attributes
+			{
+				sizeA=150;
+				sizeB=150;
+				isRectangle=1;
+			};
+			id=414;
+			type="EmptyDetector";
+		};
+		class Item175
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14627.8,47.612316,20780.199};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=415;
+			type="Logic";
+		};
+		class Item176
+		{
+			dataType="Trigger";
+			position[]={12824.1,43.355743,19641.5};
+			class Attributes
+			{
+				sizeA=150;
+				sizeB=150;
+				isRectangle=1;
+			};
+			id=416;
+			type="EmptyDetector";
+		};
+		class Item177
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12824.1,43.355743,19641.5};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=417;
+			type="Logic";
+		};
+		class Item178
+		{
+			dataType="Trigger";
+			position[]={12358.7,23.912498,15674.8};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=418;
+			type="EmptyDetector";
+		};
+		class Item179
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12358.7,23.912498,15674.8};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=419;
+			type="Logic";
+		};
+		class Item180
+		{
+			dataType="Trigger";
+			position[]={11779.8,52.353275,18323};
+			class Attributes
+			{
+				sizeA=175;
+				sizeB=175;
+				isRectangle=1;
+			};
+			id=420;
+			type="EmptyDetector";
+		};
+		class Item181
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={11779.8,52.353275,18323};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=421;
+			type="Logic";
+		};
+		class Item182
+		{
+			dataType="Trigger";
+			position[]={10330.5,126.55415,19060.801};
+			class Attributes
+			{
+				sizeA=150;
+				sizeB=150;
+				isRectangle=1;
+			};
+			id=422;
+			type="EmptyDetector";
+			atlOffset=7.6293945e-006;
+		};
+		class Item183
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10330.5,126.55415,19060.801};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=423;
+			type="Logic";
+			atlOffset=7.6293945e-006;
+		};
+		class Item184
+		{
+			dataType="Trigger";
+			position[]={9441.79,124.77596,20285.301};
+			class Attributes
+			{
+				sizeA=175;
+				sizeB=175;
+				isRectangle=1;
+			};
+			id=424;
+			type="EmptyDetector";
+		};
+		class Item185
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={9441.79,124.77596,20285.301};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=425;
+			type="Logic";
+		};
+		class Item186
+		{
+			dataType="Trigger";
+			position[]={4611.46,296.69479,21415.6};
+			class Attributes
+			{
+				sizeA=150;
+				sizeB=150;
+				isRectangle=1;
+			};
+			id=426;
+			type="EmptyDetector";
+		};
+		class Item187
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4611.46,296.69479,21415.6};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=427;
+			type="Logic";
+		};
+		class Item188
+		{
+			dataType="Trigger";
+			position[]={12502.1,13.325788,14378.2};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=428;
+			type="EmptyDetector";
+			atlOffset=-9.5367432e-007;
+		};
+		class Item189
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12502.1,13.325788,14378.2};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=429;
+			type="Logic";
+			atlOffset=-9.5367432e-007;
+		};
+		class Item190
+		{
+			dataType="Trigger";
+			position[]={11010.2,26.359692,13442.4};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=430;
+			type="EmptyDetector";
+		};
+		class Item191
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={11010.2,26.359692,13442.4};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=431;
+			type="Logic";
+		};
+		class Item192
+		{
+			dataType="Trigger";
+			position[]={10671.1,16.721733,12257.7};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=432;
+			type="EmptyDetector";
+		};
+		class Item193
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10671.1,16.721733,12257.7};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=433;
+			type="Logic";
+		};
+		class Item194
+		{
+			dataType="Trigger";
+			position[]={11620.9,22.953327,11845.7};
+			class Attributes
+			{
+				sizeA=150;
+				sizeB=150;
+				isRectangle=1;
+			};
+			id=434;
+			type="EmptyDetector";
+		};
+		class Item195
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={11620.9,22.953327,11845.7};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=435;
+			type="Logic";
+		};
+		class Item196
+		{
+			dataType="Trigger";
+			position[]={12294.9,123.99193,8893.8799};
+			class Attributes
+			{
+				sizeA=100;
+				sizeB=100;
+				isRectangle=1;
+			};
+			id=436;
+			type="EmptyDetector";
+		};
+		class Item197
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12294.9,123.99193,8893.8799};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_5""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=437;
+			type="Logic";
+		};
+		class Item198
+		{
+			dataType="Trigger";
+			position[]={9055.8496,21.954548,11979.4};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=438;
+			type="EmptyDetector";
+		};
+		class Item199
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={9055.8496,21.954548,11979.4};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=439;
+			type="Logic";
+		};
+		class Item200
+		{
+			dataType="Trigger";
+			position[]={7403.3101,26.288723,12116.3};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=440;
+			type="EmptyDetector";
+		};
+		class Item201
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7403.3101,26.288723,12116.3};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=441;
+			type="Logic";
+		};
+		class Item202
+		{
+			dataType="Trigger";
+			position[]={5098.1899,48.952263,11241.7};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=442;
+			type="EmptyDetector";
+		};
+		class Item203
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5098.1899,48.952263,11241.7};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=443;
+			type="Logic";
+		};
+		class Item204
+		{
+			dataType="Trigger";
+			position[]={4152.4302,52.537334,11744.3};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=444;
+			type="EmptyDetector";
+		};
+		class Item205
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4152.4302,52.537334,11744.3};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=445;
+			type="Logic";
+		};
+		class Item206
+		{
+			dataType="Trigger";
+			position[]={3553.8401,8.7105865,13000.4};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=446;
+			type="EmptyDetector";
+		};
+		class Item207
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3553.8401,8.7105865,13000.4};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=447;
+			type="Logic";
+		};
+		class Item208
+		{
+			dataType="Trigger";
+			position[]={3823,17.05407,13711.7};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=448;
+			type="EmptyDetector";
+		};
+		class Item209
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3823,17.05407,13711.7};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=449;
+			type="Logic";
+		};
+		class Item210
+		{
+			dataType="Trigger";
+			position[]={4228.0298,18.060003,15042.5};
+			class Attributes
+			{
+				sizeA=125;
+				sizeB=125;
+				isRectangle=1;
+			};
+			id=450;
+			type="EmptyDetector";
+		};
+		class Item211
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4228.0298,18.060003,15042.5};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_1""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=451;
+			type="Logic";
+		};
+		class Item212
+		{
+			dataType="Trigger";
+			position[]={4908.5098,77.693558,16147.8};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=452;
+			type="EmptyDetector";
+		};
+		class Item213
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4908.5098,77.693558,16147.8};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=453;
+			type="Logic";
+		};
+		class Item214
+		{
+			dataType="Trigger";
+			position[]={6171.4702,43,16227.1};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=454;
+			type="EmptyDetector";
+		};
+		class Item215
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6171.4702,43,16227.1};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_2""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=455;
+			type="Logic";
+		};
+		class Item216
+		{
+			dataType="Trigger";
+			position[]={7118.2402,114.22603,16449.699};
+			class Attributes
+			{
+				sizeA=200;
+				sizeB=200;
+				isRectangle=1;
+			};
+			id=456;
+			type="EmptyDetector";
+		};
+		class Item217
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7118.2402,114.22603,16449.699};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=457;
+			type="Logic";
+		};
+		class Item218
+		{
+			dataType="Trigger";
+			position[]={8629.54,180.76244,18282};
+			class Attributes
+			{
+				sizeA=150;
+				sizeB=150;
+				isRectangle=1;
+			};
+			id=458;
+			type="EmptyDetector";
+		};
+		class Item219
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8629.54,180.76244,18282};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=459;
+			type="Logic";
+		};
+		class Item220
+		{
+			dataType="Trigger";
+			position[]={10438,83.826675,17238.6};
+			class Attributes
+			{
+				sizeA=125;
+				sizeB=125;
+				isRectangle=1;
+			};
+			id=460;
+			type="EmptyDetector";
+		};
+		class Item221
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10438,83.826675,17238.6};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=461;
+			type="Logic";
+		};
+		class Item222
+		{
+			dataType="Trigger";
+			position[]={9335.8496,119.895,15883.7};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=462;
+			type="EmptyDetector";
+		};
+		class Item223
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={9335.8496,119.895,15883.7};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=463;
+			type="Logic";
+		};
+		class Item224
+		{
+			dataType="Trigger";
+			position[]={14280.3,4.7059116,13030.4};
+			class Attributes
+			{
+				sizeA=100;
+				sizeB=100;
+				isRectangle=1;
+			};
+			id=464;
+			type="EmptyDetector";
+		};
+		class Item225
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14280.3,4.7059116,13030.4};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_4""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=465;
+			type="Logic";
+		};
+		class Item226
+		{
+			dataType="Trigger";
+			position[]={12724.2,59.631893,16516.199};
+			class Attributes
+			{
+				sizeA=300;
+				sizeB=300;
+				isRectangle=1;
+			};
+			id=466;
+			type="EmptyDetector";
+		};
+		class Item227
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12724.2,59.631893,16516.199};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_6""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 30];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=467;
+			type="Logic";
+		};
+		class Item228
+		{
+			dataType="Trigger";
+			position[]={20856.5,12.724644,19313};
+			class Attributes
+			{
+				sizeA=250;
+				sizeB=250;
+				isRectangle=1;
+			};
+			id=468;
+			type="EmptyDetector";
+		};
+		class Item229
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={20856.5,12.724644,19313};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_11""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=469;
+			type="Logic";
+		};
+		class Item230
+		{
+			dataType="Trigger";
+			position[]={9150.3301,15.976727,21527.9};
+			class Attributes
+			{
+				sizeA=100;
+				sizeB=100;
+				isRectangle=1;
+			};
+			id=470;
+			type="EmptyDetector";
+			atlOffset=-9.5367432e-007;
+		};
+		class Item231
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={9150.3301,15.976727,21527.9};
+			};
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_3""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=471;
+			type="Logic";
+			atlOffset=-9.5367432e-007;
 		};
 	};
 	class Connections
@@ -4803,8 +4909,8 @@ class Mission
 			class Item0
 			{
 				linkID=0;
-				item0=200;
-				item1=201;
+				item0=356;
+				item1=357;
 				class CustomData
 				{
 					type="Sync";
@@ -4813,8 +4919,8 @@ class Mission
 			class Item1
 			{
 				linkID=1;
-				item0=202;
-				item1=203;
+				item0=358;
+				item1=359;
 				class CustomData
 				{
 					type="Sync";
@@ -4823,8 +4929,8 @@ class Mission
 			class Item2
 			{
 				linkID=2;
-				item0=204;
-				item1=205;
+				item0=360;
+				item1=361;
 				class CustomData
 				{
 					type="Sync";
@@ -4833,8 +4939,8 @@ class Mission
 			class Item3
 			{
 				linkID=3;
-				item0=206;
-				item1=207;
+				item0=362;
+				item1=363;
 				class CustomData
 				{
 					type="Sync";
@@ -4843,8 +4949,8 @@ class Mission
 			class Item4
 			{
 				linkID=4;
-				item0=208;
-				item1=209;
+				item0=364;
+				item1=365;
 				class CustomData
 				{
 					type="Sync";
@@ -4853,8 +4959,8 @@ class Mission
 			class Item5
 			{
 				linkID=5;
-				item0=210;
-				item1=211;
+				item0=366;
+				item1=367;
 				class CustomData
 				{
 					type="Sync";
@@ -4863,8 +4969,8 @@ class Mission
 			class Item6
 			{
 				linkID=6;
-				item0=212;
-				item1=213;
+				item0=368;
+				item1=369;
 				class CustomData
 				{
 					type="Sync";
@@ -4873,8 +4979,8 @@ class Mission
 			class Item7
 			{
 				linkID=7;
-				item0=214;
-				item1=215;
+				item0=370;
+				item1=371;
 				class CustomData
 				{
 					type="Sync";
@@ -4883,8 +4989,8 @@ class Mission
 			class Item8
 			{
 				linkID=8;
-				item0=216;
-				item1=217;
+				item0=372;
+				item1=373;
 				class CustomData
 				{
 					type="Sync";
@@ -4893,8 +4999,8 @@ class Mission
 			class Item9
 			{
 				linkID=9;
-				item0=218;
-				item1=219;
+				item0=374;
+				item1=375;
 				class CustomData
 				{
 					type="Sync";
@@ -4903,8 +5009,8 @@ class Mission
 			class Item10
 			{
 				linkID=10;
-				item0=220;
-				item1=221;
+				item0=376;
+				item1=377;
 				class CustomData
 				{
 					type="Sync";
@@ -4913,8 +5019,8 @@ class Mission
 			class Item11
 			{
 				linkID=11;
-				item0=222;
-				item1=223;
+				item0=378;
+				item1=379;
 				class CustomData
 				{
 					type="Sync";
@@ -4923,8 +5029,8 @@ class Mission
 			class Item12
 			{
 				linkID=12;
-				item0=224;
-				item1=225;
+				item0=380;
+				item1=381;
 				class CustomData
 				{
 					type="Sync";
@@ -4933,8 +5039,8 @@ class Mission
 			class Item13
 			{
 				linkID=13;
-				item0=226;
-				item1=227;
+				item0=382;
+				item1=383;
 				class CustomData
 				{
 					type="Sync";
@@ -4943,8 +5049,8 @@ class Mission
 			class Item14
 			{
 				linkID=14;
-				item0=228;
-				item1=229;
+				item0=384;
+				item1=385;
 				class CustomData
 				{
 					type="Sync";
@@ -4953,8 +5059,8 @@ class Mission
 			class Item15
 			{
 				linkID=15;
-				item0=230;
-				item1=231;
+				item0=386;
+				item1=387;
 				class CustomData
 				{
 					type="Sync";
@@ -4963,8 +5069,8 @@ class Mission
 			class Item16
 			{
 				linkID=16;
-				item0=232;
-				item1=233;
+				item0=388;
+				item1=389;
 				class CustomData
 				{
 					type="Sync";
@@ -4973,8 +5079,8 @@ class Mission
 			class Item17
 			{
 				linkID=17;
-				item0=234;
-				item1=235;
+				item0=390;
+				item1=391;
 				class CustomData
 				{
 					type="Sync";
@@ -4983,8 +5089,8 @@ class Mission
 			class Item18
 			{
 				linkID=18;
-				item0=236;
-				item1=237;
+				item0=392;
+				item1=393;
 				class CustomData
 				{
 					type="Sync";
@@ -4993,8 +5099,8 @@ class Mission
 			class Item19
 			{
 				linkID=19;
-				item0=238;
-				item1=239;
+				item0=394;
+				item1=395;
 				class CustomData
 				{
 					type="Sync";
@@ -5003,8 +5109,8 @@ class Mission
 			class Item20
 			{
 				linkID=20;
-				item0=240;
-				item1=241;
+				item0=396;
+				item1=397;
 				class CustomData
 				{
 					type="Sync";
@@ -5013,8 +5119,8 @@ class Mission
 			class Item21
 			{
 				linkID=21;
-				item0=242;
-				item1=243;
+				item0=398;
+				item1=399;
 				class CustomData
 				{
 					type="Sync";
@@ -5023,8 +5129,8 @@ class Mission
 			class Item22
 			{
 				linkID=22;
-				item0=244;
-				item1=245;
+				item0=400;
+				item1=401;
 				class CustomData
 				{
 					type="Sync";
@@ -5033,8 +5139,8 @@ class Mission
 			class Item23
 			{
 				linkID=23;
-				item0=246;
-				item1=247;
+				item0=402;
+				item1=403;
 				class CustomData
 				{
 					type="Sync";
@@ -5043,8 +5149,8 @@ class Mission
 			class Item24
 			{
 				linkID=24;
-				item0=248;
-				item1=249;
+				item0=404;
+				item1=405;
 				class CustomData
 				{
 					type="Sync";
@@ -5053,8 +5159,8 @@ class Mission
 			class Item25
 			{
 				linkID=25;
-				item0=250;
-				item1=251;
+				item0=406;
+				item1=407;
 				class CustomData
 				{
 					type="Sync";
@@ -5063,8 +5169,8 @@ class Mission
 			class Item26
 			{
 				linkID=26;
-				item0=252;
-				item1=253;
+				item0=408;
+				item1=409;
 				class CustomData
 				{
 					type="Sync";
@@ -5073,8 +5179,8 @@ class Mission
 			class Item27
 			{
 				linkID=27;
-				item0=254;
-				item1=255;
+				item0=410;
+				item1=411;
 				class CustomData
 				{
 					type="Sync";
@@ -5083,8 +5189,8 @@ class Mission
 			class Item28
 			{
 				linkID=28;
-				item0=256;
-				item1=257;
+				item0=412;
+				item1=413;
 				class CustomData
 				{
 					type="Sync";
@@ -5093,8 +5199,8 @@ class Mission
 			class Item29
 			{
 				linkID=29;
-				item0=258;
-				item1=259;
+				item0=414;
+				item1=415;
 				class CustomData
 				{
 					type="Sync";
@@ -5103,8 +5209,8 @@ class Mission
 			class Item30
 			{
 				linkID=30;
-				item0=260;
-				item1=261;
+				item0=416;
+				item1=417;
 				class CustomData
 				{
 					type="Sync";
@@ -5113,8 +5219,8 @@ class Mission
 			class Item31
 			{
 				linkID=31;
-				item0=262;
-				item1=263;
+				item0=418;
+				item1=419;
 				class CustomData
 				{
 					type="Sync";
@@ -5123,8 +5229,8 @@ class Mission
 			class Item32
 			{
 				linkID=32;
-				item0=264;
-				item1=265;
+				item0=420;
+				item1=421;
 				class CustomData
 				{
 					type="Sync";
@@ -5133,8 +5239,8 @@ class Mission
 			class Item33
 			{
 				linkID=33;
-				item0=266;
-				item1=267;
+				item0=422;
+				item1=423;
 				class CustomData
 				{
 					type="Sync";
@@ -5143,8 +5249,8 @@ class Mission
 			class Item34
 			{
 				linkID=34;
-				item0=268;
-				item1=269;
+				item0=424;
+				item1=425;
 				class CustomData
 				{
 					type="Sync";
@@ -5153,8 +5259,8 @@ class Mission
 			class Item35
 			{
 				linkID=35;
-				item0=270;
-				item1=271;
+				item0=426;
+				item1=427;
 				class CustomData
 				{
 					type="Sync";
@@ -5163,8 +5269,8 @@ class Mission
 			class Item36
 			{
 				linkID=36;
-				item0=272;
-				item1=273;
+				item0=428;
+				item1=429;
 				class CustomData
 				{
 					type="Sync";
@@ -5173,8 +5279,8 @@ class Mission
 			class Item37
 			{
 				linkID=37;
-				item0=274;
-				item1=275;
+				item0=430;
+				item1=431;
 				class CustomData
 				{
 					type="Sync";
@@ -5183,8 +5289,8 @@ class Mission
 			class Item38
 			{
 				linkID=38;
-				item0=276;
-				item1=277;
+				item0=432;
+				item1=433;
 				class CustomData
 				{
 					type="Sync";
@@ -5193,8 +5299,8 @@ class Mission
 			class Item39
 			{
 				linkID=39;
-				item0=278;
-				item1=279;
+				item0=434;
+				item1=435;
 				class CustomData
 				{
 					type="Sync";
@@ -5203,8 +5309,8 @@ class Mission
 			class Item40
 			{
 				linkID=40;
-				item0=280;
-				item1=281;
+				item0=436;
+				item1=437;
 				class CustomData
 				{
 					type="Sync";
@@ -5213,8 +5319,8 @@ class Mission
 			class Item41
 			{
 				linkID=41;
-				item0=282;
-				item1=283;
+				item0=438;
+				item1=439;
 				class CustomData
 				{
 					type="Sync";
@@ -5223,8 +5329,8 @@ class Mission
 			class Item42
 			{
 				linkID=42;
-				item0=284;
-				item1=285;
+				item0=440;
+				item1=441;
 				class CustomData
 				{
 					type="Sync";
@@ -5233,8 +5339,8 @@ class Mission
 			class Item43
 			{
 				linkID=43;
-				item0=286;
-				item1=287;
+				item0=442;
+				item1=443;
 				class CustomData
 				{
 					type="Sync";
@@ -5243,8 +5349,8 @@ class Mission
 			class Item44
 			{
 				linkID=44;
-				item0=288;
-				item1=289;
+				item0=444;
+				item1=445;
 				class CustomData
 				{
 					type="Sync";
@@ -5253,8 +5359,8 @@ class Mission
 			class Item45
 			{
 				linkID=45;
-				item0=290;
-				item1=291;
+				item0=446;
+				item1=447;
 				class CustomData
 				{
 					type="Sync";
@@ -5263,8 +5369,8 @@ class Mission
 			class Item46
 			{
 				linkID=46;
-				item0=292;
-				item1=293;
+				item0=448;
+				item1=449;
 				class CustomData
 				{
 					type="Sync";
@@ -5273,8 +5379,8 @@ class Mission
 			class Item47
 			{
 				linkID=47;
-				item0=294;
-				item1=295;
+				item0=450;
+				item1=451;
 				class CustomData
 				{
 					type="Sync";
@@ -5283,8 +5389,8 @@ class Mission
 			class Item48
 			{
 				linkID=48;
-				item0=296;
-				item1=297;
+				item0=452;
+				item1=453;
 				class CustomData
 				{
 					type="Sync";
@@ -5293,8 +5399,8 @@ class Mission
 			class Item49
 			{
 				linkID=49;
-				item0=298;
-				item1=299;
+				item0=454;
+				item1=455;
 				class CustomData
 				{
 					type="Sync";
@@ -5303,8 +5409,8 @@ class Mission
 			class Item50
 			{
 				linkID=50;
-				item0=300;
-				item1=301;
+				item0=456;
+				item1=457;
 				class CustomData
 				{
 					type="Sync";
@@ -5313,8 +5419,8 @@ class Mission
 			class Item51
 			{
 				linkID=51;
-				item0=302;
-				item1=303;
+				item0=458;
+				item1=459;
 				class CustomData
 				{
 					type="Sync";
@@ -5323,8 +5429,8 @@ class Mission
 			class Item52
 			{
 				linkID=52;
-				item0=304;
-				item1=305;
+				item0=460;
+				item1=461;
 				class CustomData
 				{
 					type="Sync";
@@ -5333,8 +5439,8 @@ class Mission
 			class Item53
 			{
 				linkID=53;
-				item0=306;
-				item1=307;
+				item0=462;
+				item1=463;
 				class CustomData
 				{
 					type="Sync";
@@ -5343,8 +5449,8 @@ class Mission
 			class Item54
 			{
 				linkID=54;
-				item0=308;
-				item1=309;
+				item0=464;
+				item1=465;
 				class CustomData
 				{
 					type="Sync";
@@ -5353,8 +5459,8 @@ class Mission
 			class Item55
 			{
 				linkID=55;
-				item0=310;
-				item1=311;
+				item0=466;
+				item1=467;
 				class CustomData
 				{
 					type="Sync";
@@ -5363,8 +5469,8 @@ class Mission
 			class Item56
 			{
 				linkID=56;
-				item0=312;
-				item1=313;
+				item0=468;
+				item1=469;
 				class CustomData
 				{
 					type="Sync";
@@ -5373,8 +5479,8 @@ class Mission
 			class Item57
 			{
 				linkID=57;
-				item0=314;
-				item1=315;
+				item0=470;
+				item1=471;
 				class CustomData
 				{
 					type="Sync";
@@ -5383,8 +5489,8 @@ class Mission
 			class Item58
 			{
 				linkID=58;
-				item0=201;
-				item1=289;
+				item0=357;
+				item1=445;
 				class CustomData
 				{
 					type="Sync";
@@ -5393,8 +5499,8 @@ class Mission
 			class Item59
 			{
 				linkID=59;
-				item0=201;
-				item1=287;
+				item0=357;
+				item1=443;
 				class CustomData
 				{
 					type="Sync";
@@ -5403,8 +5509,8 @@ class Mission
 			class Item60
 			{
 				linkID=60;
-				item0=203;
-				item1=207;
+				item0=359;
+				item1=363;
 				class CustomData
 				{
 					type="Sync";
@@ -5413,8 +5519,8 @@ class Mission
 			class Item61
 			{
 				linkID=61;
-				item0=203;
-				item1=211;
+				item0=359;
+				item1=367;
 				class CustomData
 				{
 					type="Sync";
@@ -5423,8 +5529,8 @@ class Mission
 			class Item62
 			{
 				linkID=62;
-				item0=203;
-				item1=217;
+				item0=359;
+				item1=373;
 				class CustomData
 				{
 					type="Sync";
@@ -5433,8 +5539,8 @@ class Mission
 			class Item63
 			{
 				linkID=63;
-				item0=205;
-				item1=207;
+				item0=361;
+				item1=363;
 				class CustomData
 				{
 					type="Sync";
@@ -5443,8 +5549,8 @@ class Mission
 			class Item64
 			{
 				linkID=64;
-				item0=207;
-				item1=209;
+				item0=363;
+				item1=365;
 				class CustomData
 				{
 					type="Sync";
@@ -5453,8 +5559,8 @@ class Mission
 			class Item65
 			{
 				linkID=65;
-				item0=207;
-				item1=211;
+				item0=363;
+				item1=367;
 				class CustomData
 				{
 					type="Sync";
@@ -5463,8 +5569,8 @@ class Mission
 			class Item66
 			{
 				linkID=66;
-				item0=209;
-				item1=211;
+				item0=365;
+				item1=367;
 				class CustomData
 				{
 					type="Sync";
@@ -5473,8 +5579,8 @@ class Mission
 			class Item67
 			{
 				linkID=67;
-				item0=211;
-				item1=213;
+				item0=367;
+				item1=369;
 				class CustomData
 				{
 					type="Sync";
@@ -5483,8 +5589,8 @@ class Mission
 			class Item68
 			{
 				linkID=68;
-				item0=211;
-				item1=217;
+				item0=367;
+				item1=373;
 				class CustomData
 				{
 					type="Sync";
@@ -5493,8 +5599,8 @@ class Mission
 			class Item69
 			{
 				linkID=69;
-				item0=211;
-				item1=215;
+				item0=367;
+				item1=371;
 				class CustomData
 				{
 					type="Sync";
@@ -5503,8 +5609,8 @@ class Mission
 			class Item70
 			{
 				linkID=70;
-				item0=213;
-				item1=215;
+				item0=369;
+				item1=371;
 				class CustomData
 				{
 					type="Sync";
@@ -5513,8 +5619,8 @@ class Mission
 			class Item71
 			{
 				linkID=71;
-				item0=215;
-				item1=217;
+				item0=371;
+				item1=373;
 				class CustomData
 				{
 					type="Sync";
@@ -5523,8 +5629,8 @@ class Mission
 			class Item72
 			{
 				linkID=72;
-				item0=215;
-				item1=221;
+				item0=371;
+				item1=377;
 				class CustomData
 				{
 					type="Sync";
@@ -5533,8 +5639,8 @@ class Mission
 			class Item73
 			{
 				linkID=73;
-				item0=217;
-				item1=219;
+				item0=373;
+				item1=375;
 				class CustomData
 				{
 					type="Sync";
@@ -5543,8 +5649,8 @@ class Mission
 			class Item74
 			{
 				linkID=74;
-				item0=217;
-				item1=221;
+				item0=373;
+				item1=377;
 				class CustomData
 				{
 					type="Sync";
@@ -5553,8 +5659,8 @@ class Mission
 			class Item75
 			{
 				linkID=75;
-				item0=219;
-				item1=221;
+				item0=375;
+				item1=377;
 				class CustomData
 				{
 					type="Sync";
@@ -5563,8 +5669,8 @@ class Mission
 			class Item76
 			{
 				linkID=76;
-				item0=221;
-				item1=223;
+				item0=377;
+				item1=379;
 				class CustomData
 				{
 					type="Sync";
@@ -5573,8 +5679,8 @@ class Mission
 			class Item77
 			{
 				linkID=77;
-				item0=221;
-				item1=225;
+				item0=377;
+				item1=381;
 				class CustomData
 				{
 					type="Sync";
@@ -5583,8 +5689,8 @@ class Mission
 			class Item78
 			{
 				linkID=78;
-				item0=221;
-				item1=313;
+				item0=377;
+				item1=469;
 				class CustomData
 				{
 					type="Sync";
@@ -5593,8 +5699,8 @@ class Mission
 			class Item79
 			{
 				linkID=79;
-				item0=223;
-				item1=225;
+				item0=379;
+				item1=381;
 				class CustomData
 				{
 					type="Sync";
@@ -5603,8 +5709,8 @@ class Mission
 			class Item80
 			{
 				linkID=80;
-				item0=223;
-				item1=227;
+				item0=379;
+				item1=383;
 				class CustomData
 				{
 					type="Sync";
@@ -5613,8 +5719,8 @@ class Mission
 			class Item81
 			{
 				linkID=81;
-				item0=223;
-				item1=229;
+				item0=379;
+				item1=385;
 				class CustomData
 				{
 					type="Sync";
@@ -5623,8 +5729,8 @@ class Mission
 			class Item82
 			{
 				linkID=82;
-				item0=223;
-				item1=313;
+				item0=379;
+				item1=469;
 				class CustomData
 				{
 					type="Sync";
@@ -5633,8 +5739,8 @@ class Mission
 			class Item83
 			{
 				linkID=83;
-				item0=225;
-				item1=231;
+				item0=381;
+				item1=387;
 				class CustomData
 				{
 					type="Sync";
@@ -5643,8 +5749,8 @@ class Mission
 			class Item84
 			{
 				linkID=84;
-				item0=225;
-				item1=233;
+				item0=381;
+				item1=389;
 				class CustomData
 				{
 					type="Sync";
@@ -5653,8 +5759,8 @@ class Mission
 			class Item85
 			{
 				linkID=85;
-				item0=227;
-				item1=229;
+				item0=383;
+				item1=385;
 				class CustomData
 				{
 					type="Sync";
@@ -5663,8 +5769,8 @@ class Mission
 			class Item86
 			{
 				linkID=86;
-				item0=227;
-				item1=313;
+				item0=383;
+				item1=469;
 				class CustomData
 				{
 					type="Sync";
@@ -5673,8 +5779,8 @@ class Mission
 			class Item87
 			{
 				linkID=87;
-				item0=229;
-				item1=231;
+				item0=385;
+				item1=387;
 				class CustomData
 				{
 					type="Sync";
@@ -5683,8 +5789,8 @@ class Mission
 			class Item88
 			{
 				linkID=88;
-				item0=229;
-				item1=245;
+				item0=385;
+				item1=401;
 				class CustomData
 				{
 					type="Sync";
@@ -5693,8 +5799,8 @@ class Mission
 			class Item89
 			{
 				linkID=89;
-				item0=231;
-				item1=233;
+				item0=387;
+				item1=389;
 				class CustomData
 				{
 					type="Sync";
@@ -5703,8 +5809,8 @@ class Mission
 			class Item90
 			{
 				linkID=90;
-				item0=231;
-				item1=235;
+				item0=387;
+				item1=391;
 				class CustomData
 				{
 					type="Sync";
@@ -5713,8 +5819,8 @@ class Mission
 			class Item91
 			{
 				linkID=91;
-				item0=231;
-				item1=245;
+				item0=387;
+				item1=401;
 				class CustomData
 				{
 					type="Sync";
@@ -5723,8 +5829,8 @@ class Mission
 			class Item92
 			{
 				linkID=92;
-				item0=233;
-				item1=235;
+				item0=389;
+				item1=391;
 				class CustomData
 				{
 					type="Sync";
@@ -5733,8 +5839,8 @@ class Mission
 			class Item93
 			{
 				linkID=93;
-				item0=233;
-				item1=237;
+				item0=389;
+				item1=393;
 				class CustomData
 				{
 					type="Sync";
@@ -5743,8 +5849,8 @@ class Mission
 			class Item94
 			{
 				linkID=94;
-				item0=237;
-				item1=239;
+				item0=393;
+				item1=395;
 				class CustomData
 				{
 					type="Sync";
@@ -5753,8 +5859,8 @@ class Mission
 			class Item95
 			{
 				linkID=95;
-				item0=239;
-				item1=243;
+				item0=395;
+				item1=399;
 				class CustomData
 				{
 					type="Sync";
@@ -5763,8 +5869,8 @@ class Mission
 			class Item96
 			{
 				linkID=96;
-				item0=239;
-				item1=241;
+				item0=395;
+				item1=397;
 				class CustomData
 				{
 					type="Sync";
@@ -5773,8 +5879,8 @@ class Mission
 			class Item97
 			{
 				linkID=97;
-				item0=241;
-				item1=243;
+				item0=397;
+				item1=399;
 				class CustomData
 				{
 					type="Sync";
@@ -5783,8 +5889,8 @@ class Mission
 			class Item98
 			{
 				linkID=98;
-				item0=245;
-				item1=247;
+				item0=401;
+				item1=403;
 				class CustomData
 				{
 					type="Sync";
@@ -5793,8 +5899,8 @@ class Mission
 			class Item99
 			{
 				linkID=99;
-				item0=245;
-				item1=249;
+				item0=401;
+				item1=405;
 				class CustomData
 				{
 					type="Sync";
@@ -5803,8 +5909,8 @@ class Mission
 			class Item100
 			{
 				linkID=100;
-				item0=247;
-				item1=249;
+				item0=403;
+				item1=405;
 				class CustomData
 				{
 					type="Sync";
@@ -5813,8 +5919,8 @@ class Mission
 			class Item101
 			{
 				linkID=101;
-				item0=247;
-				item1=251;
+				item0=403;
+				item1=407;
 				class CustomData
 				{
 					type="Sync";
@@ -5823,8 +5929,8 @@ class Mission
 			class Item102
 			{
 				linkID=102;
-				item0=249;
-				item1=251;
+				item0=405;
+				item1=407;
 				class CustomData
 				{
 					type="Sync";
@@ -5833,8 +5939,8 @@ class Mission
 			class Item103
 			{
 				linkID=103;
-				item0=249;
-				item1=253;
+				item0=405;
+				item1=409;
 				class CustomData
 				{
 					type="Sync";
@@ -5843,8 +5949,8 @@ class Mission
 			class Item104
 			{
 				linkID=104;
-				item0=251;
-				item1=255;
+				item0=407;
+				item1=411;
 				class CustomData
 				{
 					type="Sync";
@@ -5853,8 +5959,8 @@ class Mission
 			class Item105
 			{
 				linkID=105;
-				item0=253;
-				item1=255;
+				item0=409;
+				item1=411;
 				class CustomData
 				{
 					type="Sync";
@@ -5863,8 +5969,8 @@ class Mission
 			class Item106
 			{
 				linkID=106;
-				item0=253;
-				item1=263;
+				item0=409;
+				item1=419;
 				class CustomData
 				{
 					type="Sync";
@@ -5873,8 +5979,8 @@ class Mission
 			class Item107
 			{
 				linkID=107;
-				item0=253;
-				item1=273;
+				item0=409;
+				item1=429;
 				class CustomData
 				{
 					type="Sync";
@@ -5883,8 +5989,8 @@ class Mission
 			class Item108
 			{
 				linkID=108;
-				item0=253;
-				item1=311;
+				item0=409;
+				item1=467;
 				class CustomData
 				{
 					type="Sync";
@@ -5893,8 +5999,8 @@ class Mission
 			class Item109
 			{
 				linkID=109;
-				item0=255;
-				item1=257;
+				item0=411;
+				item1=413;
 				class CustomData
 				{
 					type="Sync";
@@ -5903,8 +6009,8 @@ class Mission
 			class Item110
 			{
 				linkID=110;
-				item0=255;
-				item1=311;
+				item0=411;
+				item1=467;
 				class CustomData
 				{
 					type="Sync";
@@ -5913,8 +6019,8 @@ class Mission
 			class Item111
 			{
 				linkID=111;
-				item0=257;
-				item1=259;
+				item0=413;
+				item1=415;
 				class CustomData
 				{
 					type="Sync";
@@ -5923,8 +6029,8 @@ class Mission
 			class Item112
 			{
 				linkID=112;
-				item0=257;
-				item1=261;
+				item0=413;
+				item1=417;
 				class CustomData
 				{
 					type="Sync";
@@ -5933,8 +6039,8 @@ class Mission
 			class Item113
 			{
 				linkID=113;
-				item0=259;
-				item1=261;
+				item0=415;
+				item1=417;
 				class CustomData
 				{
 					type="Sync";
@@ -5943,8 +6049,8 @@ class Mission
 			class Item114
 			{
 				linkID=114;
-				item0=261;
-				item1=265;
+				item0=417;
+				item1=421;
 				class CustomData
 				{
 					type="Sync";
@@ -5953,8 +6059,8 @@ class Mission
 			class Item115
 			{
 				linkID=115;
-				item0=261;
-				item1=267;
+				item0=417;
+				item1=423;
 				class CustomData
 				{
 					type="Sync";
@@ -5963,8 +6069,8 @@ class Mission
 			class Item116
 			{
 				linkID=116;
-				item0=263;
-				item1=273;
+				item0=419;
+				item1=429;
 				class CustomData
 				{
 					type="Sync";
@@ -5973,8 +6079,8 @@ class Mission
 			class Item117
 			{
 				linkID=117;
-				item0=263;
-				item1=311;
+				item0=419;
+				item1=467;
 				class CustomData
 				{
 					type="Sync";
@@ -5983,8 +6089,8 @@ class Mission
 			class Item118
 			{
 				linkID=118;
-				item0=263;
-				item1=307;
+				item0=419;
+				item1=463;
 				class CustomData
 				{
 					type="Sync";
@@ -5993,8 +6099,8 @@ class Mission
 			class Item119
 			{
 				linkID=119;
-				item0=263;
-				item1=305;
+				item0=419;
+				item1=461;
 				class CustomData
 				{
 					type="Sync";
@@ -6003,8 +6109,8 @@ class Mission
 			class Item120
 			{
 				linkID=120;
-				item0=265;
-				item1=305;
+				item0=421;
+				item1=461;
 				class CustomData
 				{
 					type="Sync";
@@ -6013,8 +6119,8 @@ class Mission
 			class Item121
 			{
 				linkID=121;
-				item0=265;
-				item1=267;
+				item0=421;
+				item1=423;
 				class CustomData
 				{
 					type="Sync";
@@ -6023,8 +6129,8 @@ class Mission
 			class Item122
 			{
 				linkID=122;
-				item0=265;
-				item1=311;
+				item0=421;
+				item1=467;
 				class CustomData
 				{
 					type="Sync";
@@ -6033,8 +6139,8 @@ class Mission
 			class Item123
 			{
 				linkID=123;
-				item0=267;
-				item1=305;
+				item0=423;
+				item1=461;
 				class CustomData
 				{
 					type="Sync";
@@ -6043,8 +6149,8 @@ class Mission
 			class Item124
 			{
 				linkID=124;
-				item0=267;
-				item1=269;
+				item0=423;
+				item1=425;
 				class CustomData
 				{
 					type="Sync";
@@ -6053,8 +6159,8 @@ class Mission
 			class Item125
 			{
 				linkID=125;
-				item0=269;
-				item1=303;
+				item0=425;
+				item1=459;
 				class CustomData
 				{
 					type="Sync";
@@ -6063,8 +6169,8 @@ class Mission
 			class Item126
 			{
 				linkID=126;
-				item0=269;
-				item1=271;
+				item0=425;
+				item1=427;
 				class CustomData
 				{
 					type="Sync";
@@ -6073,8 +6179,8 @@ class Mission
 			class Item127
 			{
 				linkID=127;
-				item0=269;
-				item1=315;
+				item0=425;
+				item1=471;
 				class CustomData
 				{
 					type="Sync";
@@ -6083,8 +6189,8 @@ class Mission
 			class Item128
 			{
 				linkID=128;
-				item0=271;
-				item1=303;
+				item0=427;
+				item1=459;
 				class CustomData
 				{
 					type="Sync";
@@ -6093,8 +6199,8 @@ class Mission
 			class Item129
 			{
 				linkID=129;
-				item0=271;
-				item1=301;
+				item0=427;
+				item1=457;
 				class CustomData
 				{
 					type="Sync";
@@ -6103,8 +6209,8 @@ class Mission
 			class Item130
 			{
 				linkID=130;
-				item0=271;
-				item1=297;
+				item0=427;
+				item1=453;
 				class CustomData
 				{
 					type="Sync";
@@ -6113,8 +6219,8 @@ class Mission
 			class Item131
 			{
 				linkID=131;
-				item0=271;
-				item1=315;
+				item0=427;
+				item1=471;
 				class CustomData
 				{
 					type="Sync";
@@ -6123,8 +6229,8 @@ class Mission
 			class Item132
 			{
 				linkID=132;
-				item0=273;
-				item1=275;
+				item0=429;
+				item1=431;
 				class CustomData
 				{
 					type="Sync";
@@ -6133,8 +6239,8 @@ class Mission
 			class Item133
 			{
 				linkID=133;
-				item0=275;
-				item1=307;
+				item0=431;
+				item1=463;
 				class CustomData
 				{
 					type="Sync";
@@ -6143,8 +6249,8 @@ class Mission
 			class Item134
 			{
 				linkID=134;
-				item0=275;
-				item1=277;
+				item0=431;
+				item1=433;
 				class CustomData
 				{
 					type="Sync";
@@ -6153,8 +6259,8 @@ class Mission
 			class Item135
 			{
 				linkID=135;
-				item0=275;
-				item1=279;
+				item0=431;
+				item1=435;
 				class CustomData
 				{
 					type="Sync";
@@ -6163,8 +6269,8 @@ class Mission
 			class Item136
 			{
 				linkID=136;
-				item0=275;
-				item1=309;
+				item0=431;
+				item1=465;
 				class CustomData
 				{
 					type="Sync";
@@ -6173,8 +6279,8 @@ class Mission
 			class Item137
 			{
 				linkID=137;
-				item0=277;
-				item1=279;
+				item0=433;
+				item1=435;
 				class CustomData
 				{
 					type="Sync";
@@ -6183,8 +6289,8 @@ class Mission
 			class Item138
 			{
 				linkID=138;
-				item0=277;
-				item1=281;
+				item0=433;
+				item1=437;
 				class CustomData
 				{
 					type="Sync";
@@ -6193,8 +6299,8 @@ class Mission
 			class Item139
 			{
 				linkID=139;
-				item0=277;
-				item1=283;
+				item0=433;
+				item1=439;
 				class CustomData
 				{
 					type="Sync";
@@ -6203,8 +6309,8 @@ class Mission
 			class Item140
 			{
 				linkID=140;
-				item0=279;
-				item1=309;
+				item0=435;
+				item1=465;
 				class CustomData
 				{
 					type="Sync";
@@ -6213,8 +6319,8 @@ class Mission
 			class Item141
 			{
 				linkID=141;
-				item0=281;
-				item1=283;
+				item0=437;
+				item1=439;
 				class CustomData
 				{
 					type="Sync";
@@ -6223,8 +6329,8 @@ class Mission
 			class Item142
 			{
 				linkID=142;
-				item0=283;
-				item1=285;
+				item0=439;
+				item1=441;
 				class CustomData
 				{
 					type="Sync";
@@ -6233,8 +6339,8 @@ class Mission
 			class Item143
 			{
 				linkID=143;
-				item0=285;
-				item1=287;
+				item0=441;
+				item1=443;
 				class CustomData
 				{
 					type="Sync";
@@ -6243,8 +6349,8 @@ class Mission
 			class Item144
 			{
 				linkID=144;
-				item0=287;
-				item1=289;
+				item0=443;
+				item1=445;
 				class CustomData
 				{
 					type="Sync";
@@ -6253,8 +6359,8 @@ class Mission
 			class Item145
 			{
 				linkID=145;
-				item0=289;
-				item1=291;
+				item0=445;
+				item1=447;
 				class CustomData
 				{
 					type="Sync";
@@ -6263,8 +6369,8 @@ class Mission
 			class Item146
 			{
 				linkID=146;
-				item0=291;
-				item1=293;
+				item0=447;
+				item1=449;
 				class CustomData
 				{
 					type="Sync";
@@ -6273,8 +6379,8 @@ class Mission
 			class Item147
 			{
 				linkID=147;
-				item0=293;
-				item1=295;
+				item0=449;
+				item1=451;
 				class CustomData
 				{
 					type="Sync";
@@ -6283,8 +6389,8 @@ class Mission
 			class Item148
 			{
 				linkID=148;
-				item0=295;
-				item1=297;
+				item0=451;
+				item1=453;
 				class CustomData
 				{
 					type="Sync";
@@ -6293,8 +6399,8 @@ class Mission
 			class Item149
 			{
 				linkID=149;
-				item0=297;
-				item1=299;
+				item0=453;
+				item1=455;
 				class CustomData
 				{
 					type="Sync";
@@ -6303,8 +6409,8 @@ class Mission
 			class Item150
 			{
 				linkID=150;
-				item0=299;
-				item1=301;
+				item0=455;
+				item1=457;
 				class CustomData
 				{
 					type="Sync";
@@ -6313,8 +6419,8 @@ class Mission
 			class Item151
 			{
 				linkID=151;
-				item0=301;
-				item1=303;
+				item0=457;
+				item1=459;
 				class CustomData
 				{
 					type="Sync";
@@ -6323,8 +6429,8 @@ class Mission
 			class Item152
 			{
 				linkID=152;
-				item0=301;
-				item1=307;
+				item0=457;
+				item1=463;
 				class CustomData
 				{
 					type="Sync";
@@ -6333,8 +6439,8 @@ class Mission
 			class Item153
 			{
 				linkID=153;
-				item0=303;
-				item1=307;
+				item0=459;
+				item1=463;
 				class CustomData
 				{
 					type="Sync";
@@ -6343,8 +6449,8 @@ class Mission
 			class Item154
 			{
 				linkID=154;
-				item0=305;
-				item1=307;
+				item0=461;
+				item1=463;
 				class CustomData
 				{
 					type="Sync";
@@ -6353,8 +6459,8 @@ class Mission
 			class Item155
 			{
 				linkID=155;
-				item0=305;
-				item1=311;
+				item0=461;
+				item1=467;
 				class CustomData
 				{
 					type="Sync";

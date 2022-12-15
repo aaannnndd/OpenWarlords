@@ -63,7 +63,7 @@ OWL_sectorColors = [
 	_marker setMarkerShapeLocal (["ELLIPSE", "RECTANGLE"] select (_triggerArea#3));
 	_marker setMarkerBrushLocal "Border";
 	_marker setMarkerSizeLocal [_triggerArea#0, _triggerArea#1];
-	_marker setMarkerColorLocal ((["colorIndependent", "colorOPFOR", "colorBLUFOR"]) # _sideIdx);
+	_marker setMarkerColorLocal ((["ColorBlack", "ColorWEST", "ColorEAST", "ColorGUER"]) # _sideIdx);
 
 	_mrkrNameLock1 = format ["OWL_sectorMrkrLock1_%1", _forEachIndex];
 	_mrkrNameLock2 = format ["OWL_sectorMrkrLock2_%1", _forEachIndex];
@@ -80,7 +80,7 @@ OWL_sectorColors = [
 		_x setMarkerBrushLocal "Solid";
 		_x setMarkerDirLocal (_relPos # 2);
 		_x setMarkerSizeLocal [(_trgSize) + _borderHalf, _borderHalf];
-		_x setMarkerColorLocal ((["ColorBlack", "ColorWEST", "ColorEAST", "ColorGUER"]) # (_sector getVariable "OWL_sectorParam_side"));
+		_x setMarkerColorLocal ((["ColorBlack", "ColorWEST", "ColorEAST", "ColorGUER"]) # _sideIdx);
 		_x setMarkerAlphaLocal 0.35;
 		if (_sector getVariable "OWL_sectorSide" == side player) then {
 			_x setMarkerAlphaLocal 0;

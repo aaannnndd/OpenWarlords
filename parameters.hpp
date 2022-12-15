@@ -36,7 +36,7 @@ class Params
 	class InitialProgress	// should we implement that or nah?
 	{
 		title = "Initial Progress";
-		values[] = {0, 25, 50, 75, 100};
+		values[] = {0, 25, 50};
 		default = 0;
 	};
 };
