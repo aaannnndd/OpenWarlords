@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=473;
+		nextID=589;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3744.3975,207.0376,10112.106};
-		dir[]={0.10471644,-0.44059399,0.89159417};
-		up[]={0.051393937,0.89770687,0.43758965};
-		aside[]={0.99318582,3.770092e-007,-0.11664881};
+		pos[]={3748.0188,48.414749,10255.02};
+		dir[]={0.12044045,-0.13656113,0.98328739};
+		up[]={0.016603302,0.99063021,0.13555096};
+		aside[]={0.99258685,4.8137736e-008,-0.12157988};
 	};
 };
 binarizationWanted=0;
@@ -3505,7 +3505,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=356;
+			id=473;
 			type="EmptyDetector";
 		};
 		class Item117
@@ -3517,7 +3517,7 @@ class Mission
 			};
 			name="OWL_mainBase_WEST";
 			init="this setVariable [""OWL_sectorParam_canBeBase"", true];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=357;
+			id=474;
 			type="Logic";
 			atlOffset=-1.9073486e-006;
 		};
@@ -3531,7 +3531,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=358;
+			id=475;
 			type="EmptyDetector";
 		};
 		class Item119
@@ -3543,7 +3543,7 @@ class Mission
 			};
 			name="OWL_mainBase_EAST";
 			init="this setVariable [""OWL_sectorParam_canBeBase"", true];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 2];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=359;
+			id=476;
 			type="Logic";
 		};
 		class Item120
@@ -3556,7 +3556,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=360;
+			id=477;
 			type="EmptyDetector";
 		};
 		class Item121
@@ -3566,8 +3566,8 @@ class Mission
 			{
 				position[]={26993,21.652548,24672.801};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=361;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Molos Airfield""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=478;
 			type="Logic";
 		};
 		class Item122
@@ -3580,7 +3580,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=362;
+			id=479;
 			type="EmptyDetector";
 		};
 		class Item123
@@ -3590,8 +3590,8 @@ class Mission
 			{
 				position[]={27001.301,20.652349,23186.699};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=363;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Molos""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=480;
 			type="Logic";
 		};
 		class Item124
@@ -3604,7 +3604,7 @@ class Mission
 				sizeB=125;
 				isRectangle=1;
 			};
-			id=364;
+			id=481;
 			type="EmptyDetector";
 		};
 		class Item125
@@ -3614,8 +3614,8 @@ class Mission
 			{
 				position[]={26725.4,15.328559,21209.301};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=365;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Gatolia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=482;
 			type="Logic";
 		};
 		class Item126
@@ -3628,7 +3628,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=366;
+			id=483;
 			type="EmptyDetector";
 		};
 		class Item127
@@ -3638,8 +3638,8 @@ class Mission
 			{
 				position[]={25688.4,20.239233,21338.6};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=367;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Sofia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=484;
 			type="Logic";
 		};
 		class Item128
@@ -3652,7 +3652,7 @@ class Mission
 				sizeB=125;
 				isRectangle=1;
 			};
-			id=368;
+			id=485;
 			type="EmptyDetector";
 		};
 		class Item129
@@ -3662,8 +3662,8 @@ class Mission
 			{
 				position[]={25396.301,9.6301346,20333.1};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_13""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=369;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Sofia Power Plant""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=486;
 			type="Logic";
 		};
 		class Item130
@@ -3676,7 +3676,7 @@ class Mission
 				sizeB=125;
 				isRectangle=1;
 			};
-			id=370;
+			id=487;
 			type="EmptyDetector";
 		};
 		class Item131
@@ -3686,8 +3686,8 @@ class Mission
 			{
 				position[]={23948.9,14.677764,20160.301};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=371;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Delfinaki""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=488;
 			type="Logic";
 		};
 		class Item132
@@ -3700,7 +3700,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=372;
+			id=489;
 			type="EmptyDetector";
 		};
 		class Item133
@@ -3710,8 +3710,8 @@ class Mission
 			{
 				position[]={23567.1,92.435188,21099.5};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_12""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=373;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Nidasos Base""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=490;
 			type="Logic";
 		};
 		class Item134
@@ -3724,7 +3724,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=374;
+			id=491;
 			type="EmptyDetector";
 		};
 		class Item135
@@ -3734,8 +3734,8 @@ class Mission
 			{
 				position[]={21907.699,23.704601,21033.199};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_10""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=375;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Ghost Hotel""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=492;
 			type="Logic";
 		};
 		class Item136
@@ -3748,7 +3748,7 @@ class Mission
 				sizeB=125;
 				isRectangle=1;
 			};
-			id=376;
+			id=493;
 			type="EmptyDetector";
 		};
 		class Item137
@@ -3758,8 +3758,8 @@ class Mission
 			{
 				position[]={23211.301,13.839722,19960.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=377;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Ioannina""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=494;
 			type="Logic";
 		};
 		class Item138
@@ -3772,7 +3772,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=378;
+			id=495;
 			type="EmptyDetector";
 		};
 		class Item139
@@ -3782,8 +3782,8 @@ class Mission
 			{
 				position[]={20946.199,43.776089,16955.1};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 100];" \n "";
-			id=379;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Paros""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 100];" \n "";
+			id=496;
 			type="Logic";
 		};
 		class Item140
@@ -3796,7 +3796,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=380;
+			id=497;
 			type="EmptyDetector";
 		};
 		class Item141
@@ -3806,8 +3806,8 @@ class Mission
 			{
 				position[]={21387.4,19.170893,16339.8};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 100];" \n "";
-			id=381;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Kalochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 100];" \n "";
+			id=498;
 			type="Logic";
 		};
 		class Item142
@@ -3820,7 +3820,7 @@ class Mission
 				sizeB=125;
 				isRectangle=1;
 			};
-			id=382;
+			id=499;
 			type="EmptyDetector";
 		};
 		class Item143
@@ -3830,8 +3830,8 @@ class Mission
 			{
 				position[]={19254.4,34.517487,17589.699};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=383;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Agios Petros""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=500;
 			type="Logic";
 		};
 		class Item144
@@ -3844,7 +3844,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=384;
+			id=501;
 			type="EmptyDetector";
 		};
 		class Item145
@@ -3854,8 +3854,8 @@ class Mission
 			{
 				position[]={18813.4,31.489239,16631.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=385;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Rodopoli""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=502;
 			type="Logic";
 		};
 		class Item146
@@ -3868,7 +3868,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=386;
+			id=503;
 			type="EmptyDetector";
 		};
 		class Item147
@@ -3878,8 +3878,8 @@ class Mission
 			{
 				position[]={18180.199,26.808235,15306.6};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=387;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Charkia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=504;
 			type="Logic";
 		};
 		class Item148
@@ -3892,7 +3892,7 @@ class Mission
 				sizeB=150;
 				isRectangle=1;
 			};
-			id=388;
+			id=505;
 			type="EmptyDetector";
 		};
 		class Item149
@@ -3902,8 +3902,8 @@ class Mission
 			{
 				position[]={19407.9,38.95145,13250.8};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=389;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Dorida""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=506;
 			type="Logic";
 		};
 		class Item150
@@ -3916,7 +3916,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=390;
+			id=507;
 			type="EmptyDetector";
 		};
 		class Item151
@@ -3926,8 +3926,8 @@ class Mission
 			{
 				position[]={16828.5,22.541981,12705.3};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=391;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Pyrgos""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=508;
 			type="Logic";
 		};
 		class Item152
@@ -3940,7 +3940,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=392;
+			id=509;
 			type="EmptyDetector";
 		};
 		class Item153
@@ -3950,8 +3950,8 @@ class Mission
 			{
 				position[]={20262.301,51.314915,11691.2};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=393;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Chalkeia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=510;
 			type="Logic";
 		};
 		class Item154
@@ -3964,7 +3964,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=394;
+			id=511;
 			type="EmptyDetector";
 		};
 		class Item155
@@ -3974,8 +3974,8 @@ class Mission
 			{
 				position[]={20442,35.422977,8841.3701};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=395;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Panagia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=512;
 			type="Logic";
 		};
 		class Item156
@@ -3988,7 +3988,7 @@ class Mission
 				sizeB=150;
 				isRectangle=1;
 			};
-			id=396;
+			id=513;
 			type="EmptyDetector";
 		};
 		class Item157
@@ -3998,8 +3998,8 @@ class Mission
 			{
 				position[]={21699.5,15.0616,7566.8999};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=397;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Feres""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=514;
 			type="Logic";
 		};
 		class Item158
@@ -4012,7 +4012,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=398;
+			id=515;
 			type="EmptyDetector";
 		};
 		class Item159
@@ -4022,8 +4022,8 @@ class Mission
 			{
 				position[]={20796.199,36.491802,6736.3398};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=399;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Selakano""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=516;
 			type="Logic";
 		};
 		class Item160
@@ -4036,7 +4036,7 @@ class Mission
 				sizeB=150;
 				isRectangle=1;
 			};
-			id=400;
+			id=517;
 			type="EmptyDetector";
 		};
 		class Item161
@@ -4046,8 +4046,8 @@ class Mission
 			{
 				position[]={16671.1,17.660427,16104.6};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=401;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Anthrakia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=518;
 			type="Logic";
 		};
 		class Item162
@@ -4060,7 +4060,7 @@ class Mission
 				sizeB=400;
 				isRectangle=1;
 			};
-			id=402;
+			id=519;
 			type="EmptyDetector";
 		};
 		class Item163
@@ -4070,8 +4070,8 @@ class Mission
 			{
 				position[]={16252.4,16.862637,17130};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 40];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=403;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Telos Complex""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 40];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=520;
 			type="Logic";
 		};
 		class Item164
@@ -4084,7 +4084,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=404;
+			id=521;
 			type="EmptyDetector";
 		};
 		class Item165
@@ -4094,8 +4094,8 @@ class Mission
 			{
 				position[]={15420.3,4.1190624,16114};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_9""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=405;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Main Power Plant""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=522;
 			type="Logic";
 		};
 		class Item166
@@ -4108,7 +4108,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=406;
+			id=523;
 			type="EmptyDetector";
 		};
 		class Item167
@@ -4118,8 +4118,8 @@ class Mission
 			{
 				position[]={15196.5,17.916002,17318.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_8""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=407;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Airfield Compound""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=524;
 			type="Logic";
 		};
 		class Item168
@@ -4132,7 +4132,7 @@ class Mission
 				sizeB=175;
 				isRectangle=1;
 			};
-			id=408;
+			id=525;
 			type="EmptyDetector";
 		};
 		class Item169
@@ -4142,8 +4142,8 @@ class Mission
 			{
 				position[]={14309.8,19.85198,16243.5};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_7""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=409;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Airbase""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=526;
 			type="Logic";
 		};
 		class Item170
@@ -4156,7 +4156,7 @@ class Mission
 				sizeB=175;
 				isRectangle=1;
 			};
-			id=410;
+			id=527;
 			type="EmptyDetector";
 		};
 		class Item171
@@ -4166,8 +4166,8 @@ class Mission
 			{
 				position[]={14488.5,20.915617,17670.6};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=411;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Gravia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=528;
 			type="Logic";
 		};
 		class Item172
@@ -4180,7 +4180,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=412;
+			id=529;
 			type="EmptyDetector";
 		};
 		class Item173
@@ -4190,8 +4190,8 @@ class Mission
 			{
 				position[]={14028.7,26.7547,18666.5};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=413;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Athira""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=530;
 			type="Logic";
 		};
 		class Item174
@@ -4204,7 +4204,7 @@ class Mission
 				sizeB=150;
 				isRectangle=1;
 			};
-			id=414;
+			id=531;
 			type="EmptyDetector";
 		};
 		class Item175
@@ -4214,8 +4214,8 @@ class Mission
 			{
 				position[]={14627.8,47.612316,20780.199};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=415;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Frini""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=532;
 			type="Logic";
 		};
 		class Item176
@@ -4228,7 +4228,7 @@ class Mission
 				sizeB=150;
 				isRectangle=1;
 			};
-			id=416;
+			id=533;
 			type="EmptyDetector";
 		};
 		class Item177
@@ -4238,8 +4238,8 @@ class Mission
 			{
 				position[]={12824.1,43.355743,19641.5};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=417;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Ifestiona""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=534;
 			type="Logic";
 		};
 		class Item178
@@ -4252,7 +4252,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=418;
+			id=535;
 			type="EmptyDetector";
 		};
 		class Item179
@@ -4262,8 +4262,8 @@ class Mission
 			{
 				position[]={12358.7,23.912498,15674.8};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=419;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Lakka""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=536;
 			type="Logic";
 		};
 		class Item180
@@ -4276,7 +4276,7 @@ class Mission
 				sizeB=175;
 				isRectangle=1;
 			};
-			id=420;
+			id=537;
 			type="EmptyDetector";
 		};
 		class Item181
@@ -4286,8 +4286,8 @@ class Mission
 			{
 				position[]={11779.8,52.353275,18323};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=421;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Koroni""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=538;
 			type="Logic";
 		};
 		class Item182
@@ -4300,9 +4300,8 @@ class Mission
 				sizeB=150;
 				isRectangle=1;
 			};
-			id=422;
+			id=539;
 			type="EmptyDetector";
-			atlOffset=7.6293945e-006;
 		};
 		class Item183
 		{
@@ -4311,10 +4310,9 @@ class Mission
 			{
 				position[]={10330.5,126.55415,19060.801};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=423;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Galati""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=540;
 			type="Logic";
-			atlOffset=7.6293945e-006;
 		};
 		class Item184
 		{
@@ -4326,7 +4324,7 @@ class Mission
 				sizeB=175;
 				isRectangle=1;
 			};
-			id=424;
+			id=541;
 			type="EmptyDetector";
 		};
 		class Item185
@@ -4336,8 +4334,8 @@ class Mission
 			{
 				position[]={9441.79,124.77596,20285.301};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=425;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Abdera""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=542;
 			type="Logic";
 		};
 		class Item186
@@ -4350,7 +4348,7 @@ class Mission
 				sizeB=150;
 				isRectangle=1;
 			};
-			id=426;
+			id=543;
 			type="EmptyDetector";
 		};
 		class Item187
@@ -4360,8 +4358,8 @@ class Mission
 			{
 				position[]={4611.46,296.69479,21415.6};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=427;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Oreokastro""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=544;
 			type="Logic";
 		};
 		class Item188
@@ -4374,9 +4372,8 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=428;
+			id=545;
 			type="EmptyDetector";
-			atlOffset=-9.5367432e-007;
 		};
 		class Item189
 		{
@@ -4385,10 +4382,9 @@ class Mission
 			{
 				position[]={12502.1,13.325788,14378.2};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=429;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Neochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=546;
 			type="Logic";
-			atlOffset=-9.5367432e-007;
 		};
 		class Item190
 		{
@@ -4400,7 +4396,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=430;
+			id=547;
 			type="EmptyDetector";
 		};
 		class Item191
@@ -4410,8 +4406,8 @@ class Mission
 			{
 				position[]={11010.2,26.359692,13442.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=431;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Poliakko""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=548;
 			type="Logic";
 		};
 		class Item192
@@ -4424,7 +4420,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=432;
+			id=549;
 			type="EmptyDetector";
 		};
 		class Item193
@@ -4434,8 +4430,8 @@ class Mission
 			{
 				position[]={10671.1,16.721733,12257.7};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=433;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Therisa""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=550;
 			type="Logic";
 		};
 		class Item194
@@ -4448,7 +4444,7 @@ class Mission
 				sizeB=150;
 				isRectangle=1;
 			};
-			id=434;
+			id=551;
 			type="EmptyDetector";
 		};
 		class Item195
@@ -4458,8 +4454,8 @@ class Mission
 			{
 				position[]={11620.9,22.953327,11845.7};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=435;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""AAC Airfield""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=552;
 			type="Logic";
 		};
 		class Item196
@@ -4472,7 +4468,7 @@ class Mission
 				sizeB=100;
 				isRectangle=1;
 			};
-			id=436;
+			id=553;
 			type="EmptyDetector";
 		};
 		class Item197
@@ -4482,8 +4478,8 @@ class Mission
 			{
 				position[]={12294.9,123.99193,8893.8799};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_5""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=437;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Southern Base""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=554;
 			type="Logic";
 		};
 		class Item198
@@ -4496,7 +4492,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=438;
+			id=555;
 			type="EmptyDetector";
 		};
 		class Item199
@@ -4506,8 +4502,8 @@ class Mission
 			{
 				position[]={9055.8496,21.954548,11979.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=439;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Zaros""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=556;
 			type="Logic";
 		};
 		class Item200
@@ -4520,7 +4516,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=440;
+			id=557;
 			type="EmptyDetector";
 		};
 		class Item201
@@ -4530,8 +4526,8 @@ class Mission
 			{
 				position[]={7403.3101,26.288723,12116.3};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=441;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Kavirida""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=558;
 			type="Logic";
 		};
 		class Item202
@@ -4544,7 +4540,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=442;
+			id=559;
 			type="EmptyDetector";
 		};
 		class Item203
@@ -4554,8 +4550,8 @@ class Mission
 			{
 				position[]={5098.1899,48.952263,11241.7};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=443;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Panochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=560;
 			type="Logic";
 		};
 		class Item204
@@ -4568,7 +4564,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=444;
+			id=561;
 			type="EmptyDetector";
 		};
 		class Item205
@@ -4578,21 +4574,21 @@ class Mission
 			{
 				position[]={4152.4302,52.537334,11744.3};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=445;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Neri""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=562;
 			type="Logic";
 		};
 		class Item206
 		{
 			dataType="Trigger";
-			position[]={3553.8401,8.7105865,13000.4};
+			position[]={3553.8301,8.7102919,13000.4};
 			class Attributes
 			{
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=446;
+			id=563;
 			type="EmptyDetector";
 		};
 		class Item207
@@ -4600,10 +4596,10 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3553.8401,8.7105865,13000.4};
+				position[]={3553.8301,8.7102919,13000.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=447;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Kavala""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=564;
 			type="Logic";
 		};
 		class Item208
@@ -4616,7 +4612,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=448;
+			id=565;
 			type="EmptyDetector";
 		};
 		class Item209
@@ -4626,8 +4622,8 @@ class Mission
 			{
 				position[]={3823,17.05407,13711.7};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=449;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Aggelochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=566;
 			type="Logic";
 		};
 		class Item210
@@ -4640,7 +4636,7 @@ class Mission
 				sizeB=125;
 				isRectangle=1;
 			};
-			id=450;
+			id=567;
 			type="EmptyDetector";
 		};
 		class Item211
@@ -4650,8 +4646,8 @@ class Mission
 			{
 				position[]={4228.0298,18.060003,15042.5};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_1""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=451;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Power Plant""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=568;
 			type="Logic";
 		};
 		class Item212
@@ -4664,7 +4660,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=452;
+			id=569;
 			type="EmptyDetector";
 		};
 		class Item213
@@ -4674,8 +4670,8 @@ class Mission
 			{
 				position[]={4908.5098,77.693558,16147.8};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=453;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Negades""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=570;
 			type="Logic";
 		};
 		class Item214
@@ -4688,7 +4684,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=454;
+			id=571;
 			type="EmptyDetector";
 		};
 		class Item215
@@ -4698,8 +4694,8 @@ class Mission
 			{
 				position[]={6171.4702,43,16227.1};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_2""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=455;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Kore Factory""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=572;
 			type="Logic";
 		};
 		class Item216
@@ -4712,7 +4708,7 @@ class Mission
 				sizeB=200;
 				isRectangle=1;
 			};
-			id=456;
+			id=573;
 			type="EmptyDetector";
 		};
 		class Item217
@@ -4722,8 +4718,8 @@ class Mission
 			{
 				position[]={7118.2402,114.22603,16449.699};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=457;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Kore""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=574;
 			type="Logic";
 		};
 		class Item218
@@ -4736,7 +4732,7 @@ class Mission
 				sizeB=150;
 				isRectangle=1;
 			};
-			id=458;
+			id=575;
 			type="EmptyDetector";
 		};
 		class Item219
@@ -4746,8 +4742,8 @@ class Mission
 			{
 				position[]={8629.54,180.76244,18282};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=459;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Syrta""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=576;
 			type="Logic";
 		};
 		class Item220
@@ -4760,7 +4756,7 @@ class Mission
 				sizeB=125;
 				isRectangle=1;
 			};
-			id=460;
+			id=577;
 			type="EmptyDetector";
 		};
 		class Item221
@@ -4770,8 +4766,8 @@ class Mission
 			{
 				position[]={10438,83.826675,17238.6};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=461;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Orino""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=578;
 			type="Logic";
 		};
 		class Item222
@@ -4784,7 +4780,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=462;
+			id=579;
 			type="EmptyDetector";
 		};
 		class Item223
@@ -4794,8 +4790,8 @@ class Mission
 			{
 				position[]={9335.8496,119.895,15883.7};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", true];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=463;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Agios Dionysios""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=580;
 			type="Logic";
 		};
 		class Item224
@@ -4808,7 +4804,7 @@ class Mission
 				sizeB=100;
 				isRectangle=1;
 			};
-			id=464;
+			id=581;
 			type="EmptyDetector";
 		};
 		class Item225
@@ -4818,8 +4814,8 @@ class Mission
 			{
 				position[]={14280.3,4.7059116,13030.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_4""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=465;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Sagonisi Harbor""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=582;
 			type="Logic";
 		};
 		class Item226
@@ -4832,7 +4828,7 @@ class Mission
 				sizeB=300;
 				isRectangle=1;
 			};
-			id=466;
+			id=583;
 			type="EmptyDetector";
 		};
 		class Item227
@@ -4842,8 +4838,8 @@ class Mission
 			{
 				position[]={12724.2,59.631893,16516.199};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_6""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 30];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=467;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Lakka Factory""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 30];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=584;
 			type="Logic";
 		};
 		class Item228
@@ -4856,7 +4852,7 @@ class Mission
 				sizeB=250;
 				isRectangle=1;
 			};
-			id=468;
+			id=585;
 			type="EmptyDetector";
 		};
 		class Item229
@@ -4866,8 +4862,8 @@ class Mission
 			{
 				position[]={20856.5,12.724644,19313};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_11""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=469;
+			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Georgios Base""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			id=586;
 			type="Logic";
 		};
 		class Item230
@@ -4880,9 +4876,8 @@ class Mission
 				sizeB=100;
 				isRectangle=1;
 			};
-			id=470;
+			id=587;
 			type="EmptyDetector";
-			atlOffset=-9.5367432e-007;
 		};
 		class Item231
 		{
@@ -4892,25 +4887,24 @@ class Mission
 				position[]={9150.3301,15.976727,21527.9};
 			};
 			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_3""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
-			id=471;
+			id=588;
 			type="Logic";
-			atlOffset=-9.5367432e-007;
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=156;
+			nextID=160;
 		};
 		class Links
 		{
-			items=156;
+			items=160;
 			class Item0
 			{
 				linkID=0;
-				item0=356;
-				item1=357;
+				item0=473;
+				item1=474;
 				class CustomData
 				{
 					type="Sync";
@@ -4919,8 +4913,8 @@ class Mission
 			class Item1
 			{
 				linkID=1;
-				item0=358;
-				item1=359;
+				item0=475;
+				item1=476;
 				class CustomData
 				{
 					type="Sync";
@@ -4929,8 +4923,8 @@ class Mission
 			class Item2
 			{
 				linkID=2;
-				item0=360;
-				item1=361;
+				item0=477;
+				item1=478;
 				class CustomData
 				{
 					type="Sync";
@@ -4939,8 +4933,8 @@ class Mission
 			class Item3
 			{
 				linkID=3;
-				item0=362;
-				item1=363;
+				item0=479;
+				item1=480;
 				class CustomData
 				{
 					type="Sync";
@@ -4949,8 +4943,8 @@ class Mission
 			class Item4
 			{
 				linkID=4;
-				item0=364;
-				item1=365;
+				item0=481;
+				item1=482;
 				class CustomData
 				{
 					type="Sync";
@@ -4959,8 +4953,8 @@ class Mission
 			class Item5
 			{
 				linkID=5;
-				item0=366;
-				item1=367;
+				item0=483;
+				item1=484;
 				class CustomData
 				{
 					type="Sync";
@@ -4969,8 +4963,8 @@ class Mission
 			class Item6
 			{
 				linkID=6;
-				item0=368;
-				item1=369;
+				item0=485;
+				item1=486;
 				class CustomData
 				{
 					type="Sync";
@@ -4979,8 +4973,8 @@ class Mission
 			class Item7
 			{
 				linkID=7;
-				item0=370;
-				item1=371;
+				item0=487;
+				item1=488;
 				class CustomData
 				{
 					type="Sync";
@@ -4989,8 +4983,8 @@ class Mission
 			class Item8
 			{
 				linkID=8;
-				item0=372;
-				item1=373;
+				item0=489;
+				item1=490;
 				class CustomData
 				{
 					type="Sync";
@@ -4999,8 +4993,8 @@ class Mission
 			class Item9
 			{
 				linkID=9;
-				item0=374;
-				item1=375;
+				item0=491;
+				item1=492;
 				class CustomData
 				{
 					type="Sync";
@@ -5009,8 +5003,8 @@ class Mission
 			class Item10
 			{
 				linkID=10;
-				item0=376;
-				item1=377;
+				item0=493;
+				item1=494;
 				class CustomData
 				{
 					type="Sync";
@@ -5019,8 +5013,8 @@ class Mission
 			class Item11
 			{
 				linkID=11;
-				item0=378;
-				item1=379;
+				item0=495;
+				item1=496;
 				class CustomData
 				{
 					type="Sync";
@@ -5029,8 +5023,8 @@ class Mission
 			class Item12
 			{
 				linkID=12;
-				item0=380;
-				item1=381;
+				item0=497;
+				item1=498;
 				class CustomData
 				{
 					type="Sync";
@@ -5039,8 +5033,8 @@ class Mission
 			class Item13
 			{
 				linkID=13;
-				item0=382;
-				item1=383;
+				item0=499;
+				item1=500;
 				class CustomData
 				{
 					type="Sync";
@@ -5049,8 +5043,8 @@ class Mission
 			class Item14
 			{
 				linkID=14;
-				item0=384;
-				item1=385;
+				item0=501;
+				item1=502;
 				class CustomData
 				{
 					type="Sync";
@@ -5059,8 +5053,8 @@ class Mission
 			class Item15
 			{
 				linkID=15;
-				item0=386;
-				item1=387;
+				item0=503;
+				item1=504;
 				class CustomData
 				{
 					type="Sync";
@@ -5069,8 +5063,8 @@ class Mission
 			class Item16
 			{
 				linkID=16;
-				item0=388;
-				item1=389;
+				item0=505;
+				item1=506;
 				class CustomData
 				{
 					type="Sync";
@@ -5079,8 +5073,8 @@ class Mission
 			class Item17
 			{
 				linkID=17;
-				item0=390;
-				item1=391;
+				item0=507;
+				item1=508;
 				class CustomData
 				{
 					type="Sync";
@@ -5089,8 +5083,8 @@ class Mission
 			class Item18
 			{
 				linkID=18;
-				item0=392;
-				item1=393;
+				item0=509;
+				item1=510;
 				class CustomData
 				{
 					type="Sync";
@@ -5099,8 +5093,8 @@ class Mission
 			class Item19
 			{
 				linkID=19;
-				item0=394;
-				item1=395;
+				item0=511;
+				item1=512;
 				class CustomData
 				{
 					type="Sync";
@@ -5109,8 +5103,8 @@ class Mission
 			class Item20
 			{
 				linkID=20;
-				item0=396;
-				item1=397;
+				item0=513;
+				item1=514;
 				class CustomData
 				{
 					type="Sync";
@@ -5119,8 +5113,8 @@ class Mission
 			class Item21
 			{
 				linkID=21;
-				item0=398;
-				item1=399;
+				item0=515;
+				item1=516;
 				class CustomData
 				{
 					type="Sync";
@@ -5129,8 +5123,8 @@ class Mission
 			class Item22
 			{
 				linkID=22;
-				item0=400;
-				item1=401;
+				item0=517;
+				item1=518;
 				class CustomData
 				{
 					type="Sync";
@@ -5139,8 +5133,8 @@ class Mission
 			class Item23
 			{
 				linkID=23;
-				item0=402;
-				item1=403;
+				item0=519;
+				item1=520;
 				class CustomData
 				{
 					type="Sync";
@@ -5149,8 +5143,8 @@ class Mission
 			class Item24
 			{
 				linkID=24;
-				item0=404;
-				item1=405;
+				item0=521;
+				item1=522;
 				class CustomData
 				{
 					type="Sync";
@@ -5159,8 +5153,8 @@ class Mission
 			class Item25
 			{
 				linkID=25;
-				item0=406;
-				item1=407;
+				item0=523;
+				item1=524;
 				class CustomData
 				{
 					type="Sync";
@@ -5169,8 +5163,8 @@ class Mission
 			class Item26
 			{
 				linkID=26;
-				item0=408;
-				item1=409;
+				item0=525;
+				item1=526;
 				class CustomData
 				{
 					type="Sync";
@@ -5179,8 +5173,8 @@ class Mission
 			class Item27
 			{
 				linkID=27;
-				item0=410;
-				item1=411;
+				item0=527;
+				item1=528;
 				class CustomData
 				{
 					type="Sync";
@@ -5189,8 +5183,8 @@ class Mission
 			class Item28
 			{
 				linkID=28;
-				item0=412;
-				item1=413;
+				item0=529;
+				item1=530;
 				class CustomData
 				{
 					type="Sync";
@@ -5199,8 +5193,8 @@ class Mission
 			class Item29
 			{
 				linkID=29;
-				item0=414;
-				item1=415;
+				item0=531;
+				item1=532;
 				class CustomData
 				{
 					type="Sync";
@@ -5209,8 +5203,8 @@ class Mission
 			class Item30
 			{
 				linkID=30;
-				item0=416;
-				item1=417;
+				item0=533;
+				item1=534;
 				class CustomData
 				{
 					type="Sync";
@@ -5219,8 +5213,8 @@ class Mission
 			class Item31
 			{
 				linkID=31;
-				item0=418;
-				item1=419;
+				item0=535;
+				item1=536;
 				class CustomData
 				{
 					type="Sync";
@@ -5229,8 +5223,8 @@ class Mission
 			class Item32
 			{
 				linkID=32;
-				item0=420;
-				item1=421;
+				item0=537;
+				item1=538;
 				class CustomData
 				{
 					type="Sync";
@@ -5239,8 +5233,8 @@ class Mission
 			class Item33
 			{
 				linkID=33;
-				item0=422;
-				item1=423;
+				item0=539;
+				item1=540;
 				class CustomData
 				{
 					type="Sync";
@@ -5249,8 +5243,8 @@ class Mission
 			class Item34
 			{
 				linkID=34;
-				item0=424;
-				item1=425;
+				item0=541;
+				item1=542;
 				class CustomData
 				{
 					type="Sync";
@@ -5259,8 +5253,8 @@ class Mission
 			class Item35
 			{
 				linkID=35;
-				item0=426;
-				item1=427;
+				item0=543;
+				item1=544;
 				class CustomData
 				{
 					type="Sync";
@@ -5269,8 +5263,8 @@ class Mission
 			class Item36
 			{
 				linkID=36;
-				item0=428;
-				item1=429;
+				item0=545;
+				item1=546;
 				class CustomData
 				{
 					type="Sync";
@@ -5279,8 +5273,8 @@ class Mission
 			class Item37
 			{
 				linkID=37;
-				item0=430;
-				item1=431;
+				item0=547;
+				item1=548;
 				class CustomData
 				{
 					type="Sync";
@@ -5289,8 +5283,8 @@ class Mission
 			class Item38
 			{
 				linkID=38;
-				item0=432;
-				item1=433;
+				item0=549;
+				item1=550;
 				class CustomData
 				{
 					type="Sync";
@@ -5299,8 +5293,8 @@ class Mission
 			class Item39
 			{
 				linkID=39;
-				item0=434;
-				item1=435;
+				item0=551;
+				item1=552;
 				class CustomData
 				{
 					type="Sync";
@@ -5309,8 +5303,8 @@ class Mission
 			class Item40
 			{
 				linkID=40;
-				item0=436;
-				item1=437;
+				item0=553;
+				item1=554;
 				class CustomData
 				{
 					type="Sync";
@@ -5319,8 +5313,8 @@ class Mission
 			class Item41
 			{
 				linkID=41;
-				item0=438;
-				item1=439;
+				item0=555;
+				item1=556;
 				class CustomData
 				{
 					type="Sync";
@@ -5329,8 +5323,8 @@ class Mission
 			class Item42
 			{
 				linkID=42;
-				item0=440;
-				item1=441;
+				item0=557;
+				item1=558;
 				class CustomData
 				{
 					type="Sync";
@@ -5339,8 +5333,8 @@ class Mission
 			class Item43
 			{
 				linkID=43;
-				item0=442;
-				item1=443;
+				item0=559;
+				item1=560;
 				class CustomData
 				{
 					type="Sync";
@@ -5349,8 +5343,8 @@ class Mission
 			class Item44
 			{
 				linkID=44;
-				item0=444;
-				item1=445;
+				item0=561;
+				item1=562;
 				class CustomData
 				{
 					type="Sync";
@@ -5359,8 +5353,8 @@ class Mission
 			class Item45
 			{
 				linkID=45;
-				item0=446;
-				item1=447;
+				item0=563;
+				item1=564;
 				class CustomData
 				{
 					type="Sync";
@@ -5369,8 +5363,8 @@ class Mission
 			class Item46
 			{
 				linkID=46;
-				item0=448;
-				item1=449;
+				item0=565;
+				item1=566;
 				class CustomData
 				{
 					type="Sync";
@@ -5379,8 +5373,8 @@ class Mission
 			class Item47
 			{
 				linkID=47;
-				item0=450;
-				item1=451;
+				item0=567;
+				item1=568;
 				class CustomData
 				{
 					type="Sync";
@@ -5389,8 +5383,8 @@ class Mission
 			class Item48
 			{
 				linkID=48;
-				item0=452;
-				item1=453;
+				item0=569;
+				item1=570;
 				class CustomData
 				{
 					type="Sync";
@@ -5399,8 +5393,8 @@ class Mission
 			class Item49
 			{
 				linkID=49;
-				item0=454;
-				item1=455;
+				item0=571;
+				item1=572;
 				class CustomData
 				{
 					type="Sync";
@@ -5409,8 +5403,8 @@ class Mission
 			class Item50
 			{
 				linkID=50;
-				item0=456;
-				item1=457;
+				item0=573;
+				item1=574;
 				class CustomData
 				{
 					type="Sync";
@@ -5419,8 +5413,8 @@ class Mission
 			class Item51
 			{
 				linkID=51;
-				item0=458;
-				item1=459;
+				item0=575;
+				item1=576;
 				class CustomData
 				{
 					type="Sync";
@@ -5429,8 +5423,8 @@ class Mission
 			class Item52
 			{
 				linkID=52;
-				item0=460;
-				item1=461;
+				item0=577;
+				item1=578;
 				class CustomData
 				{
 					type="Sync";
@@ -5439,8 +5433,8 @@ class Mission
 			class Item53
 			{
 				linkID=53;
-				item0=462;
-				item1=463;
+				item0=579;
+				item1=580;
 				class CustomData
 				{
 					type="Sync";
@@ -5449,8 +5443,8 @@ class Mission
 			class Item54
 			{
 				linkID=54;
-				item0=464;
-				item1=465;
+				item0=581;
+				item1=582;
 				class CustomData
 				{
 					type="Sync";
@@ -5459,8 +5453,8 @@ class Mission
 			class Item55
 			{
 				linkID=55;
-				item0=466;
-				item1=467;
+				item0=583;
+				item1=584;
 				class CustomData
 				{
 					type="Sync";
@@ -5469,8 +5463,8 @@ class Mission
 			class Item56
 			{
 				linkID=56;
-				item0=468;
-				item1=469;
+				item0=585;
+				item1=586;
 				class CustomData
 				{
 					type="Sync";
@@ -5479,8 +5473,8 @@ class Mission
 			class Item57
 			{
 				linkID=57;
-				item0=470;
-				item1=471;
+				item0=587;
+				item1=588;
 				class CustomData
 				{
 					type="Sync";
@@ -5489,8 +5483,8 @@ class Mission
 			class Item58
 			{
 				linkID=58;
-				item0=357;
-				item1=445;
+				item0=474;
+				item1=562;
 				class CustomData
 				{
 					type="Sync";
@@ -5499,8 +5493,8 @@ class Mission
 			class Item59
 			{
 				linkID=59;
-				item0=357;
-				item1=443;
+				item0=474;
+				item1=560;
 				class CustomData
 				{
 					type="Sync";
@@ -5509,8 +5503,8 @@ class Mission
 			class Item60
 			{
 				linkID=60;
-				item0=359;
-				item1=363;
+				item0=476;
+				item1=480;
 				class CustomData
 				{
 					type="Sync";
@@ -5519,8 +5513,8 @@ class Mission
 			class Item61
 			{
 				linkID=61;
-				item0=359;
-				item1=367;
+				item0=476;
+				item1=484;
 				class CustomData
 				{
 					type="Sync";
@@ -5529,8 +5523,8 @@ class Mission
 			class Item62
 			{
 				linkID=62;
-				item0=359;
-				item1=373;
+				item0=476;
+				item1=490;
 				class CustomData
 				{
 					type="Sync";
@@ -5539,8 +5533,8 @@ class Mission
 			class Item63
 			{
 				linkID=63;
-				item0=361;
-				item1=363;
+				item0=478;
+				item1=480;
 				class CustomData
 				{
 					type="Sync";
@@ -5549,8 +5543,8 @@ class Mission
 			class Item64
 			{
 				linkID=64;
-				item0=363;
-				item1=365;
+				item0=480;
+				item1=482;
 				class CustomData
 				{
 					type="Sync";
@@ -5559,8 +5553,8 @@ class Mission
 			class Item65
 			{
 				linkID=65;
-				item0=363;
-				item1=367;
+				item0=480;
+				item1=484;
 				class CustomData
 				{
 					type="Sync";
@@ -5569,8 +5563,8 @@ class Mission
 			class Item66
 			{
 				linkID=66;
-				item0=365;
-				item1=367;
+				item0=482;
+				item1=484;
 				class CustomData
 				{
 					type="Sync";
@@ -5579,8 +5573,8 @@ class Mission
 			class Item67
 			{
 				linkID=67;
-				item0=367;
-				item1=369;
+				item0=484;
+				item1=486;
 				class CustomData
 				{
 					type="Sync";
@@ -5589,8 +5583,8 @@ class Mission
 			class Item68
 			{
 				linkID=68;
-				item0=367;
-				item1=373;
+				item0=484;
+				item1=490;
 				class CustomData
 				{
 					type="Sync";
@@ -5599,8 +5593,8 @@ class Mission
 			class Item69
 			{
 				linkID=69;
-				item0=367;
-				item1=371;
+				item0=484;
+				item1=488;
 				class CustomData
 				{
 					type="Sync";
@@ -5609,8 +5603,8 @@ class Mission
 			class Item70
 			{
 				linkID=70;
-				item0=369;
-				item1=371;
+				item0=486;
+				item1=488;
 				class CustomData
 				{
 					type="Sync";
@@ -5619,8 +5613,8 @@ class Mission
 			class Item71
 			{
 				linkID=71;
-				item0=371;
-				item1=373;
+				item0=488;
+				item1=490;
 				class CustomData
 				{
 					type="Sync";
@@ -5629,8 +5623,8 @@ class Mission
 			class Item72
 			{
 				linkID=72;
-				item0=371;
-				item1=377;
+				item0=488;
+				item1=494;
 				class CustomData
 				{
 					type="Sync";
@@ -5639,8 +5633,8 @@ class Mission
 			class Item73
 			{
 				linkID=73;
-				item0=373;
-				item1=375;
+				item0=490;
+				item1=492;
 				class CustomData
 				{
 					type="Sync";
@@ -5649,8 +5643,8 @@ class Mission
 			class Item74
 			{
 				linkID=74;
-				item0=373;
-				item1=377;
+				item0=490;
+				item1=494;
 				class CustomData
 				{
 					type="Sync";
@@ -5659,8 +5653,8 @@ class Mission
 			class Item75
 			{
 				linkID=75;
-				item0=375;
-				item1=377;
+				item0=492;
+				item1=494;
 				class CustomData
 				{
 					type="Sync";
@@ -5669,8 +5663,8 @@ class Mission
 			class Item76
 			{
 				linkID=76;
-				item0=377;
-				item1=379;
+				item0=492;
+				item1=586;
 				class CustomData
 				{
 					type="Sync";
@@ -5679,8 +5673,8 @@ class Mission
 			class Item77
 			{
 				linkID=77;
-				item0=377;
-				item1=381;
+				item0=494;
+				item1=496;
 				class CustomData
 				{
 					type="Sync";
@@ -5689,8 +5683,8 @@ class Mission
 			class Item78
 			{
 				linkID=78;
-				item0=377;
-				item1=469;
+				item0=494;
+				item1=498;
 				class CustomData
 				{
 					type="Sync";
@@ -5699,8 +5693,8 @@ class Mission
 			class Item79
 			{
 				linkID=79;
-				item0=379;
-				item1=381;
+				item0=494;
+				item1=586;
 				class CustomData
 				{
 					type="Sync";
@@ -5709,8 +5703,8 @@ class Mission
 			class Item80
 			{
 				linkID=80;
-				item0=379;
-				item1=383;
+				item0=496;
+				item1=498;
 				class CustomData
 				{
 					type="Sync";
@@ -5719,8 +5713,8 @@ class Mission
 			class Item81
 			{
 				linkID=81;
-				item0=379;
-				item1=385;
+				item0=496;
+				item1=500;
 				class CustomData
 				{
 					type="Sync";
@@ -5729,8 +5723,8 @@ class Mission
 			class Item82
 			{
 				linkID=82;
-				item0=379;
-				item1=469;
+				item0=496;
+				item1=502;
 				class CustomData
 				{
 					type="Sync";
@@ -5739,8 +5733,8 @@ class Mission
 			class Item83
 			{
 				linkID=83;
-				item0=381;
-				item1=387;
+				item0=496;
+				item1=586;
 				class CustomData
 				{
 					type="Sync";
@@ -5749,8 +5743,8 @@ class Mission
 			class Item84
 			{
 				linkID=84;
-				item0=381;
-				item1=389;
+				item0=498;
+				item1=504;
 				class CustomData
 				{
 					type="Sync";
@@ -5759,8 +5753,8 @@ class Mission
 			class Item85
 			{
 				linkID=85;
-				item0=383;
-				item1=385;
+				item0=498;
+				item1=506;
 				class CustomData
 				{
 					type="Sync";
@@ -5769,8 +5763,8 @@ class Mission
 			class Item86
 			{
 				linkID=86;
-				item0=383;
-				item1=469;
+				item0=500;
+				item1=502;
 				class CustomData
 				{
 					type="Sync";
@@ -5779,8 +5773,8 @@ class Mission
 			class Item87
 			{
 				linkID=87;
-				item0=385;
-				item1=387;
+				item0=500;
+				item1=586;
 				class CustomData
 				{
 					type="Sync";
@@ -5789,8 +5783,8 @@ class Mission
 			class Item88
 			{
 				linkID=88;
-				item0=385;
-				item1=401;
+				item0=502;
+				item1=504;
 				class CustomData
 				{
 					type="Sync";
@@ -5799,8 +5793,8 @@ class Mission
 			class Item89
 			{
 				linkID=89;
-				item0=387;
-				item1=389;
+				item0=502;
+				item1=518;
 				class CustomData
 				{
 					type="Sync";
@@ -5809,8 +5803,8 @@ class Mission
 			class Item90
 			{
 				linkID=90;
-				item0=387;
-				item1=391;
+				item0=504;
+				item1=506;
 				class CustomData
 				{
 					type="Sync";
@@ -5819,8 +5813,8 @@ class Mission
 			class Item91
 			{
 				linkID=91;
-				item0=387;
-				item1=401;
+				item0=504;
+				item1=508;
 				class CustomData
 				{
 					type="Sync";
@@ -5829,8 +5823,8 @@ class Mission
 			class Item92
 			{
 				linkID=92;
-				item0=389;
-				item1=391;
+				item0=504;
+				item1=518;
 				class CustomData
 				{
 					type="Sync";
@@ -5839,8 +5833,8 @@ class Mission
 			class Item93
 			{
 				linkID=93;
-				item0=389;
-				item1=393;
+				item0=506;
+				item1=508;
 				class CustomData
 				{
 					type="Sync";
@@ -5849,8 +5843,8 @@ class Mission
 			class Item94
 			{
 				linkID=94;
-				item0=393;
-				item1=395;
+				item0=506;
+				item1=510;
 				class CustomData
 				{
 					type="Sync";
@@ -5859,8 +5853,8 @@ class Mission
 			class Item95
 			{
 				linkID=95;
-				item0=395;
-				item1=399;
+				item0=508;
+				item1=510;
 				class CustomData
 				{
 					type="Sync";
@@ -5869,8 +5863,8 @@ class Mission
 			class Item96
 			{
 				linkID=96;
-				item0=395;
-				item1=397;
+				item0=510;
+				item1=512;
 				class CustomData
 				{
 					type="Sync";
@@ -5879,8 +5873,8 @@ class Mission
 			class Item97
 			{
 				linkID=97;
-				item0=397;
-				item1=399;
+				item0=512;
+				item1=516;
 				class CustomData
 				{
 					type="Sync";
@@ -5889,8 +5883,8 @@ class Mission
 			class Item98
 			{
 				linkID=98;
-				item0=401;
-				item1=403;
+				item0=512;
+				item1=514;
 				class CustomData
 				{
 					type="Sync";
@@ -5899,8 +5893,8 @@ class Mission
 			class Item99
 			{
 				linkID=99;
-				item0=401;
-				item1=405;
+				item0=514;
+				item1=516;
 				class CustomData
 				{
 					type="Sync";
@@ -5909,8 +5903,8 @@ class Mission
 			class Item100
 			{
 				linkID=100;
-				item0=403;
-				item1=405;
+				item0=518;
+				item1=520;
 				class CustomData
 				{
 					type="Sync";
@@ -5919,8 +5913,8 @@ class Mission
 			class Item101
 			{
 				linkID=101;
-				item0=403;
-				item1=407;
+				item0=518;
+				item1=522;
 				class CustomData
 				{
 					type="Sync";
@@ -5929,8 +5923,8 @@ class Mission
 			class Item102
 			{
 				linkID=102;
-				item0=405;
-				item1=407;
+				item0=520;
+				item1=522;
 				class CustomData
 				{
 					type="Sync";
@@ -5939,8 +5933,8 @@ class Mission
 			class Item103
 			{
 				linkID=103;
-				item0=405;
-				item1=409;
+				item0=520;
+				item1=524;
 				class CustomData
 				{
 					type="Sync";
@@ -5949,8 +5943,8 @@ class Mission
 			class Item104
 			{
 				linkID=104;
-				item0=407;
-				item1=411;
+				item0=522;
+				item1=524;
 				class CustomData
 				{
 					type="Sync";
@@ -5959,8 +5953,8 @@ class Mission
 			class Item105
 			{
 				linkID=105;
-				item0=409;
-				item1=411;
+				item0=522;
+				item1=526;
 				class CustomData
 				{
 					type="Sync";
@@ -5969,8 +5963,8 @@ class Mission
 			class Item106
 			{
 				linkID=106;
-				item0=409;
-				item1=419;
+				item0=524;
+				item1=528;
 				class CustomData
 				{
 					type="Sync";
@@ -5979,8 +5973,8 @@ class Mission
 			class Item107
 			{
 				linkID=107;
-				item0=409;
-				item1=429;
+				item0=526;
+				item1=528;
 				class CustomData
 				{
 					type="Sync";
@@ -5989,8 +5983,8 @@ class Mission
 			class Item108
 			{
 				linkID=108;
-				item0=409;
-				item1=467;
+				item0=526;
+				item1=536;
 				class CustomData
 				{
 					type="Sync";
@@ -5999,8 +5993,8 @@ class Mission
 			class Item109
 			{
 				linkID=109;
-				item0=411;
-				item1=413;
+				item0=526;
+				item1=546;
 				class CustomData
 				{
 					type="Sync";
@@ -6009,8 +6003,8 @@ class Mission
 			class Item110
 			{
 				linkID=110;
-				item0=411;
-				item1=467;
+				item0=526;
+				item1=584;
 				class CustomData
 				{
 					type="Sync";
@@ -6019,8 +6013,8 @@ class Mission
 			class Item111
 			{
 				linkID=111;
-				item0=413;
-				item1=415;
+				item0=528;
+				item1=530;
 				class CustomData
 				{
 					type="Sync";
@@ -6029,8 +6023,8 @@ class Mission
 			class Item112
 			{
 				linkID=112;
-				item0=413;
-				item1=417;
+				item0=528;
+				item1=584;
 				class CustomData
 				{
 					type="Sync";
@@ -6039,8 +6033,8 @@ class Mission
 			class Item113
 			{
 				linkID=113;
-				item0=415;
-				item1=417;
+				item0=530;
+				item1=532;
 				class CustomData
 				{
 					type="Sync";
@@ -6049,8 +6043,8 @@ class Mission
 			class Item114
 			{
 				linkID=114;
-				item0=417;
-				item1=421;
+				item0=530;
+				item1=534;
 				class CustomData
 				{
 					type="Sync";
@@ -6059,8 +6053,8 @@ class Mission
 			class Item115
 			{
 				linkID=115;
-				item0=417;
-				item1=423;
+				item0=532;
+				item1=534;
 				class CustomData
 				{
 					type="Sync";
@@ -6069,8 +6063,8 @@ class Mission
 			class Item116
 			{
 				linkID=116;
-				item0=419;
-				item1=429;
+				item0=534;
+				item1=538;
 				class CustomData
 				{
 					type="Sync";
@@ -6079,8 +6073,8 @@ class Mission
 			class Item117
 			{
 				linkID=117;
-				item0=419;
-				item1=467;
+				item0=534;
+				item1=540;
 				class CustomData
 				{
 					type="Sync";
@@ -6089,8 +6083,8 @@ class Mission
 			class Item118
 			{
 				linkID=118;
-				item0=419;
-				item1=463;
+				item0=536;
+				item1=546;
 				class CustomData
 				{
 					type="Sync";
@@ -6099,8 +6093,8 @@ class Mission
 			class Item119
 			{
 				linkID=119;
-				item0=419;
-				item1=461;
+				item0=536;
+				item1=584;
 				class CustomData
 				{
 					type="Sync";
@@ -6109,8 +6103,8 @@ class Mission
 			class Item120
 			{
 				linkID=120;
-				item0=421;
-				item1=461;
+				item0=536;
+				item1=580;
 				class CustomData
 				{
 					type="Sync";
@@ -6119,8 +6113,8 @@ class Mission
 			class Item121
 			{
 				linkID=121;
-				item0=421;
-				item1=423;
+				item0=536;
+				item1=578;
 				class CustomData
 				{
 					type="Sync";
@@ -6129,8 +6123,8 @@ class Mission
 			class Item122
 			{
 				linkID=122;
-				item0=421;
-				item1=467;
+				item0=538;
+				item1=578;
 				class CustomData
 				{
 					type="Sync";
@@ -6139,8 +6133,8 @@ class Mission
 			class Item123
 			{
 				linkID=123;
-				item0=423;
-				item1=461;
+				item0=538;
+				item1=540;
 				class CustomData
 				{
 					type="Sync";
@@ -6149,8 +6143,8 @@ class Mission
 			class Item124
 			{
 				linkID=124;
-				item0=423;
-				item1=425;
+				item0=538;
+				item1=584;
 				class CustomData
 				{
 					type="Sync";
@@ -6159,8 +6153,8 @@ class Mission
 			class Item125
 			{
 				linkID=125;
-				item0=425;
-				item1=459;
+				item0=540;
+				item1=578;
 				class CustomData
 				{
 					type="Sync";
@@ -6169,8 +6163,8 @@ class Mission
 			class Item126
 			{
 				linkID=126;
-				item0=425;
-				item1=427;
+				item0=540;
+				item1=542;
 				class CustomData
 				{
 					type="Sync";
@@ -6179,8 +6173,8 @@ class Mission
 			class Item127
 			{
 				linkID=127;
-				item0=425;
-				item1=471;
+				item0=542;
+				item1=576;
 				class CustomData
 				{
 					type="Sync";
@@ -6189,8 +6183,8 @@ class Mission
 			class Item128
 			{
 				linkID=128;
-				item0=427;
-				item1=459;
+				item0=542;
+				item1=544;
 				class CustomData
 				{
 					type="Sync";
@@ -6199,8 +6193,8 @@ class Mission
 			class Item129
 			{
 				linkID=129;
-				item0=427;
-				item1=457;
+				item0=542;
+				item1=588;
 				class CustomData
 				{
 					type="Sync";
@@ -6209,8 +6203,8 @@ class Mission
 			class Item130
 			{
 				linkID=130;
-				item0=427;
-				item1=453;
+				item0=544;
+				item1=576;
 				class CustomData
 				{
 					type="Sync";
@@ -6219,8 +6213,8 @@ class Mission
 			class Item131
 			{
 				linkID=131;
-				item0=427;
-				item1=471;
+				item0=544;
+				item1=574;
 				class CustomData
 				{
 					type="Sync";
@@ -6229,8 +6223,8 @@ class Mission
 			class Item132
 			{
 				linkID=132;
-				item0=429;
-				item1=431;
+				item0=544;
+				item1=572;
 				class CustomData
 				{
 					type="Sync";
@@ -6239,8 +6233,8 @@ class Mission
 			class Item133
 			{
 				linkID=133;
-				item0=431;
-				item1=463;
+				item0=544;
+				item1=570;
 				class CustomData
 				{
 					type="Sync";
@@ -6249,8 +6243,8 @@ class Mission
 			class Item134
 			{
 				linkID=134;
-				item0=431;
-				item1=433;
+				item0=544;
+				item1=588;
 				class CustomData
 				{
 					type="Sync";
@@ -6259,8 +6253,8 @@ class Mission
 			class Item135
 			{
 				linkID=135;
-				item0=431;
-				item1=435;
+				item0=546;
+				item1=548;
 				class CustomData
 				{
 					type="Sync";
@@ -6269,8 +6263,8 @@ class Mission
 			class Item136
 			{
 				linkID=136;
-				item0=431;
-				item1=465;
+				item0=548;
+				item1=580;
 				class CustomData
 				{
 					type="Sync";
@@ -6279,8 +6273,8 @@ class Mission
 			class Item137
 			{
 				linkID=137;
-				item0=433;
-				item1=435;
+				item0=548;
+				item1=550;
 				class CustomData
 				{
 					type="Sync";
@@ -6289,8 +6283,8 @@ class Mission
 			class Item138
 			{
 				linkID=138;
-				item0=433;
-				item1=437;
+				item0=548;
+				item1=552;
 				class CustomData
 				{
 					type="Sync";
@@ -6299,8 +6293,8 @@ class Mission
 			class Item139
 			{
 				linkID=139;
-				item0=433;
-				item1=439;
+				item0=548;
+				item1=582;
 				class CustomData
 				{
 					type="Sync";
@@ -6309,8 +6303,8 @@ class Mission
 			class Item140
 			{
 				linkID=140;
-				item0=435;
-				item1=465;
+				item0=550;
+				item1=552;
 				class CustomData
 				{
 					type="Sync";
@@ -6319,8 +6313,8 @@ class Mission
 			class Item141
 			{
 				linkID=141;
-				item0=437;
-				item1=439;
+				item0=550;
+				item1=554;
 				class CustomData
 				{
 					type="Sync";
@@ -6329,8 +6323,8 @@ class Mission
 			class Item142
 			{
 				linkID=142;
-				item0=439;
-				item1=441;
+				item0=550;
+				item1=556;
 				class CustomData
 				{
 					type="Sync";
@@ -6339,8 +6333,8 @@ class Mission
 			class Item143
 			{
 				linkID=143;
-				item0=441;
-				item1=443;
+				item0=552;
+				item1=554;
 				class CustomData
 				{
 					type="Sync";
@@ -6349,8 +6343,8 @@ class Mission
 			class Item144
 			{
 				linkID=144;
-				item0=443;
-				item1=445;
+				item0=552;
+				item1=582;
 				class CustomData
 				{
 					type="Sync";
@@ -6359,8 +6353,8 @@ class Mission
 			class Item145
 			{
 				linkID=145;
-				item0=445;
-				item1=447;
+				item0=554;
+				item1=556;
 				class CustomData
 				{
 					type="Sync";
@@ -6369,8 +6363,8 @@ class Mission
 			class Item146
 			{
 				linkID=146;
-				item0=447;
-				item1=449;
+				item0=556;
+				item1=558;
 				class CustomData
 				{
 					type="Sync";
@@ -6379,8 +6373,8 @@ class Mission
 			class Item147
 			{
 				linkID=147;
-				item0=449;
-				item1=451;
+				item0=558;
+				item1=560;
 				class CustomData
 				{
 					type="Sync";
@@ -6389,8 +6383,8 @@ class Mission
 			class Item148
 			{
 				linkID=148;
-				item0=451;
-				item1=453;
+				item0=560;
+				item1=562;
 				class CustomData
 				{
 					type="Sync";
@@ -6399,8 +6393,8 @@ class Mission
 			class Item149
 			{
 				linkID=149;
-				item0=453;
-				item1=455;
+				item0=562;
+				item1=564;
 				class CustomData
 				{
 					type="Sync";
@@ -6409,8 +6403,8 @@ class Mission
 			class Item150
 			{
 				linkID=150;
-				item0=455;
-				item1=457;
+				item0=564;
+				item1=566;
 				class CustomData
 				{
 					type="Sync";
@@ -6419,8 +6413,8 @@ class Mission
 			class Item151
 			{
 				linkID=151;
-				item0=457;
-				item1=459;
+				item0=566;
+				item1=568;
 				class CustomData
 				{
 					type="Sync";
@@ -6429,8 +6423,8 @@ class Mission
 			class Item152
 			{
 				linkID=152;
-				item0=457;
-				item1=463;
+				item0=568;
+				item1=570;
 				class CustomData
 				{
 					type="Sync";
@@ -6439,8 +6433,8 @@ class Mission
 			class Item153
 			{
 				linkID=153;
-				item0=459;
-				item1=463;
+				item0=570;
+				item1=572;
 				class CustomData
 				{
 					type="Sync";
@@ -6449,8 +6443,8 @@ class Mission
 			class Item154
 			{
 				linkID=154;
-				item0=461;
-				item1=463;
+				item0=572;
+				item1=574;
 				class CustomData
 				{
 					type="Sync";
@@ -6459,8 +6453,48 @@ class Mission
 			class Item155
 			{
 				linkID=155;
-				item0=461;
-				item1=467;
+				item0=574;
+				item1=576;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item156
+			{
+				linkID=156;
+				item0=574;
+				item1=580;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item157
+			{
+				linkID=157;
+				item0=576;
+				item1=580;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item158
+			{
+				linkID=158;
+				item0=578;
+				item1=580;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item159
+			{
+				linkID=159;
+				item0=578;
+				item1=584;
 				class CustomData
 				{
 					type="Sync";
