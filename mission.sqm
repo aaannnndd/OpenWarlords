@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3748.0188,48.414749,10255.02};
-		dir[]={0.12044045,-0.13656113,0.98328739};
-		up[]={0.016603302,0.99063021,0.13555096};
-		aside[]={0.99258685,4.8137736e-008,-0.12157988};
+		pos[]={3807.7285,98.716354,10350.287};
+		dir[]={0.069403052,-0.25001001,0.96576273};
+		up[]={0.017920755,0.96824032,0.24937205};
+		aside[]={0.99743682,-3.2476964e-007,-0.071680732};
 	};
 };
 binarizationWanted=0;
@@ -3515,8 +3515,7 @@ class Mission
 			{
 				position[]={3749.52,15.065609,10330.4};
 			};
-			name="OWL_mainBase_WEST";
-			init="this setVariable [""OWL_sectorParam_canBeBase"", true];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 2];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=474;
 			type="Logic";
 			atlOffset=-1.9073486e-006;
@@ -3541,8 +3540,7 @@ class Mission
 			{
 				position[]={24771.301,16.731209,23158.301};
 			};
-			name="OWL_mainBase_EAST";
-			init="this setVariable [""OWL_sectorParam_canBeBase"", true];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 2];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 2];" \n "this setVariable [""OWL_sectorParam_name"", """"];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 2];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=476;
 			type="Logic";
 		};
@@ -3566,7 +3564,7 @@ class Mission
 			{
 				position[]={26993,21.652548,24672.801};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Molos Airfield""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Molos Airfield""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=478;
 			type="Logic";
 		};
@@ -3590,7 +3588,7 @@ class Mission
 			{
 				position[]={27001.301,20.652349,23186.699};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Molos""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Molos""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=480;
 			type="Logic";
 		};
@@ -3614,7 +3612,7 @@ class Mission
 			{
 				position[]={26725.4,15.328559,21209.301};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Gatolia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Gatolia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=482;
 			type="Logic";
 		};
@@ -3638,7 +3636,7 @@ class Mission
 			{
 				position[]={25688.4,20.239233,21338.6};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Sofia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Sofia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=484;
 			type="Logic";
 		};
@@ -3662,7 +3660,7 @@ class Mission
 			{
 				position[]={25396.301,9.6301346,20333.1};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Sofia Power Plant""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Sofia Power Plant""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=486;
 			type="Logic";
 		};
@@ -3686,7 +3684,7 @@ class Mission
 			{
 				position[]={23948.9,14.677764,20160.301};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Delfinaki""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Delfinaki""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=488;
 			type="Logic";
 		};
@@ -3710,7 +3708,7 @@ class Mission
 			{
 				position[]={23567.1,92.435188,21099.5};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Nidasos Base""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Nidasos Base""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=490;
 			type="Logic";
 		};
@@ -3734,7 +3732,7 @@ class Mission
 			{
 				position[]={21907.699,23.704601,21033.199};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Ghost Hotel""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Ghost Hotel""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=492;
 			type="Logic";
 		};
@@ -3758,7 +3756,7 @@ class Mission
 			{
 				position[]={23211.301,13.839722,19960.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Ioannina""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Ioannina""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=494;
 			type="Logic";
 		};
@@ -3782,7 +3780,7 @@ class Mission
 			{
 				position[]={20946.199,43.776089,16955.1};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Paros""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 100];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Paros""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 100];" \n "";
 			id=496;
 			type="Logic";
 		};
@@ -3806,7 +3804,7 @@ class Mission
 			{
 				position[]={21387.4,19.170893,16339.8};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Kalochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 100];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Kalochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 100];" \n "";
 			id=498;
 			type="Logic";
 		};
@@ -3830,7 +3828,7 @@ class Mission
 			{
 				position[]={19254.4,34.517487,17589.699};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Agios Petros""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Agios Petros""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=500;
 			type="Logic";
 		};
@@ -3854,7 +3852,7 @@ class Mission
 			{
 				position[]={18813.4,31.489239,16631.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Rodopoli""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Rodopoli""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=502;
 			type="Logic";
 		};
@@ -3878,7 +3876,7 @@ class Mission
 			{
 				position[]={18180.199,26.808235,15306.6};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Charkia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Charkia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=504;
 			type="Logic";
 		};
@@ -3902,7 +3900,7 @@ class Mission
 			{
 				position[]={19407.9,38.95145,13250.8};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Dorida""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Dorida""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=506;
 			type="Logic";
 		};
@@ -3926,7 +3924,7 @@ class Mission
 			{
 				position[]={16828.5,22.541981,12705.3};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Pyrgos""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Pyrgos""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=508;
 			type="Logic";
 		};
@@ -3950,7 +3948,7 @@ class Mission
 			{
 				position[]={20262.301,51.314915,11691.2};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Chalkeia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Chalkeia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=510;
 			type="Logic";
 		};
@@ -3974,7 +3972,7 @@ class Mission
 			{
 				position[]={20442,35.422977,8841.3701};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Panagia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Panagia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=512;
 			type="Logic";
 		};
@@ -3998,7 +3996,7 @@ class Mission
 			{
 				position[]={21699.5,15.0616,7566.8999};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Feres""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Feres""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=514;
 			type="Logic";
 		};
@@ -4022,7 +4020,7 @@ class Mission
 			{
 				position[]={20796.199,36.491802,6736.3398};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Selakano""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Selakano""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=516;
 			type="Logic";
 		};
@@ -4046,7 +4044,7 @@ class Mission
 			{
 				position[]={16671.1,17.660427,16104.6};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Anthrakia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Anthrakia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=518;
 			type="Logic";
 		};
@@ -4070,7 +4068,7 @@ class Mission
 			{
 				position[]={16252.4,16.862637,17130};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Telos Complex""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 40];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Telos Complex""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 40];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=520;
 			type="Logic";
 		};
@@ -4094,7 +4092,7 @@ class Mission
 			{
 				position[]={15420.3,4.1190624,16114};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Main Power Plant""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Main Power Plant""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=522;
 			type="Logic";
 		};
@@ -4118,7 +4116,7 @@ class Mission
 			{
 				position[]={15196.5,17.916002,17318.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Airfield Compound""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Airfield Compound""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=524;
 			type="Logic";
 		};
@@ -4142,7 +4140,7 @@ class Mission
 			{
 				position[]={14309.8,19.85198,16243.5};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Airbase""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Airbase""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=526;
 			type="Logic";
 		};
@@ -4166,7 +4164,7 @@ class Mission
 			{
 				position[]={14488.5,20.915617,17670.6};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Gravia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Gravia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=528;
 			type="Logic";
 		};
@@ -4190,7 +4188,7 @@ class Mission
 			{
 				position[]={14028.7,26.7547,18666.5};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Athira""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Athira""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=530;
 			type="Logic";
 		};
@@ -4214,7 +4212,7 @@ class Mission
 			{
 				position[]={14627.8,47.612316,20780.199};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Frini""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Frini""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=532;
 			type="Logic";
 		};
@@ -4238,7 +4236,7 @@ class Mission
 			{
 				position[]={12824.1,43.355743,19641.5};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Ifestiona""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Ifestiona""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=534;
 			type="Logic";
 		};
@@ -4262,7 +4260,7 @@ class Mission
 			{
 				position[]={12358.7,23.912498,15674.8};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Lakka""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Lakka""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=536;
 			type="Logic";
 		};
@@ -4286,7 +4284,7 @@ class Mission
 			{
 				position[]={11779.8,52.353275,18323};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Koroni""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Koroni""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=538;
 			type="Logic";
 		};
@@ -4302,6 +4300,7 @@ class Mission
 			};
 			id=539;
 			type="EmptyDetector";
+			atlOffset=7.6293945e-006;
 		};
 		class Item183
 		{
@@ -4310,9 +4309,10 @@ class Mission
 			{
 				position[]={10330.5,126.55415,19060.801};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Galati""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Galati""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=540;
 			type="Logic";
+			atlOffset=7.6293945e-006;
 		};
 		class Item184
 		{
@@ -4334,7 +4334,7 @@ class Mission
 			{
 				position[]={9441.79,124.77596,20285.301};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Abdera""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Abdera""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=542;
 			type="Logic";
 		};
@@ -4358,7 +4358,7 @@ class Mission
 			{
 				position[]={4611.46,296.69479,21415.6};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Oreokastro""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Oreokastro""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=544;
 			type="Logic";
 		};
@@ -4374,6 +4374,7 @@ class Mission
 			};
 			id=545;
 			type="EmptyDetector";
+			atlOffset=-9.5367432e-007;
 		};
 		class Item189
 		{
@@ -4382,9 +4383,10 @@ class Mission
 			{
 				position[]={12502.1,13.325788,14378.2};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Neochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Neochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=546;
 			type="Logic";
+			atlOffset=-9.5367432e-007;
 		};
 		class Item190
 		{
@@ -4406,7 +4408,7 @@ class Mission
 			{
 				position[]={11010.2,26.359692,13442.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Poliakko""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Poliakko""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=548;
 			type="Logic";
 		};
@@ -4430,7 +4432,7 @@ class Mission
 			{
 				position[]={10671.1,16.721733,12257.7};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Therisa""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Therisa""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=550;
 			type="Logic";
 		};
@@ -4454,7 +4456,7 @@ class Mission
 			{
 				position[]={11620.9,22.953327,11845.7};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""AAC Airfield""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""AAC Airfield""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", true];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=552;
 			type="Logic";
 		};
@@ -4478,7 +4480,7 @@ class Mission
 			{
 				position[]={12294.9,123.99193,8893.8799};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Southern Base""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Southern Base""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=554;
 			type="Logic";
 		};
@@ -4502,7 +4504,7 @@ class Mission
 			{
 				position[]={9055.8496,21.954548,11979.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Zaros""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Zaros""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=556;
 			type="Logic";
 		};
@@ -4526,7 +4528,7 @@ class Mission
 			{
 				position[]={7403.3101,26.288723,12116.3};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Kavirida""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Kavirida""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=558;
 			type="Logic";
 		};
@@ -4550,7 +4552,7 @@ class Mission
 			{
 				position[]={5098.1899,48.952263,11241.7};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Panochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Panochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=560;
 			type="Logic";
 		};
@@ -4574,7 +4576,7 @@ class Mission
 			{
 				position[]={4152.4302,52.537334,11744.3};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Neri""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Neri""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=562;
 			type="Logic";
 		};
@@ -4598,7 +4600,7 @@ class Mission
 			{
 				position[]={3553.8301,8.7102919,13000.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Kavala""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Kavala""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=564;
 			type="Logic";
 		};
@@ -4622,7 +4624,7 @@ class Mission
 			{
 				position[]={3823,17.05407,13711.7};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Aggelochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Aggelochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=566;
 			type="Logic";
 		};
@@ -4646,7 +4648,7 @@ class Mission
 			{
 				position[]={4228.0298,18.060003,15042.5};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Power Plant""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Power Plant""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=568;
 			type="Logic";
 		};
@@ -4670,7 +4672,7 @@ class Mission
 			{
 				position[]={4908.5098,77.693558,16147.8};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Negades""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Negades""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=570;
 			type="Logic";
 		};
@@ -4694,7 +4696,7 @@ class Mission
 			{
 				position[]={6171.4702,43,16227.1};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Kore Factory""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Kore Factory""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=572;
 			type="Logic";
 		};
@@ -4718,7 +4720,7 @@ class Mission
 			{
 				position[]={7118.2402,114.22603,16449.699};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Kore""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Kore""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=574;
 			type="Logic";
 		};
@@ -4742,7 +4744,7 @@ class Mission
 			{
 				position[]={8629.54,180.76244,18282};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Syrta""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Syrta""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=576;
 			type="Logic";
 		};
@@ -4766,7 +4768,7 @@ class Mission
 			{
 				position[]={10438,83.826675,17238.6};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Orino""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Orino""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=578;
 			type="Logic";
 		};
@@ -4790,7 +4792,7 @@ class Mission
 			{
 				position[]={9335.8496,119.895,15883.7};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Agios Dionysios""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Agios Dionysios""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=580;
 			type="Logic";
 		};
@@ -4814,7 +4816,7 @@ class Mission
 			{
 				position[]={14280.3,4.7059116,13030.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Sagonisi Harbor""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Sagonisi Harbor""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=582;
 			type="Logic";
 		};
@@ -4838,7 +4840,7 @@ class Mission
 			{
 				position[]={12724.2,59.631893,16516.199};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Lakka Factory""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 30];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Lakka Factory""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 30];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=584;
 			type="Logic";
 		};
@@ -4862,7 +4864,7 @@ class Mission
 			{
 				position[]={20856.5,12.724644,19313};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Georgios Base""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Georgios Base""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=586;
 			type="Logic";
 		};
@@ -4878,6 +4880,7 @@ class Mission
 			};
 			id=587;
 			type="EmptyDetector";
+			atlOffset=-9.5367432e-007;
 		};
 		class Item231
 		{
@@ -4886,9 +4889,10 @@ class Mission
 			{
 				position[]={9150.3301,15.976727,21527.9};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_3""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_3""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=588;
 			type="Logic";
+			atlOffset=-9.5367432e-007;
 		};
 	};
 	class Connections
