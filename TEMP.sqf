@@ -20,7 +20,6 @@ OWL_allSectors = [];
 		_x setVariable ["OWL_sectorArea", triggerArea _trigger];
 		_x setVariable ["OWL_sectorSide", [sideEmpty, west, east, resistance] # (_x getVariable "OWL_sectorParam_side")];
 		OWL_allSectors pushBack _x;
-		deleteVehicle _trigger;
 	};
 } forEach (entities "Logic");
 

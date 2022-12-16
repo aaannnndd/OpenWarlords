@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3748.0188,48.414749,10255.02};
-		dir[]={0.12044045,-0.13656113,0.98328739};
-		up[]={0.016603302,0.99063021,0.13555096};
-		aside[]={0.99258685,4.8137736e-008,-0.12157988};
+		pos[]={4220.0527,525.84827,9034.0996};
+		dir[]={0.22485548,-0.3616364,0.90479785};
+		up[]={0.087218978,0.93231928,0.35096118};
+		aside[]={0.9704808,0,-0.24117866};
 	};
 };
 binarizationWanted=0;
@@ -155,8 +155,24 @@ class CustomAttributes
 					singleType="ARRAY";
 					class value
 					{
-						items=1;
+						items=3;
 						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="MenuInventory";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="MenuPosition";
+							};
+						};
+						class Item2
 						{
 							class data
 							{
@@ -4302,6 +4318,7 @@ class Mission
 			};
 			id=539;
 			type="EmptyDetector";
+			atlOffset=7.6293945e-006;
 		};
 		class Item183
 		{
@@ -4313,6 +4330,7 @@ class Mission
 			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Galati""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=540;
 			type="Logic";
+			atlOffset=7.6293945e-006;
 		};
 		class Item184
 		{
@@ -4374,6 +4392,7 @@ class Mission
 			};
 			id=545;
 			type="EmptyDetector";
+			atlOffset=-9.5367432e-007;
 		};
 		class Item189
 		{
@@ -4385,6 +4404,7 @@ class Mission
 			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""Neochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=546;
 			type="Logic";
+			atlOffset=-9.5367432e-007;
 		};
 		class Item190
 		{
@@ -4878,6 +4898,7 @@ class Mission
 			};
 			id=587;
 			type="EmptyDetector";
+			atlOffset=-9.5367432e-007;
 		};
 		class Item231
 		{
@@ -4889,6 +4910,7 @@ class Mission
 			init="this setVariable [""OWL_sectorParam_canBeBase"", false];" \n "this setVariable [""OWL_sectorParam_name"", ""STR_A3_WL_location_3""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", true];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=588;
 			type="Logic";
+			atlOffset=-9.5367432e-007;
 		};
 	};
 	class Connections

@@ -21,6 +21,7 @@ OWL_fnc_handleClientRequest = compileFinal preprocessFileLineNumbers "Server\han
 OWL_fnc_getIncomePayout = compileFinal preprocessFileLineNumbers "Server\getIncomePayout.sqf";
 OWL_fnc_updateIncome = compileFinal preprocessFileLineNumbers "Server\updateIncome.sqf";
 OWL_fnc_initMapAlterations = compileFinal preprocessFileLineNumbers "Server\initMapAlterations.sqf";
+OWL_fnc_updateSpawnPoints = compileFinal preprocessFileLineNumbers "Server\updateSpawnPoints.sqf";
 
 
 /******************************************************
@@ -97,6 +98,7 @@ OWL_allSectors = [];
 } forEach (entities "Logic");
 publicVariable "OWL_allSectors";
 
+call OWL_fnc_updateSpawnPoints;
 
 /******************************************************
 ***********			Main Game Loop 			***********
@@ -132,6 +134,5 @@ OWL_functionUpdateQueue = [
 	};
 
 };
-
 
 missionNamespace setVariable ["OWL_ServerInitialized", true, true];
