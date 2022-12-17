@@ -54,11 +54,27 @@ OWL_maxPlayersForSide = log 0;
 ******************************************************/
 
 /* Possible sector parameters
+
 OWL_sectorParam_canBeBase
+	0 - Can't be base
+	1 - Can be base
+	2 - Can be base and default base if randomization is disabled
+	
 OWL_sectorParam_name
+	Any string to use as a sector name
+
 OWL_sectorParam_useLocationName
+	True - name parameter is ignored and location name is used instead
+	False - name parameter is ignored only if it is empty string or undefined
+
 OWL_sectorParam_side
-OWL_sectorParam_income
+	Indicates who owns the sector at the start of the game
+	0 - Unclaimed
+	1 - Competing side 1
+	2 - Competing side 2
+	3 - Defending side
+
+OWL_sectorParam_income:
 OWL_sectorParam_hasHarbour
 OWL_sectorParam_hasHelipad
 OWL_sectorParam_hasRunway
@@ -67,6 +83,7 @@ OWL_sectorParam_borderSize
 */
 
 OWL_allSectors = [];
+
 {
 	private _syncedObjects = synchronizedObjects _x;
 	// We do typeOf check because entities command also returns entities deriving from the given type
@@ -99,7 +116,61 @@ OWL_allSectors = [];
 		OWL_allSectors pushBack _x;
 	};
 } forEach (entities "Logic");
+
+if (["BaseLocation"] call BIS_fnc_getParamValue == 1) then {
+	// Choose random base location
+	
+	private _possibleBases = [[],[]];
+	
+	{
+		if (_x getVariable ["OWL_sectorParam_canBeBase", 0] >= 1) then {
+			switch (_x getVariable ["OWL_sectorParam_side", 0]) do {
+				case 1: { (_possibleBases#0) pushBack _x; };
+				case 2: { (_possibleBases#1) pushBack _x; };
+				default { ["Bases can only be owned by competing sides!"] call OWL_fnc_log; };
+			};
+		};
+	} forEach OWL_allSectors;
+	
+	for "_i" from 0 to 1 do {
+		if (count (_possibleBases # _i) == 0) then {
+			[format ["There are no bases to choose from for %1 side!", OWL_competingSides # _i]] call OWL_fnc_log;
+			//(_possibleBases # _i) pushBack (OWL_allSectors # _i);
+			throw "[OWL] Bases init error";
+		};
+	};
+	
+	OWL_mainBases = [ selectRandom (_possibleBases#0), selectRandom (_possibleBases#1) ];
+}
+else {
+	// Find default bases
+	
+	OWL_mainBases = [objNull, objNull];
+	
+	{
+		if (_x getVariable ["OWL_sectorParam_canBeBase", 0] == 2) then {
+			private _side = _x getVariable ["OWL_sectorParam_side", 0];
+			if (_side != 1 && {_side != 2}) then {
+				["Bases can only be owned by competing sides!"] call OWL_fnc_log;
+				continue;
+			};
+			_side = _side - 1;
+			if (isNull (OWL_mainBases # _side)) then {
+				OWL_mainBases set [_side, _x];
+			};
+		};
+	} forEach OWL_allSectors;
+	
+	{
+		if (isNull _x) then {
+			[format ["No base found for %1 side!", OWL_competingSides # _forEachIndex]] call OWL_fnc_log;
+			throw "[OWL] Bases init error";
+		};
+	} forEach OWL_mainBases;
+};
+
 publicVariable "OWL_allSectors";
+publicVariable "OWL_mainBases";
 
 call OWL_fnc_updateSpawnPoints;
 

@@ -9,10 +9,12 @@ OWL_fnc_calculateSectorRelationships = compileFinal preprocessFileLineNumbers "C
 OWL_fnc_calculateLinkedSectors = compileFinal preprocessFileLineNumbers "Common\calculateLinkedSectors.sqf";
 
 OWL_fnc_log = {
+	params ["_msg"];
+	_msg = "[OWL] " + _msg;
 	if (OWL_devMode && hasInterface) then {
-		systemChat _this;
+		systemChat _msg;
 	};
-	diag_log _this;
+	diag_log _msg;
 };
 
 
@@ -23,7 +25,9 @@ OWL_fnc_log = {
 OWL_devMode = true;
 OWL_competingSides = [[WEST, EAST], [WEST, RESISTANCE], [EAST, RESISTANCE]] # (["Combatants"] call BIS_fnc_getParamValue);
 OWL_defendingSide = [RESISTANCE, EAST, WEST] # (["Combatants"] call BIS_fnc_getParamValue);
-// Maybe we should replace this with something more generalized like OWL_side1Base, OWL_side2Base?
+
+
+
 OWL_mainBases = [missionNamespace getVariable format ["OWL_mainBase_%1", OWL_competingSides # 0], 
 				 missionNamespace getVariable format ["OWL_mainBase_%1", OWL_competingSides # 1]];
 
