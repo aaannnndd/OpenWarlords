@@ -1,2 +1,3 @@
 #include "parameters.hpp"
+#include "loadouts.inc"
 

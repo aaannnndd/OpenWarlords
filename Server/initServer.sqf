@@ -11,6 +11,9 @@ if (!isMultiplayer) then {
 	} forEach switchableUnits;
 };
 
+// Available from the start
+[east, "O_SquadLeader"] call bis_fnc_addRespawnInventory;
+[west, "B_SquadLeader"] call bis_fnc_addRespawnInventory;
 
 /******************************************************
 ***********		Init Serverside Functions	***********
