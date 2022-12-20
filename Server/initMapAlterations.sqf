@@ -8,9 +8,9 @@ private _list = nearestObjects [ [15000,15000,0] , [], 20000];
 		if (_x in _stringInterpretation) then {
 			hideObjectGlobal _obj;
 		};
-	} forEach ["b_ficusc2d_f.p3d", "wired_fence_8m_f.p3d","powerpolewooden_small_f.p3d","powerpolewooden_f.p3d"];
-
-	if ( (typeOf _x) in ["Land_HighVoltageColumn_F", "Land_HighVoltageColumnWire_F", "Land_HighVoltageTower_large_F", "Land_PowerWireBig_direct_F","Land_PowerWireBig_direct_short_f","Land_PowerWireBig_end_F"] ) then { 
+	} forEach ["b_ficusc2d_f.p3d", "wired_fence_8m_f.p3d", "wired_fence_4m_f.p3d","powerpolewooden_small_f.p3d","powerpolewooden_f.p3d"];
+																																																					
+	if ( (typeOf _x) in ["Land_HighVoltageColumn_F", "Land_HighVoltageColumnWire_F", "Land_HighVoltageTower_large_F", "Land_PowerWireBig_direct_F","Land_PowerWireBig_direct_short_f","Land_PowerWireBig_end_F", "Land_PowerWireBig_direct_short_F", "Land_HighVoltageTower_largeCorner_F", "Land_PowerWireBig_right_F", "Land_PowerWireBig_left_F"] ) then { 
     	hideObjectGlobal _x; 
 	};
 
