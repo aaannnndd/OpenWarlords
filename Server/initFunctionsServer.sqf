@@ -5,4 +5,4 @@ OWL_fnc_updateIncome = compileFinal preprocessFileLineNumbers "Server\updateInco
 OWL_fnc_initMapAlterations = compileFinal preprocessFileLineNumbers "Server\initMapAlterations.sqf";
 OWL_fnc_updateSpawnPoints = compileFinal preprocessFileLineNumbers "Server\updateSpawnPoints.sqf";
 
-OWL_fnc_handleClientRequest = call compileFinal preprocessFileLineNumbers "Server\handleClientRequest.sqf";
+call compileFinal preprocessFileLineNumbers "Server\handleClientRequest.sqf";
