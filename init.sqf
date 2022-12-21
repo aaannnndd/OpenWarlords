@@ -1,5 +1,5 @@
 
-//call compileFinal preprocessFileLineNumbers "TEMP.sqf";
+[] spawn compileFinal preprocessFileLineNumbers "TEMP.sqf";
 
 if (hasInterface || {isServer}) then {
 	call compileFinal preprocessFileLineNumbers "Common\initCommon.sqf";

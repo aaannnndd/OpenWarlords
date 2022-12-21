@@ -7,7 +7,7 @@ OWL_fnc_getPlayerFromNetId = {
 		if (owner _x == _netId) then {
 			_player = _x;
 		};
-	} for allPlayers;
+	} forEach allPlayers;
 
 	_player;
 };

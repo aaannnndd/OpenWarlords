@@ -1,49 +1,36 @@
 
-OWL_allSectors = [];
-{
-	if (typeOf _x == "Logic" and {count synchronizedObjects _x > 0}) then {
-		private _trigger = objNull;
-		{
-			if (typeOf _x != "Logic") then {
-				_trigger = _x;
-				break
+if (!hasInterface) exitWith {};
+waitUntil { !isNull player };
+waitUntil { missionNamespace getVariable ["OWL_ServerInitialized", false] };
+
+while {true} do {
+	{
+		if (player inArea (_x getVariable "OWL_sectorArea")) then {
+			hintSilent format ["Inside (%1)", _x getVariable "OWL_sectorName"];
+			break;
+		}
+		else {
+			private _borderArea = +(_x getVariable "OWL_sectorArea");
+			_borderArea set [1, _borderArea#1 + (_x getVariable "OWL_sectorParam_borderSize")];
+			_borderArea set [2, _borderArea#2 + (_x getVariable "OWL_sectorParam_borderSize")];
+			if (player inArea _borderArea) then {
+				hintSilent format ["Inside border of (%1)", _x getVariable "OWL_sectorName"];
+				break;
+			}
+			else {
+				if (_forEachIndex + 1 == count OWL_allSectors) then {
+					hintSilent "Outside of any sector";
+				};
 			};
-		} forEach synchronizedObjects _x;
-		
-		if (isNull _trigger) then {
-			waitUntil {not isNull player};
-			sleep 1;
-			systemChat "trigger is null!";
-			systemChat (str (synchronizedObjects _x));
 		};
-
-		_x setVariable ["OWL_sectorArea", triggerArea _trigger];
-		_x setVariable ["OWL_sectorSide", [sideEmpty, west, east, resistance] # (_x getVariable "OWL_sectorParam_side")];
-		OWL_allSectors pushBack _x;
-	};
-} forEach (entities "Logic");
-
-setGroupIconsVisible [true,false];
-setGroupIconsSelectable true;
-
-if (side group player == EAST) then {
-	OWL_sectorIcon = "\A3\ui_f\data\map\markers\nato\o_installation.paa";
-	OWL_sectorMarker = "o_installation";
-	OWL_baseIcon = "\A3\ui_f\data\map\markers\nato\o_hq.paa";
-	OWL_baseMarker = "o_hq";
-} else {
-	OWL_sectorIcon = "\A3\ui_f\data\map\markers\nato\b_installation.paa";
-	OWL_sectorMarker = "b_installation";
-	OWL_baseIcon = "\A3\ui_f\data\map\markers\nato\b_hq.paa";
-	OWL_baseMarker = "b_hq";
+		
+		sleep 0.02;
+	} forEach OWL_allSectors;
 };
 
-OWL_sectorColors = [
-	[0, 0, 0, 0.8],
-	[profileNamespace getVariable ["Map_BLUFOR_R", 0], profileNamespace getVariable ["Map_BLUFOR_G", 1], profileNamespace getVariable ["Map_BLUFOR_B", 1], 0.8],
-	[profileNamespace getVariable ["Map_OPFOR_R", 0], profileNamespace getVariable ["Map_OPFOR_G", 1], profileNamespace getVariable ["Map_OPFOR_B", 1], 0.8],
-	[profileNamespace getVariable ["Map_Independent_R", 0], profileNamespace getVariable ["Map_Independent_G", 1], profileNamespace getVariable ["Map_Independent_B", 1], 0.8]
-];
+/*
+setGroupIconsVisible [true,false];
+setGroupIconsSelectable true;
 
 {
 	_sector = _x;
@@ -88,3 +75,4 @@ OWL_sectorColors = [
 	_x setVariable ["OWL_sectorLockMrkrs", [_mrkrNameLock1, _mrkrNameLock2, _mrkrNameLock3, _mrkrNameLock4]];
 
 } forEach OWL_allSectors;
+*/

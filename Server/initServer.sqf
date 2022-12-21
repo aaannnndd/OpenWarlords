@@ -114,6 +114,8 @@ OWL_allSectors = [];
 		
 		_x setVariable ["OWL_sectorProtected", true];
 		
+		_x enableSimulationGlobal false;
+		
 		OWL_allSectors pushBack _x;
 	};
 } forEach (entities "Logic");
@@ -135,8 +137,7 @@ if (["BaseLocation"] call BIS_fnc_getParamValue == 1) then {
 	
 	for "_i" from 0 to 1 do {
 		if (count (_possibleBases # _i) == 0) then {
-			[format ["There are no bases to choose from for %1 side!", OWL_competingSides # _i]] call OWL_fnc_log;
-			//(_possibleBases # _i) pushBack (OWL_allSectors # _i);
+			[format ["There are no bases to choose from for side %1!", _i]] call OWL_fnc_log;
 			throw "[OWL] Bases init error";
 		};
 	};
@@ -158,13 +159,16 @@ else {
 			_side = _side - 1;
 			if (isNull (OWL_mainBases # _side)) then {
 				OWL_mainBases set [_side, _x];
+			}
+			else {
+				[format ["There are more than one default base for side %1!", _side]] call OWL_fnc_log;
 			};
 		};
 	} forEach OWL_allSectors;
 	
 	{
 		if (isNull _x) then {
-			[format ["No base found for %1 side!", OWL_competingSides # _forEachIndex]] call OWL_fnc_log;
+			[format ["No base found for side %1!", _forEachIndex]] call OWL_fnc_log;
 			throw "[OWL] Bases init error";
 		};
 	} forEach OWL_mainBases;
@@ -184,6 +188,7 @@ OWL_functionUpdateQueue = [
 	["OWL_fnc_updateSectors",		1	],
 	["OWL_fnc_updateIncome", 		60	]
 ];
+
 
 [] spawn {
 

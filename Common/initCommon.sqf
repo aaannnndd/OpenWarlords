@@ -9,8 +9,7 @@ OWL_fnc_calculateSectorRelationships = compileFinal preprocessFileLineNumbers "C
 OWL_fnc_calculateLinkedSectors = compileFinal preprocessFileLineNumbers "Common\calculateLinkedSectors.sqf";
 
 OWL_fnc_log = {
-	params ["_msg"];
-	_msg = "[OWL] " + _msg;
+	private _msg = "[OWL] " + _this#0;
 	if (OWL_devMode && hasInterface) then {
 		systemChat _msg;
 	};
@@ -27,10 +26,6 @@ OWL_competingSides = [[WEST, EAST], [WEST, RESISTANCE], [EAST, RESISTANCE]] # ([
 OWL_defendingSide = [RESISTANCE, EAST, WEST] # (["Combatants"] call BIS_fnc_getParamValue);
 
 
-
-OWL_mainBases = [missionNamespace getVariable format ["OWL_mainBase_%1", OWL_competingSides # 0], 
-				 missionNamespace getVariable format ["OWL_mainBase_%1", OWL_competingSides # 1]];
-
 // Changing mission variables
 // Public variables will be sync'd before this is .init'd. The server will init to objNull regardless which means 'vote in progress'
 {
@@ -38,4 +33,3 @@ OWL_mainBases = [missionNamespace getVariable format ["OWL_mainBase_%1", OWL_com
 		missionNamespace setVariable [format ["OWL_currentSector_%1", _x], objNull];
 	};
 } forEach OWL_competingSides;
-
