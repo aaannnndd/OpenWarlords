@@ -13,21 +13,21 @@ player setVariable ["OWL_warlordSide", playerSide, true];
 switch (playerSide) do {
 	case WEST: {
 		OWL_sectorIcon = "\A3\ui_f\data\map\markers\nato\b_installation.paa";
-		OWL_sectorMarker = "b_installation";
+		OWL_sectorIconMarker = "b_installation";
 		OWL_baseIcon = "\A3\ui_f\data\map\markers\nato\b_hq.paa";
-		OWL_baseMarker = "b_hq";
+		OWL_baseIconMarker = "b_hq";
 	};
 	case EAST: {
 		OWL_sectorIcon = "\A3\ui_f\data\map\markers\nato\o_installation.paa";
-		OWL_sectorMarker = "o_installation";
+		OWL_sectorIconMarker = "o_installation";
 		OWL_baseIcon = "\A3\ui_f\data\map\markers\nato\o_hq.paa";
-		OWL_baseMarker = "o_hq";
+		OWL_baseIconMarker = "o_hq";
 	};
 	default {
 		OWL_sectorIcon = "\A3\ui_f\data\map\markers\nato\n_installation.paa";
-		OWL_sectorMarker = "n_installation";
+		OWL_sectorIconMarker = "n_installation";
 		OWL_baseIcon = "\A3\ui_f\data\map\markers\nato\n_hq.paa";
-		OWL_baseMarker = "n_hq";
+		OWL_baseIconMarker = "n_hq";
 	};
 };
 
@@ -75,23 +75,26 @@ OWL_sectorColors = [
 	
 	_x setVariable ["OWL_sectorName", _sectorName];
 	
-	// TEMPORARY CODE FOR TESTING
-	private _marker = createMarkerLocal [format ["OWL_sectorMarkerName_%1", _forEachIndex], position _x];
-	_marker setMarkerTypeLocal "mil_dot";
-	_marker setMarkerTextLocal _sectorName;
-	/////////////////////////////////////////////
-	
 	private _sectorArea = _x getVariable "OWL_sectorArea";
 	private _sectorIsRectangle = _sectorArea # 4;
 	private _markerSideColor = (_x getVariable "OWL_sectorSide") call OWL_fnc_sideToMarkerColor;
 	
-	private _markerBorderLine = format ["OWL_sectorMarkerBorderLine_%1", _forEachIndex];
-	createMarkerLocal [_markerBorderLine, _sectorArea#0];
-	_markerBorderLine setMarkerShapeLocal (["ELLIPSE", "RECTANGLE"] select _sectorIsRectangle);
-	_markerBorderLine setMarkerBrushLocal "Border";	//(["SolidBorder", "Border"] select _sectorIsRectangle);
-	_markerBorderLine setMarkerSizeLocal [_sectorArea#1, _sectorArea#2];
-	_markerBorderLine setMarkerColorLocal _markerSideColor;
-	_markerBorderLine setMarkerAlphaLocal 1;
+	private _markerIcon = format ["OWL_sectorMarkerIcon_%1", _forEachIndex];
+	createMarkerLocal [_markerIcon, _sectorArea#0];
+	_markerIcon setMarkerTypeLocal ([OWL_sectorIconMarker, OWL_baseIconMarker] select (_x in OWL_mainBases));
+	_markerIcon setMarkerSizeLocal [1, 1];
+	_markerIcon setMarkerColorLocal _markerSideColor;
+	_markerIcon setMarkerAlphaLocal 1;
+	_x setVariable ["OWL_sectorMarkerIcon", _markerIcon];
+	
+	private _markerInnerLine = format ["OWL_sectorMarkerInnerLine_%1", _forEachIndex];
+	createMarkerLocal [_markerInnerLine, _sectorArea#0];
+	_markerInnerLine setMarkerShapeLocal (["ELLIPSE", "RECTANGLE"] select _sectorIsRectangle);
+	_markerInnerLine setMarkerBrushLocal "Border";	//(["SolidBorder", "Border"] select _sectorIsRectangle);
+	_markerInnerLine setMarkerSizeLocal [_sectorArea#1, _sectorArea#2];
+	_markerInnerLine setMarkerColorLocal _markerSideColor;
+	_markerInnerLine setMarkerAlphaLocal 1;
+	_x setVariable ["OWL_sectorMarkerInnerLine", _markerInnerLine];
 	
 	private _borderSize = (_x getVariable "OWL_sectorParam_borderSize");
 	private _halfBorderSize = _borderSize / 2;
@@ -136,6 +139,8 @@ OWL_sectorColors = [
 		
 		_borderMarkers pushBack _marker;
 	};
+	
+	_x setVariable ["OWL_sectorBorderMarkers", _borderMarkers];
 	
 } forEach OWL_allSectors;
 

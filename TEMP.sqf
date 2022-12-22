@@ -3,30 +3,81 @@ if (!hasInterface) exitWith {};
 waitUntil { !isNull player };
 waitUntil { missionNamespace getVariable ["OWL_ServerInitialized", false] };
 
-while {true} do {
-	{
-		if (player inArea (_x getVariable "OWL_sectorArea")) then {
-			hintSilent format ["Inside (%1)", _x getVariable "OWL_sectorName"];
-			break;
-		}
-		else {
-			private _borderArea = +(_x getVariable "OWL_sectorArea");
-			_borderArea set [1, _borderArea#1 + (_x getVariable "OWL_sectorParam_borderSize")];
-			_borderArea set [2, _borderArea#2 + (_x getVariable "OWL_sectorParam_borderSize")];
-			if (player inArea _borderArea) then {
-				hintSilent format ["Inside border of (%1)", _x getVariable "OWL_sectorName"];
+[] spawn {
+	while {true} do {
+		{
+			if (player inArea (_x getVariable "OWL_sectorArea")) then {
+				hintSilent format ["Inside (%1)", _x getVariable "OWL_sectorName"];
+				sleep (((count OWL_allSectors - 1) - _forEachIndex) / (count OWL_allSectors - 1));
 				break;
 			}
 			else {
-				if (_forEachIndex + 1 == count OWL_allSectors) then {
-					hintSilent "Outside of any sector";
+				private _borderArea = +(_x getVariable "OWL_sectorArea");
+				_borderArea set [1, _borderArea#1 + (_x getVariable "OWL_sectorParam_borderSize")];
+				_borderArea set [2, _borderArea#2 + (_x getVariable "OWL_sectorParam_borderSize")];
+				if (player inArea _borderArea) then {
+					hintSilent format ["Inside border of (%1)", _x getVariable "OWL_sectorName"];
+					sleep (((count OWL_allSectors - 1) - _forEachIndex) / (count OWL_allSectors - 1));
+					break;
+				}
+				else {
+					if (_forEachIndex + 1 == count OWL_allSectors) then {
+						hintSilent "Outside of any sector";
+					};
 				};
 			};
+			
+			sleep 0.02;
+		} forEach OWL_allSectors;
+	};
+};
+
+waitUntil {!isNull (findDisplay 12 displayCtrl 51)};
+systemChat "Adding draw EH on map";
+
+OWL_CursorIsOverSector = false;
+(findDisplay 12 displayCtrl 51) ctrlAddEventHandler ["Draw", {	
+	{
+		if (((_this#0) ctrlMapWorldToScreen ((_x getVariable "OWL_sectorArea") # 0)) distance2D getMousePosition < 0.02) then {
+			if (!OWL_CursorIsOverSector) then {
+				(_this#0) ctrlMapCursor ["Track", "HC_overEnemy"];
+				OWL_CursorIsOverSector = true;
+				systemChat format ["Cursor is over (%1) sector", _x getVariable "OWL_sectorName"];
+			};
+			
+			(_this#0) drawIcon [
+				"A3\ui_f\data\map\groupicons\selector_selectedMission_ca.paa",
+				[0.75, 0.75, 0.75, 1],
+				(_x getVariable "OWL_sectorArea") # 0,
+				40,
+				40,
+				(time * 20) % 360,
+				"",
+				1,
+				0.1,
+				"EtelkaNarrowMediumPro",
+				"right"
+			];
+			
+			break;
 		};
 		
-		sleep 0.02;
+		if (_forEachIndex + 1 == count OWL_allSectors) then { OWL_CursorIsOverSector = false; };
 	} forEach OWL_allSectors;
-};
+	
+	if (!OWL_CursorIsOverSector) then {
+		(_this#0) ctrlMapCursor ["Track", ""];
+	};
+}];
+
+/*
+{
+	private _marker = format ["OWL_sectorMarkerNameTEST_%1", _forEachIndex];
+	createMarkerLocal [_marker, (_x getVariable "OWL_sectorArea") # 0];
+	_marker setMarkerTypeLocal "mil_dot";
+	_marker setMarkerTextLocal _sectorName;
+} forEach OWL_allSectors;
+*/
 
 /*
 setGroupIconsVisible [true,false];
