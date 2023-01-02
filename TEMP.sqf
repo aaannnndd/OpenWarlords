@@ -36,7 +36,7 @@ waitUntil {!isNull (findDisplay 12 displayCtrl 51)};
 systemChat "Adding draw EH on map";
 
 OWL_CursorIsOverSector = false;
-(findDisplay 12 displayCtrl 51) ctrlAddEventHandler ["Draw", {	
+(findDisplay 12 displayCtrl 51) ctrlAddEventHandler ["Draw", {
 	{
 		if (((_this#0) ctrlMapWorldToScreen ((_x getVariable "OWL_sectorArea") # 0)) distance2D getMousePosition < 0.02) then {
 			if (!OWL_CursorIsOverSector) then {
@@ -62,12 +62,8 @@ OWL_CursorIsOverSector = false;
 			break;
 		};
 		
-		if (_forEachIndex + 1 == count OWL_allSectors) then { OWL_CursorIsOverSector = false; };
+		if (_forEachIndex + 1 == count OWL_allSectors) then { OWL_CursorIsOverSector = false; (_this#0) ctrlMapCursor ["Track", ""]; };
 	} forEach OWL_allSectors;
-	
-	if (!OWL_CursorIsOverSector) then {
-		(_this#0) ctrlMapCursor ["Track", ""];
-	};
 }];
 
 /*

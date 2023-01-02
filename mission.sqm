@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3807.7285,98.716354,10350.287};
-		dir[]={0.069403052,-0.25001001,0.96576273};
-		up[]={0.017920755,0.96824032,0.24937205};
-		aside[]={0.99743682,-3.2476964e-007,-0.071680732};
+		pos[]={3205.1052,56.45821,13183.726};
+		dir[]={0.58508915,-0.62716633,0.51428938};
+		up[]={0.47107047,0.77887064,0.41406572};
+		aside[]={0.6602568,-7.7989534e-007,-0.75115705};
 	};
 };
 binarizationWanted=0;
@@ -3520,6 +3520,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=473;
 			type="EmptyDetector";
@@ -3545,6 +3546,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=475;
 			type="EmptyDetector";
@@ -3569,6 +3571,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=477;
 			type="EmptyDetector";
@@ -3593,6 +3596,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=479;
 			type="EmptyDetector";
@@ -3617,6 +3621,7 @@ class Mission
 				sizeA=125;
 				sizeB=125;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=481;
 			type="EmptyDetector";
@@ -3641,6 +3646,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=483;
 			type="EmptyDetector";
@@ -3665,6 +3671,7 @@ class Mission
 				sizeA=125;
 				sizeB=125;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=485;
 			type="EmptyDetector";
@@ -3689,6 +3696,7 @@ class Mission
 				sizeA=125;
 				sizeB=125;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=487;
 			type="EmptyDetector";
@@ -3713,6 +3721,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=489;
 			type="EmptyDetector";
@@ -3737,6 +3746,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=491;
 			type="EmptyDetector";
@@ -3761,6 +3771,7 @@ class Mission
 				sizeA=125;
 				sizeB=125;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=493;
 			type="EmptyDetector";
@@ -3785,6 +3796,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=495;
 			type="EmptyDetector";
@@ -3809,6 +3821,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=497;
 			type="EmptyDetector";
@@ -3833,6 +3846,7 @@ class Mission
 				sizeA=125;
 				sizeB=125;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=499;
 			type="EmptyDetector";
@@ -3857,6 +3871,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=501;
 			type="EmptyDetector";
@@ -3881,6 +3896,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=503;
 			type="EmptyDetector";
@@ -3905,6 +3921,7 @@ class Mission
 				sizeA=150;
 				sizeB=150;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=505;
 			type="EmptyDetector";
@@ -3929,6 +3946,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=507;
 			type="EmptyDetector";
@@ -3953,6 +3971,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=509;
 			type="EmptyDetector";
@@ -3977,6 +3996,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=511;
 			type="EmptyDetector";
@@ -4001,6 +4021,7 @@ class Mission
 				sizeA=150;
 				sizeB=150;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=513;
 			type="EmptyDetector";
@@ -4025,6 +4046,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=515;
 			type="EmptyDetector";
@@ -4049,6 +4071,7 @@ class Mission
 				sizeA=150;
 				sizeB=150;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=517;
 			type="EmptyDetector";
@@ -4073,6 +4096,7 @@ class Mission
 				sizeA=400;
 				sizeB=400;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=519;
 			type="EmptyDetector";
@@ -4097,6 +4121,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=521;
 			type="EmptyDetector";
@@ -4121,6 +4146,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=523;
 			type="EmptyDetector";
@@ -4145,6 +4171,7 @@ class Mission
 				sizeA=175;
 				sizeB=175;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=525;
 			type="EmptyDetector";
@@ -4169,6 +4196,7 @@ class Mission
 				sizeA=175;
 				sizeB=175;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=527;
 			type="EmptyDetector";
@@ -4193,6 +4221,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=529;
 			type="EmptyDetector";
@@ -4217,6 +4246,7 @@ class Mission
 				sizeA=150;
 				sizeB=150;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=531;
 			type="EmptyDetector";
@@ -4241,6 +4271,7 @@ class Mission
 				sizeA=150;
 				sizeB=150;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=533;
 			type="EmptyDetector";
@@ -4265,6 +4296,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=535;
 			type="EmptyDetector";
@@ -4289,6 +4321,7 @@ class Mission
 				sizeA=175;
 				sizeB=175;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=537;
 			type="EmptyDetector";
@@ -4313,6 +4346,7 @@ class Mission
 				sizeA=150;
 				sizeB=150;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=539;
 			type="EmptyDetector";
@@ -4339,6 +4373,7 @@ class Mission
 				sizeA=175;
 				sizeB=175;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=541;
 			type="EmptyDetector";
@@ -4363,6 +4398,7 @@ class Mission
 				sizeA=150;
 				sizeB=150;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=543;
 			type="EmptyDetector";
@@ -4387,6 +4423,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=545;
 			type="EmptyDetector";
@@ -4413,6 +4450,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=547;
 			type="EmptyDetector";
@@ -4437,6 +4475,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=549;
 			type="EmptyDetector";
@@ -4461,6 +4500,7 @@ class Mission
 				sizeA=150;
 				sizeB=150;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=551;
 			type="EmptyDetector";
@@ -4485,6 +4525,7 @@ class Mission
 				sizeA=100;
 				sizeB=100;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=553;
 			type="EmptyDetector";
@@ -4509,6 +4550,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=555;
 			type="EmptyDetector";
@@ -4533,6 +4575,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=557;
 			type="EmptyDetector";
@@ -4557,6 +4600,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=559;
 			type="EmptyDetector";
@@ -4581,6 +4625,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=561;
 			type="EmptyDetector";
@@ -4605,6 +4650,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=563;
 			type="EmptyDetector";
@@ -4629,6 +4675,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=565;
 			type="EmptyDetector";
@@ -4653,6 +4700,7 @@ class Mission
 				sizeA=125;
 				sizeB=125;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=567;
 			type="EmptyDetector";
@@ -4677,6 +4725,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=569;
 			type="EmptyDetector";
@@ -4701,6 +4750,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=571;
 			type="EmptyDetector";
@@ -4725,6 +4775,7 @@ class Mission
 				sizeA=200;
 				sizeB=200;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=573;
 			type="EmptyDetector";
@@ -4749,6 +4800,7 @@ class Mission
 				sizeA=150;
 				sizeB=150;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=575;
 			type="EmptyDetector";
@@ -4773,6 +4825,7 @@ class Mission
 				sizeA=125;
 				sizeB=125;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=577;
 			type="EmptyDetector";
@@ -4797,6 +4850,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=579;
 			type="EmptyDetector";
@@ -4821,6 +4875,7 @@ class Mission
 				sizeA=100;
 				sizeB=100;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=581;
 			type="EmptyDetector";
@@ -4845,6 +4900,7 @@ class Mission
 				sizeA=300;
 				sizeB=300;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=583;
 			type="EmptyDetector";
@@ -4869,6 +4925,7 @@ class Mission
 				sizeA=250;
 				sizeB=250;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=585;
 			type="EmptyDetector";
@@ -4893,6 +4950,7 @@ class Mission
 				sizeA=100;
 				sizeB=100;
 				isRectangle=1;
+				isServerOnly=1;
 			};
 			id=587;
 			type="EmptyDetector";
