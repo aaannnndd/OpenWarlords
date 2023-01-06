@@ -1,3 +1,7 @@
+#include "defines.hpp"
 #include "parameters.hpp"
 #include "loadouts.hpp"
-#include "multiplayerSecurity.hpp"
+
+#if FOR_MULTIPLAYER_MACRO
+	#include "multiplayerSecurity.hpp"
+#endif

@@ -5,6 +5,12 @@ waitUntil { missionNamespace getVariable ["OWL_ServerInitialized", false] };
 
 [] spawn {
 	while {true} do {
+		if (isNull player) then {
+			hintSilent "Player is null";
+			sleep 0.2;
+			continue;
+		};
+		
 		{
 			if (player inArea (_x getVariable "OWL_sectorArea")) then {
 				hintSilent format ["Inside (%1)", _x getVariable "OWL_sectorName"];

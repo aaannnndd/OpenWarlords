@@ -145,7 +145,20 @@ OWL_sectorColors = [
 } forEach OWL_allSectors;
 
 
-private _base = OWL_competingSides findIf { playerSide == _x; };
-if (_base == -1) exitWith { ["Player doesn't belong to any competing side"] call OWL_fnc_log; };
-_base = OWL_mainBases # _base;
-player setPosATL getPosATL _base; // This should be moved to server side later because we don't want clients to execute setPos commands
+
+
+
+
+
+
+/******************************************************
+***********		Check the game state		***********
+******************************************************/
+
+"BIS_WL_Initialized_WEST" call OWL_fnc_eventAnnouncer;
+
+// If no sector to attack, then we're in voting phase!
+if (isNull (missionNamespace getVariable [format ["OWL_currentSector_%1", playerSide], objNull])) then {
+	call OWL_fnc_voteNewSectorPrompt;
+};
+

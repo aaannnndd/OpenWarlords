@@ -33,7 +33,7 @@ OWL_allSectors = [];
 {
 	private _syncedObjects = synchronizedObjects _x;
 	// We do typeOf check because entities command also returns entities deriving from the given type
-	if (typeOf _x == "Logic" && {count _syncedObjects > 0}) then {	
+	if (typeOf _x == "Logic" && {count _syncedObjects > 0} && {!(_x getVariable ["OWL_isNotSector", false])}) then {	
 		private _trigger = _syncedObjects findIf { typeOf _x == "EmptyDetector" };
 		if (_trigger == -1) then { continue };
 		_trigger = _syncedObjects # _trigger;

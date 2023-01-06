@@ -21,10 +21,11 @@ OWL_fnc_log = {
 ***********		Init Common Globals			***********
 ******************************************************/
 
-OWL_devMode = true;
+OWL_defendersPlayable = (["DefendersPlayable"] call BIS_fnc_getParamValue) == 1;
 OWL_competingSides = [[WEST, EAST], [WEST, RESISTANCE], [EAST, RESISTANCE]] # (["Combatants"] call BIS_fnc_getParamValue);
 OWL_defendingSide = [RESISTANCE, EAST, WEST] # (["Combatants"] call BIS_fnc_getParamValue);
-
+OWL_playableSides = +OWL_competingSides;
+if (OWL_defendersPlayable) then { OWL_playableSides pushBack OWL_defendingSide; };
 
 // Changing mission variables
 // Public variables will be sync'd before this is .init'd. The server will init to objNull regardless which means 'vote in progress'
