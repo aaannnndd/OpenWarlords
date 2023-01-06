@@ -145,11 +145,15 @@ OWL_sectorColors = [
 } forEach OWL_allSectors;
 
 
+<<<<<<< HEAD
 
 
 
 
 
+=======
+
+>>>>>>> 65aae93219db4cffa32b919f801059dc2e305a1d
 
 /******************************************************
 ***********		Check the game state		***********
