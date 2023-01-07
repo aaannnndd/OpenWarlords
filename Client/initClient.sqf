@@ -1,14 +1,21 @@
+["Client initialization started"] call OWL_fnc_log;
+
+waitUntil { missionNamespace getVariable ["OWL_ServerInitialized", false] };
+waitUntil { !isNull player };
+waitUntil { local player };
+
+// Send handshake and skip warlords specific initialization if client's side is not in playable sides
+if (!(playerSide in OWL_playableSides)) exitWith {
+	waitUntil { playerSide == side group player };
+	remoteExec ["OWL_fnc_initClientServer", 2];
+	["Player side is not in warlords playable sides"] call OWL_fnc_log;
+};
 
 call compileFinal preprocessFileLineNumbers "Client\initFunctionsClient.sqf";
-
-waitUntil { !isNull player };
-waitUntil { missionNamespace getVariable ["OWL_ServerInitialized", false] };
 
 /******************************************************
 ***********		Init Clientside Globals		***********
 ******************************************************/
-
-player setVariable ["OWL_warlordSide", playerSide, true];
 
 switch (playerSide) do {
 	case WEST: {
@@ -145,6 +152,19 @@ OWL_sectorColors = [
 } forEach OWL_allSectors;
 
 /******************************************************
+***********			Finishing up 			***********
+******************************************************/
+
+OWL_serverInitializedMe = false;
+
+call compileFinal preprocessFileLineNumbers "Client\initREFunctionsClient.sqf";
+
+waitUntil { playerSide == side group player };
+remoteExec ["OWL_fnc_initClientServer", 2];
+waitUntil { OWL_serverInitializedMe };
+
+
+/******************************************************
 ***********		Check the game state		***********
 ******************************************************/
 
@@ -155,3 +175,4 @@ if (isNull (missionNamespace getVariable [format ["OWL_currentSector_%1", player
 	call OWL_fnc_voteNewSectorPrompt;
 };
 
+["Client initialization finished"] call OWL_fnc_log;

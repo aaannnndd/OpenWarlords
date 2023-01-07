@@ -12,7 +12,9 @@ class CfgRemoteExec
 		class BIS_fnc_setCustomSoundController		{ allowedTargets = 0; jip = 0; };
 		class BIS_fnc_debugConsoleExec				{ allowedTargets = 0; }; //Allow debug console
 		
-		class OWL_fnc_clientRequestVoteForSector 	{ allowedTargets = 2; jip = 0; };
+		class OWL_fnc_initClientServer				{ allowedTargets = 2; jip = 0; };
+		class OWL_fnc_warlordInitCallback			{ allowedTargets = 0; jip = 0; };
+		class OWL_fnc_clientRequestVoteForSector	{ allowedTargets = 2; jip = 0; };
 	};
 	
 	class Commands

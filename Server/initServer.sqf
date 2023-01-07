@@ -1,15 +1,6 @@
+#include "..\owl_constants.hpp"
 
 ["Server initialization started"] call OWL_fnc_log;
-
-// For simulating long server init times
-call {
-	for "_i" from 1 to 10000 + 3 do {
-		for "_i" from 1 to 1000 do {
-			
-		};
-	};
-	["Loop done"] call OWL_fnc_log;
-};
 
 call compileFinal preprocessFileLineNumbers "Server\initFunctionsServer.sqf";
 call compileFinal preprocessFileLineNumbers "Server\initSectorsServer.sqf";
@@ -54,7 +45,7 @@ OWL_maxPlayersForSide = log 0;
 
 OWL_allWarlordsData = [];
 OWL_ownerToDataIndexMap = createHashMap;
-OWL_nonitializedPlayersIds = [];
+OWL_nonHandshakedClients = [];
 
 
 /******************************************************
@@ -72,17 +63,16 @@ OWL_EH_onPlayerConnected = {
 	if (_owner == 2 && {isDedicated}) exitWith {
 		["PlayerConnected EH fired against dedicated server, ignoring. Params: " + str _this] call OWL_fnc_log;
 	};
-	if (getUserInfo _dpIdStr # 7) exitWith {
-		["PlayerConnected EH fired against headless client, ignoring. Params: " + str _this] call OWL_fnc_log;
-	};
-	OWL_nonitializedPlayersIds pushBackUnique _owner;
+	
+	_dpIdStr call OWL_fnc_tryRemoveFromNonHandshakedClients;
+	OWL_nonHandshakedClients pushBack [_uid, time + HANDSHAKE_TIMEOUT, _owner, _name];
 };
 
 OWL_EH_onPlayerDisconnected = {
-	params ["_id", "_uid", "_name", "_jip", "_owner", "_idstr"];
+	params ["_dpId", "_uid", "_name", "_jip", "_owner", "_dpIdStr"];
 	["PlayerDisconnected EH: " + str _this] call OWL_fnc_log;
 	
-	_owner call OWL_fnc_popNonitializedPlayerId;
+	_dpIdStr call OWL_fnc_tryRemoveFromNonHandshakedClients;
 	_owner call OWL_fnc_tryDeleteWarlordData;
 };
 
@@ -90,17 +80,20 @@ OWL_EH_onEntityRespawned = {
 	params ["_newEntity", "_oldEntity"];
 	["EntityRespawned EH: " + str _this] call OWL_fnc_log;
 	
-	if (!isPlayer _newEntity) exitWith { ["Respawned entity is not player"] call OWL_fnc_log; };
+	if (!isPlayer _newEntity) exitWith { ["Respawned entity is not a player"] call OWL_fnc_log; };
 	
 	private _owner = owner _newEntity;
-	if (_owner call OWL_fnc_popNonitializedPlayerId) then {
-		[_owner, _newEntity] call OWL_fnc_tryInitNewWarlord;
+	private _warlordInfo = _owner call OWL_fnc_getWarlordDataByOwnerId;
+	if (count _warlordInfo != 0) then {
+		_warlordInfo set [1, _newEntity];
 	};
 };
 
 addMissionEventHandler ["EntityRespawned", { _this call OWL_EH_onEntityRespawned; }];
-addMissionEventHandler ["PlayerDisconnected", { _this call OWL_EH_onPlayerDisconnected; }];
-addMissionEventHandler ["PlayerConnected", { _this call OWL_EH_onPlayerConnected; }];
+if (isMultiplayer) then {
+	addMissionEventHandler ["PlayerDisconnected", { _this call OWL_EH_onPlayerDisconnected; }];
+	addMissionEventHandler ["PlayerConnected", { _this call OWL_EH_onPlayerConnected; }];
+};
 
 
 /******************************************************
@@ -109,17 +102,33 @@ addMissionEventHandler ["PlayerConnected", { _this call OWL_EH_onPlayerConnected
 
 // In case there are players that joined before event handlers were added
 {
-	private _userInfo = getUserInfo _x;
-	_userInfo params ["_playerID", "_ownerId", "_playerUID", "_profileName", "_displayName", "_steamName", "_clientState", "_isHC", "_adminState", "_networkInfo", "_unit"];
+	(getUserInfo _x) params ["_playerID", "_ownerId", "_playerUID", "_profileName", "_displayName", "_steamName", "_clientState", "_isHC", "_adminState", "_networkInfo", "_unit"];
 	
-	if (_ownerId == 2 && {isDedicated}) then { continue; };
-	if (_ownerId < 2) then { continue; };
-	
-	_ownerId call OWL_fnc_popNonitializedPlayerId;
-	[_ownerId, _unit] call OWL_fnc_tryInitNewWarlord;
-} forEach (allUsers);
+	_playerID call OWL_fnc_tryRemoveFromNonHandshakedClients;
+	OWL_nonHandshakedClients pushBack [_playerUID, time + HANDSHAKE_TIMEOUT, _ownerId, _profileName];
+} forEach allUsers;
+
+
+if (HANDSHAKE_TIMEOUT > 0 && {isMultiplayer}) then {
+	// Kick timed out clients loop
+	[] spawn { while {true} do {
+		{
+			_x params ["_uid", "_kickTime", "_owner", "_name"];
+			
+			if (_kickTime < time) then {
+				[format ["Handshake timed out for %1", _name]] call OWL_fnc_log;
+				if (_owner >= 3) then {
+					serverCommand format ["#kick ""%1""", _uid];
+				};
+				_uid call OWL_fnc_tryRemoveFromNonHandshakedClients;
+			};
+		} forEach OWL_nonHandshakedClients;
+		sleep 1;
+	};};
+};
 
 [] spawn compileFinal preprocessFileLineNumbers "Server\playersProcessingLoop.sqf";
+call compileFinal preprocessFileLineNumbers "Server\initREFunctionsServer.sqf";
 
 missionNamespace setVariable ["OWL_ServerInitialized", true, true];
 ["Server initialization finished"] call OWL_fnc_log;

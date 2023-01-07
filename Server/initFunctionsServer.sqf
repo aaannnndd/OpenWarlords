@@ -21,18 +21,41 @@ OWL_fnc_popNonitializedPlayerId = {
 };
 
 
+OWL_fnc_tryRemoveFromNonHandshakedClients = {
+	// Returns true if client with provided DirectPlay ID was found and removed from OWL_nonHandshakedClients array
+	// Params: DirectPlay ID - string
+	
+	private _found = false;
+	// Forcing the code to run in unscheduled to avoid edge cases
+	isNil {
+		private _i = 0;
+		while {_i < count OWL_nonHandshakedClients} do {
+			if ((OWL_nonHandshakedClients # _i # 0) isEqualTo _this) then {
+				OWL_nonHandshakedClients deleteAt _i;
+				_found = true;
+			}
+			else {
+				_i = _i + 1;
+			};
+		};
+	};
+	_found
+};
+
+
 OWL_fnc_tryInitNewWarlord = {
 	params ["_owner", "_player"];
 	
-	if (_owner < 2) exitWith { ["Tried to initialize warlord data with owner parameter < 2. Params: " + str _this] call OWL_fnc_log; };
-	if (isNull _player) exitWith { ["Tried to initialize warlord data with null player. Params: " + str _this] call OWL_fnc_log; };
-	
+	private _newWarlordInitialized = false;
 	private _side = side group _player;
-	if (_side == sideUnknown) exitWith { ["Players side is unknown. Perhaps player didn't finished initialization yet?"] call OWL_fnc_log; };
-	if ( !(_side in OWL_playableSides) ) exitWith { [format ["Side (%1) of player (%2) is not in playable sides", _side, name _player]] call OWL_fnc_log; };
 	
-	isNil {	// Forcing the code to run in unscheduled to avoid edge cases
-		
+	if ( !(_side in OWL_playableSides) ) exitWith {
+		[format ["Could not initialize new warlord (%1) because their side (%2) is not in playable sides", name _player, _side]] call OWL_fnc_log;
+		false
+	};
+	
+	// Forcing the code to run in unscheduled to avoid edge cases
+	isNil {
 		// Exit if warlord data already exists for the given owner
 		if (_owner in OWL_ownerToDataIndexMap) exitWith { [format ["Data already exists for the given owner ID (%1)", _owner]] call OWL_fnc_log; };
 		
@@ -40,14 +63,17 @@ OWL_fnc_tryInitNewWarlord = {
 		private _newData = [_owner, _player, _side, OWL_startingCP];
 		private _index = OWL_allWarlordsData pushBack _newData;
 		OWL_ownerToDataIndexMap set [_owner, _index];
+		_newWarlordInitialized = true;
 	};
+	_newWarlordInitialized
 };
 
 
 OWL_fnc_tryDeleteWarlordData = {
 	// Params: ownerID
 	
-	isNil {	// Forcing the code to run in unscheduled to avoid edge cases
+	// Forcing the code to run in unscheduled to avoid edge cases
+	isNil {
 		private _dataArrIndex = OWL_ownerToDataIndexMap get _this;
 		
 		if (!isNil "_dataArrIndex") then {
@@ -67,7 +93,6 @@ OWL_fnc_tryDeleteWarlordData = {
 				OWL_ownerToDataIndexMap set [OWL_allWarlordsData # _i # 0, _i];
 			};
 		};
-		
 	};
 };
 
@@ -76,7 +101,8 @@ OWL_fnc_getWarlordDataByOwnerId = {
 	// Params: ownerID
 	
 	private _return = [];
-	isNil {	// Forcing the code to run in unscheduled to avoid edge cases
+	// Forcing the code to run in unscheduled to avoid edge cases
+	isNil {
 		private _dataArrIndex = OWL_ownerToDataIndexMap get _this;
 		if (!isNil "_dataArrIndex") then {
 			_return = OWL_allWarlordsData # _dataArrIndex;
@@ -84,13 +110,3 @@ OWL_fnc_getWarlordDataByOwnerId = {
 	};
 	_return
 };
-
-// Previous idea
-/*OWL_fnc_clientRequestWarlordInit = {
-	params ["_playerUnit"];
-	
-	private _owner = remoteExecutedOwner;
-	if (isMultiplayer && {!isRemoteExecuted || {_owner < 2}}) exitWith {
-		[format ["OWL_fnc_clientRequestWarlordInit function failed [isMultiplayer: %1, isRemoteExecuted: %2, _owner: %3]", isMultiplayer, isRemoteExecuted, _owner]] call OWL_fnc_log;
-	};
-};*/
