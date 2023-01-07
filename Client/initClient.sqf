@@ -7,6 +7,7 @@ waitUntil { local player };
 // Send handshake and skip warlords specific initialization if client's side is not in playable sides
 if (!(playerSide in OWL_playableSides)) exitWith {
 	waitUntil { playerSide == side group player };
+	waitUntil { alive player };
 	remoteExec ["OWL_fnc_initClientServer", 2];
 	["Player side is not in warlords playable sides"] call OWL_fnc_log;
 };
@@ -159,7 +160,12 @@ OWL_serverInitializedMe = false;
 
 call compileFinal preprocessFileLineNumbers "Client\initREFunctionsClient.sqf";
 
+waitUntil { !isNull (findDisplay 46) };
 waitUntil { playerSide == side group player };
+// Waiting for respawn (after joining player can be alive for a brief moment)
+waitUntil { alive player };
+sleep 3;
+waitUntil { alive player };
 remoteExec ["OWL_fnc_initClientServer", 2];
 waitUntil { OWL_serverInitializedMe };
 

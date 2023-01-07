@@ -1,10 +1,5 @@
 
 OWL_fnc_initClientServer = {
-	if (!isMultiplayer) exitWith {
-		private _success = [0, player] call OWL_fnc_tryInitNewWarlord;
-		_success remoteExec ["OWL_fnc_warlordInitCallback", 0];
-	};
-	
 	private _owner = remoteExecutedOwner;
 	if (!isRemoteExecuted || {_owner < 2}) exitWith {
 		[format ["Handshake sanity check failed [isRemoteExecuted: %1, Owner ID: %2]", isRemoteExecuted, _owner]] call OWL_fnc_log;
@@ -47,7 +42,7 @@ OWL_fnc_initClientServer = {
 		};
 	};
 	
-	if ( !((_clientUserInfo#0) call OWL_fnc_tryRemoveFromNonHandshakedClients) ) exitWith {
+	if ( !((_clientUserInfo#2) call OWL_fnc_tryRemoveFromNonHandshakedClients) ) exitWith {
 		[format ["Could not find client in OWL_nonHandshakedClients array. UserInfo: %1", _clientUserInfo]] call OWL_fnc_log;
 		[format ["Kicking out %1 (Failed handshake)", _clientUserInfo # 3]] call OWL_fnc_log;
 		if (isMultiplayer && {_owner >= 3}) then {
@@ -60,5 +55,17 @@ OWL_fnc_initClientServer = {
 	// At this point handshake request should be considered valid
 	
 	private _success = [_owner, _player] call OWL_fnc_tryInitNewWarlord;
-	_success remoteExec ["OWL_fnc_warlordInitCallback", _owner];
+	if (_success || {!((side group _player) in OWL_playableSides)}) then {
+		true remoteExec ["OWL_fnc_warlordInitCallback", _owner];
+	}
+	else {
+		false remoteExec ["OWL_fnc_warlordInitCallback", _owner];
+	};
+};
+
+if (!isMultiplayer) then {
+	OWL_fnc_initClientServer = {
+		[0, player] call OWL_fnc_tryInitNewWarlord;
+		true remoteExec ["OWL_fnc_warlordInitCallback", 0];
+	};
 };

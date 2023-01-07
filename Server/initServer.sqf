@@ -1,4 +1,5 @@
 #include "..\owl_constants.hpp"
+#include "..\defines.hpp"
 
 ["Server initialization started"] call OWL_fnc_log;
 
@@ -64,7 +65,7 @@ OWL_EH_onPlayerConnected = {
 		["PlayerConnected EH fired against dedicated server, ignoring. Params: " + str _this] call OWL_fnc_log;
 	};
 	
-	_dpIdStr call OWL_fnc_tryRemoveFromNonHandshakedClients;
+	_uid call OWL_fnc_tryRemoveFromNonHandshakedClients;
 	OWL_nonHandshakedClients pushBack [_uid, time + HANDSHAKE_TIMEOUT, _owner, _name];
 };
 
@@ -72,7 +73,7 @@ OWL_EH_onPlayerDisconnected = {
 	params ["_dpId", "_uid", "_name", "_jip", "_owner", "_dpIdStr"];
 	["PlayerDisconnected EH: " + str _this] call OWL_fnc_log;
 	
-	_dpIdStr call OWL_fnc_tryRemoveFromNonHandshakedClients;
+	_uid call OWL_fnc_tryRemoveFromNonHandshakedClients;
 	_owner call OWL_fnc_tryDeleteWarlordData;
 };
 
@@ -84,8 +85,8 @@ OWL_EH_onEntityRespawned = {
 	
 	private _owner = owner _newEntity;
 	private _warlordInfo = _owner call OWL_fnc_getWarlordDataByOwnerId;
-	if (count _warlordInfo != 0) then {
-		_warlordInfo set [1, _newEntity];
+	if (!WARLORD_DATA_IS_NULL(_warlordInfo)) then {
+		SET_WARLORD_PLAYER(_warlordInfo, _newEntity);
 	};
 };
 
@@ -104,7 +105,7 @@ if (isMultiplayer) then {
 {
 	(getUserInfo _x) params ["_playerID", "_ownerId", "_playerUID", "_profileName", "_displayName", "_steamName", "_clientState", "_isHC", "_adminState", "_networkInfo", "_unit"];
 	
-	_playerID call OWL_fnc_tryRemoveFromNonHandshakedClients;
+	_playerUID call OWL_fnc_tryRemoveFromNonHandshakedClients;
 	OWL_nonHandshakedClients pushBack [_playerUID, time + HANDSHAKE_TIMEOUT, _ownerId, _profileName];
 } forEach allUsers;
 

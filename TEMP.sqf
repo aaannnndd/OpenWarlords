@@ -3,6 +3,7 @@ if (!hasInterface) exitWith {};
 waitUntil { !isNull player };
 waitUntil { missionNamespace getVariable ["OWL_ServerInitialized", false] };
 
+/*
 [] spawn {
 	while {true} do {
 		if (isNull player) then {
@@ -37,7 +38,9 @@ waitUntil { missionNamespace getVariable ["OWL_ServerInitialized", false] };
 		} forEach OWL_allSectors;
 	};
 };
+*/
 
+/*
 waitUntil {!isNull (findDisplay 12 displayCtrl 51)};
 systemChat "Adding draw EH on map";
 
@@ -71,6 +74,7 @@ OWL_CursorIsOverSector = false;
 		if (_forEachIndex + 1 == count OWL_allSectors) then { OWL_CursorIsOverSector = false; (_this#0) ctrlMapCursor ["Track", ""]; };
 	} forEach OWL_allSectors;
 }];
+*/
 
 /*
 {

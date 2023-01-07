@@ -22,8 +22,8 @@ OWL_fnc_popNonitializedPlayerId = {
 
 
 OWL_fnc_tryRemoveFromNonHandshakedClients = {
-	// Returns true if client with provided DirectPlay ID was found and removed from OWL_nonHandshakedClients array
-	// Params: DirectPlay ID - string
+	// Returns true if client with provided UID was found and removed from OWL_nonHandshakedClients array
+	// Params: UID - string
 	
 	private _found = false;
 	// Forcing the code to run in unscheduled to avoid edge cases
@@ -61,6 +61,7 @@ OWL_fnc_tryInitNewWarlord = {
 		
 		// Initialize new warlord data
 		private _newData = [_owner, _player, _side, OWL_startingCP];
+		
 		private _index = OWL_allWarlordsData pushBack _newData;
 		OWL_ownerToDataIndexMap set [_owner, _index];
 		_newWarlordInitialized = true;
