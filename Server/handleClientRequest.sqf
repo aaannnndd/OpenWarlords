@@ -16,6 +16,7 @@ OWL_fnc_getPlayerFromNetId = {
 OWL_sectorVoteTable = [createHashMap,createHashMap];
 OWL_sectorVoteStartTime = [-1,-1];
 OWL_sectorVoteTimer = 30;
+
 OWL_fnc_clientRequestVoteForSector = {
 	params ["_sectorId"];
 	_clientId = remoteExecutedOwner;
@@ -47,7 +48,7 @@ OWL_fnc_clientRequestVoteForSector = {
 			OWL_sectorVoteStartTime set [_this, -1];
 
 			_nextSector = objectFromNetId _mostVoted;
-			[_sideIdx, _nextSector] call OWL_fnc_handleSectorSelected;
+			[_this, _nextSector] call OWL_fnc_handleSectorSelected;
 		};
 	};
 

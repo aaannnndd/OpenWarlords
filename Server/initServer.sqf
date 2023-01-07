@@ -110,17 +110,23 @@ addMissionEventHandler ["PlayerConnected", { _this call OWL_EH_onPlayerConnected
 // In case there are players that joined before event handlers were added
 {
 	private _userInfo = getUserInfo _x;
+	_userInfo params ["_playerID", "_ownerId", "_playerUID", "_profileName", "_displayName", "_steamName", "_clientState", "_isHC", "_adminState", "_networkInfo", "_unit"];
 	
+	if (_ownerId == 2 && {isDedicated}) then { continue; };
+	if (_ownerId < 2) then { continue; };
 	
-	private _owner = owner _x;
-	if (_owner == 2 && {isDedicated}) then { continue; };
-	if (_owner < 2) then { continue; };
-	
-	_owner call OWL_fnc_popNonitializedPlayerId;
-	[_owner, _x] call OWL_fnc_tryInitNewWarlord;
+	_ownerId call OWL_fnc_popNonitializedPlayerId;
+	[_ownerId, _unit] call OWL_fnc_tryInitNewWarlord;
 } forEach (allUsers);
 
 [] spawn compileFinal preprocessFileLineNumbers "Server\playersProcessingLoop.sqf";
 
 missionNamespace setVariable ["OWL_ServerInitialized", true, true];
 ["Server initialization finished"] call OWL_fnc_log;
+
+/******************************************************
+***********			Begin the game 			***********
+******************************************************/
+
+// OTE: Sector voting is triggered by the first 'sector vote' request given that the current sector is objNull.
+// This will set in motion the actual 'game loop'.

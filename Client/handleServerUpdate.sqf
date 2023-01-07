@@ -22,19 +22,19 @@ OWL_fnc_sectorChanged = {
 	params ["_varName", "_newValue"];
 	_side = side player;
 
-	// If vote is't in progress or no votes exist, ignore.
-	if ( count (_newValue # _side) > 0 && (OWL_sectorVoteStartTime # _side) > serverTime ) then {
-
-	};
+	// Update UI for team as new votes for each sector come in.
+	// This isn't needed client side if we don't want to displayAddEventHandler
+	// Which sectors recieve which votes / how many.
 };
 
 "OWL_sectorVoteStartTime" addPublicVariableEventHandler {
 	// Initialize the UI/Voting bar progress.
 	params ["_varName", "_newValue"];
-	_votingEnds = _newValue # (side player);
+	_votingEnds = _newValue # (OWL_competingSides find (side player));
+	_currentSector = missionNamespace getVariable [format ["OWL_currentSector_%1", side player], objNull];
 
-	// Make sure it's our sides fucking vote.
-	if (_votingEnds > 0 && _votingEnds > serverTime ) then {
-
+	// Make sure current sector is objNull.
+	if (isNull _currentSector) then {
+		call OWL_fnc_sectorVoteUIHandle;
 	};
 };
