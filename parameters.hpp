@@ -14,6 +14,13 @@ class Params
 		texts[] = {"WEST vs EAST", "WEST vs RESISTANCE", "EAST vs RESISTANCE"};
 		default = 0;
 	};
+	class FogOfWarSectors
+	{
+		title = "Fog of War";
+		values[] = {0, 1};
+		texts[] = {"Disabled", "Enabled"};
+		default = 0;
+	};
 	class DefendersPlayable
 	{
 		title = "Defenders Playable";

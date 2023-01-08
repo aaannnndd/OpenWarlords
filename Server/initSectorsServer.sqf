@@ -15,12 +15,12 @@ OWL_sectorParam_useLocationName
 
 OWL_sectorParam_side
 	Indicates who owns the sector at the start of the game
-	0 - Unclaimed
+	0 - Unclaimed (civilian side)
 	1 - Competing side 1
 	2 - Competing side 2
 	3 - Defending side
 
-OWL_sectorParam_income:
+OWL_sectorParam_income
 OWL_sectorParam_hasHarbour
 OWL_sectorParam_hasHelipad
 OWL_sectorParam_hasRunway
@@ -46,7 +46,7 @@ OWL_allSectors = [];
 		_x setPosATL [_triggerPos#0, _triggerPos#1, 0];
 		_x setVariable ["OWL_sectorArea", [_triggerPos] + _triggerArea, true];
 		_x setVariable ["OWL_sectorSide",
-			[sideEmpty, OWL_competingSides#0, OWL_competingSides#1, OWL_defendingSide] # (_x getVariable ["OWL_sectorParam_side", 0]),
+			[CIVILIAN, OWL_competingSides#0, OWL_competingSides#1, OWL_defendingSide] # (_x getVariable ["OWL_sectorParam_side", 0]),
 		true];
 		
 		private _sectorIncome = _x getVariable "OWL_sectorParam_income";

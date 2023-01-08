@@ -9,6 +9,7 @@ OWL_fnc_sideToMarkerColor = {
 		case EAST:			{ "ColorEAST" };
 		case RESISTANCE:	{ "ColorGUER" };
 		case CIVILIAN:		{ "ColorCIV" };
+		case sideUnknown:	{ "ColorUNKNOWN" };
 		default				{ "ColorBlack" };
 	};
 };
