@@ -109,8 +109,8 @@ OWL_fnc_clientRequestVoteForSector = {
 			_mostVoted = -1;
 			_voteCount = 0;
 			{
-				if (_y > _voteCount) then {
-					_voteCount = _y;
+				if (count _y > _voteCount) then {
+					_voteCount = count _y;
 					_mostVoted = _x;
 				};
 			} forEach (OWL_sectorVoteTable # _this);
@@ -123,9 +123,20 @@ OWL_fnc_clientRequestVoteForSector = {
 		};
 	};
 
-	_votes = _voteTable getOrDefault [_sectorId, 0];
-	_votes = _votes + 1;
-	_voteTable set [_sectorId, _votes];
+	// If they already voted for something, delete old vote before adding new one.
+	{
+		if (_clientId in _y) then {
+			if (count _y == 1) then {
+				_voteTable deleteAt _x;
+			} else {
+				_voteTable set [_x,_y - [_clientId]];
+			};
+		};
+	} forEach _voteTable;
+
+	_voteList = _voteTable getOrDefault [_sectorId, []];
+	_voteList pushBackUnique _clientId;
+	_voteTable set [_sectorId, _voteList];
 	publicVariable "OWL_sectorVoteTable";
 	remoteExec ["OWL_fnc_sectorVoteTableUpdate", OWL_competingSides # _sideIdx];
 };
