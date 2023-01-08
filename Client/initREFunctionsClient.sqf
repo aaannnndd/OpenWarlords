@@ -22,3 +22,9 @@ OWL_fnc_sectorVoteBegin = {
 	_votingEnds = OWL_sectorVoteStartTime # (OWL_competingSides find (side player));
 	_currentSector = missionNamespace getVariable [format ["OWL_currentSector_%1", side player], objNull];
 };
+
+OWL_fnc_sectorSelected = {
+	params ["_side", "_newSector"];
+	[format ["Client Update: New sector chosen for %1: %2", _side, _newSector getVariable "OWL_sectorName"]] call OWL_fnc_log;
+	"BIS_WL_Selected_WEST" call OWL_fnc_eventAnnouncer;
+};
