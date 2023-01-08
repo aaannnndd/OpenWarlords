@@ -12,3 +12,13 @@ OWL_fnc_warlordInitCallback = {
 		forceEnd;
 	};
 };
+
+OWL_fnc_sectorVoteTableUpdate = {
+	_voteTable = missionNamespace getVariable ["OWL_sectorVoteTable", []];
+	_voteTable = _voteTable # (OWL_competingSides find (side player));
+};
+
+OWL_fnc_sectorVoteBegin = {
+	_votingEnds = OWL_sectorVoteStartTime # (OWL_competingSides find (side player));
+	_currentSector = missionNamespace getVariable [format ["OWL_currentSector_%1", side player], objNull];
+};

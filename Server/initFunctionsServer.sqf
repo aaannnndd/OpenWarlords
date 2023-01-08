@@ -6,9 +6,6 @@ OWL_fnc_initMapAlterations = compileFinal preprocessFileLineNumbers "Server\init
 OWL_fnc_updateSpawnPoints = compileFinal preprocessFileLineNumbers "Server\updateSpawnPoints.sqf";
 OWL_fnc_handleSectorSelected = compileFinal preprocessFileLineNumbers "Server\handleSectorSelected.sqf";
 
-call compileFinal preprocessFileLineNumbers "Server\handleClientRequest.sqf";
-
-
 OWL_fnc_popNonitializedPlayerId = {
 	// Returns true if provided owner id was found and deleted from noninitialized ids array, otherwise false
 	
