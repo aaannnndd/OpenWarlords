@@ -1,3 +1,4 @@
+// When you need to simulate heavy CPU load on the server, this is good to use.
 
 private _list = nearestObjects [ [15000,15000,0] , [], 20000];
 
