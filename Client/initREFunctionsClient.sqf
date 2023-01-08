@@ -27,4 +27,5 @@ OWL_fnc_sectorSelected = {
 	params ["_side", "_newSector"];
 	[format ["Client Update: New sector chosen for %1: %2", _side, _newSector getVariable "OWL_sectorName"]] call OWL_fnc_log;
 	"BIS_WL_Selected_WEST" call OWL_fnc_eventAnnouncer;
+	format ["SECTOR SELECTED: %1", toUpper (_newSector getVariable "OWL_sectorName")] spawn BIS_fnc_WLSmoothText;
 };
