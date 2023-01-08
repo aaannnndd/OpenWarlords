@@ -1,3 +1,4 @@
+#include "..\defines.hpp"
 
 OWL_fnc_initClientServer = {
 	private _owner = remoteExecutedOwner;
@@ -70,19 +71,6 @@ if (!isMultiplayer) then {
 	};
 };
 
-// Helper function
-OWL_fnc_getPlayerFromNetId = {
-	params ["_netId"];
-
-	_player = objNull;
-	{
-		if (owner _x == _netId) then {
-			_player = _x;
-		};
-	} forEach allPlayers;
-	_player;
-};
-
 // when a player votes for a sector
 OWL_sectorVoteTable = [createHashMap,createHashMap];
 OWL_sectorVoteStartTime = [-1,-1];
@@ -91,10 +79,7 @@ OWL_sectorVoteTimer = 30;
 OWL_fnc_clientRequestVoteForSector = {
 	params ["_sectorId"];
 	_clientId = remoteExecutedOwner;
-	_player = _clientId call OWL_fnc_getPlayerFromNetId;
-	_sector = objectFromNetId _sectorId;
-	
-	_sideIdx = OWL_competingSides find (side _player);
+	_sideIdx = OWL_competingSides find (GET_WARLORD_SIDE((_clientId call OWL_fnc_getWarlordDataByOwnerId)));
 	_voteTable = OWL_sectorVoteTable # _sideIdx;
 
 	// If this is the first vote - begin the countdown timer.
