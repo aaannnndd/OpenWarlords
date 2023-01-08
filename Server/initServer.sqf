@@ -27,33 +27,34 @@ if (!isMultiplayer) then {
 ***********		Init Serverside Globals		***********
 ******************************************************/
 
-OWL_startingCP = (["StartingCP"] call BIS_fnc_getParamValue);	// Temporary
-
 // [ ["_transactionID", "_side", "_amount", "_timestamp"], ... ]
 OWL_disconnectedFunds = [];
 
-// [ "UID": [lockedToSide, trasactionID, ...], ... ]
-OWL_playerUIDMap = createHashMap;
-
+OWL_StartingFunds = (["StartingFunds"] call BIS_fnc_getParamValue);
 OWL_useVanillaIncomeCalculation = (["IncomeCalculation"] call BIS_fnc_getParamValue) == 1;
+OWL_persistentDataEnabled = (["PersistentSaveSystem"] call BIS_fnc_getParamValue) == 1;
 
 OWL_maxPlayersForSide = log 0;
 {
 	if (playableSlotsNumber _x > OWL_maxPlayersForSide) then {
 		OWL_maxPlayersForSide = playableSlotsNumber _x;
 	};
-} forEach OWL_competingSides;
+} forEach OWL_playableSides;
 
+// [ [owner ID, player entity, side, funds], ... ]
 OWL_allWarlordsData = [];
 OWL_ownerToDataIndexMap = createHashMap;
 OWL_nonHandshakedClients = [];
-
+if (OWL_persistentDataEnabled) then {
+	// [ UID: [disconnectionTime, side, funds], ... ]
+	OWL_persistentWarlordsData = createHashMap;
+};
 
 /******************************************************
 ***********	Init Serverside Event Handlers	***********
 ******************************************************/
 
-// See https://feedback.bistudio.com/T123355 to know why we using call instead of directly assigning code to event handler
+// See https://feedback.bistudio.com/T123355 to understand why we use call instead of directly assigning code to the event handlers
 
 OWL_EH_onPlayerConnected = {
 	params ["_dpId", "_uid", "_name", "_jip", "_owner", "_dpIdStr"];
@@ -74,7 +75,7 @@ OWL_EH_onPlayerDisconnected = {
 	["PlayerDisconnected EH: " + str _this] call OWL_fnc_log;
 	
 	_uid call OWL_fnc_tryRemoveFromNonHandshakedClients;
-	_owner call OWL_fnc_tryDeleteWarlordData;
+	[_owner, _uid] call OWL_fnc_tryDeinitWarlord;
 };
 
 OWL_EH_onEntityRespawned = {
@@ -116,10 +117,10 @@ if (HANDSHAKE_TIMEOUT > 0 && {isMultiplayer}) then {
 		{
 			_x params ["_uid", "_kickTime", "_owner", "_name"];
 			
-			if (_kickTime < time) then {
+			if (time > _kickTime) then {
 				[format ["Handshake timed out for %1", _name]] call OWL_fnc_log;
 				if (_owner >= 3) then {
-					serverCommand format ["#kick ""%1""", _uid];
+					[_uid, _name, "Handshake timed out"] call OWL_fnc_kickPlayer;
 				};
 				_uid call OWL_fnc_tryRemoveFromNonHandshakedClients;
 			};
@@ -133,6 +134,7 @@ call compileFinal preprocessFileLineNumbers "Server\initREFunctionsServer.sqf";
 
 missionNamespace setVariable ["OWL_serverInitialized", true, true];
 ["Server initialization finished"] call OWL_fnc_log;
+
 
 /******************************************************
 ***********			Begin the game 			***********

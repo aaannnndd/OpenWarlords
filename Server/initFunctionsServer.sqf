@@ -1,3 +1,4 @@
+#include "..\defines.hpp"
 
 OWL_fnc_getIncomePayout = compileFinal preprocessFileLineNumbers "Server\getIncomePayout.sqf";
 OWL_fnc_updateIncome = compileFinal preprocessFileLineNumbers "Server\updateIncome.sqf";
@@ -28,7 +29,7 @@ OWL_fnc_tryRemoveFromNonHandshakedClients = {
 
 
 OWL_fnc_tryInitNewWarlord = {
-	params ["_owner", "_player"];
+	params ["_owner", "_uid", "_player"];
 	
 	private _newWarlordInitialized = false;
 	private _side = side group _player;
@@ -43,8 +44,30 @@ OWL_fnc_tryInitNewWarlord = {
 		// Exit if warlord data already exists for the given owner
 		if (_owner in OWL_ownerToDataIndexMap) exitWith { [format ["Data already exists for the given owner ID (%1)", _owner]] call OWL_fnc_log; };
 		
-		// Initialize new warlord data
-		private _newData = [_owner, _player, _side, OWL_startingCP];
+		// Creating new warlord data
+		private _newData = [];
+		SET_WARLORD_OWNER_ID(_newData, _owner);
+		SET_WARLORD_PLAYER(_newData, _player);
+		SET_WARLORD_SIDE(_newData, _side);
+		private _takenFunds = OWL_StartingFunds;
+		
+		// Loading up persistent data save
+		if (OWL_persistentDataEnabled) then {
+			private _persistentWarlordData = OWL_persistentWarlordsData get _uid;
+			if (!isNil "_persistentWarlordData") then {
+				_persistentWarlordData params ["_dsTime", "_savedSide", "_savedFunds"];
+				if (_side == _savedSide) then {
+					_takenFunds = _savedFunds;
+					[format ["Loaded saved warlord data of %1", name _player]] call OWL_fnc_log;
+				}
+				else {
+					[format ["Deleted previous saved warlord data of %1", name _player]] call OWL_fnc_log;
+				};
+				OWL_persistentWarlordsData deleteAt _uid;
+			};
+		};
+		
+		SET_WARLORD_FUNDS(_newData, _takenFunds);
 		
 		private _index = OWL_allWarlordsData pushBack _newData;
 		OWL_ownerToDataIndexMap set [_owner, _index];
@@ -54,21 +77,35 @@ OWL_fnc_tryInitNewWarlord = {
 };
 
 
-OWL_fnc_tryDeleteWarlordData = {
-	// Params: ownerID
+OWL_fnc_tryDeinitWarlord = {
+	// Params:
+	// 0: ownerID - number
+	// 1: UID - string (optional, add it only if you want to create a persistent save for data of the deinitialized warlord) 
+	params ["_owner", ["_uid", "", [""]]];
 	
 	// Forcing the code to run in unscheduled to avoid edge cases
 	isNil {
-		private _dataArrIndex = OWL_ownerToDataIndexMap get _this;
+		private _dataArrIndex = OWL_ownerToDataIndexMap get _owner;
 		
 		if (!isNil "_dataArrIndex") then {
-			OWL_ownerToDataIndexMap deleteAt _this;
+			OWL_ownerToDataIndexMap deleteAt _owner;
+			
+			if (OWL_persistentDataEnabled && {_uid != ""}) then {
+				private _warlordData = OWL_allWarlordsData # _dataArrIndex;
+				[format ["Saving warlord data of %1", name GET_WARLORD_PLAYER(_warlordData)]] call OWL_fnc_log;
+				private _funds = GET_WARLORD_FUNDS(_warlordData);
+				if (_funds > 0) then {
+					// Create persistent warlord data
+					private _persistentWarlordData = [time, GET_WARLORD_SIDE(_warlordData), _funds];
+					// Save it to hashmap
+					OWL_persistentWarlordsData set [_uid, _persistentWarlordData];
+				};
+			};
 			
 			// To delete an element from warlords data array we creating a shallow copy of it and modifying the copy,
 			// instead of modifying the original array. This way if there's forEach loop iterating through original array during deletion
 			// we won't shift elements in it, potentially causing forEach loop to skip an element.
-			// See https://community.bistudio.com/wiki/forEach#Notes
-			
+			// See https://community.bistudio.com/wiki/forEach#Notes for more details
 			private _newDataArray = OWL_allWarlordsData + [];
 			_newDataArray deleteAt _dataArrIndex;
 			OWL_allWarlordsData = _newDataArray;
@@ -94,4 +131,27 @@ OWL_fnc_getWarlordDataByOwnerId = {
 		};
 	};
 	_return
+};
+
+
+OWL_fnc_ownerIsValidWarlordPlayer = {
+	// Params: ownerID
+	
+	!isNil { OWL_ownerToDataIndexMap get _this };
+};
+
+
+OWL_fnc_kickPlayer = {
+	params ["_uid", "_name", "_reason"];
+	
+	private _succeeded = false;
+	if (_name == "") then { _name = _uid; };
+	[format ["Kicking out %1 (%2)", _name, _reason]] call OWL_fnc_log;
+	if (isMultiplayer) then {
+		_succeeded = serverCommand format ["#kick ""%1""", _uid];
+		if (!_succeeded) then {
+			[format ["Failed to kick %1", _name, _reason]] call OWL_fnc_log;
+		};
+	};
+	_succeeded
 };

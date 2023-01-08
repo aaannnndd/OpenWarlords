@@ -16,12 +16,12 @@ class Params
 	};
 	class DefendersPlayable
 	{
-		title = "Defending side is playable";
+		title = "Defenders Playable";
 		values[] = {0, 1};
 		texts[] = {"Disabled", "Enabled"};
 		default = 0;
 	};
-	class StartingCP
+	class StartingFunds
 	{
 		title = "Starting CP";
 		values[] = {50, 250, 500, 1000, 2000, 5000, 10000, 1000000};
@@ -29,21 +29,23 @@ class Params
 	};
 	class IncomeCalculation
 	{
-		title = "Income calculation";
+		title = "Income Calculation";
 		values[] = {0, 1};
 		texts[] = {"Vanilla", "Advanced"};
 		default = 1;
 	};
-	class MusicEnabled
+	class Music
 	{
-		title = "Music Enabled";
+		title = "Music";
 		values[] = {0, 1};
+		texts[] = {"Disabled", "Enabled"};
 		default = 1;
 	};
-	class InitialProgress	// should we implement that or nah?
+	class PersistentSaveSystem
 	{
-		title = "Initial Progress";
-		values[] = {0, 25, 50};
-		default = 0;
+		title = "Persistent Save System";
+		values[] = {0, 1};
+		texts[] = {"Disabled", "Enabled"};
+		default = 1;
 	};
 };

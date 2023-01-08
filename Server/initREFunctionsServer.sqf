@@ -20,42 +20,36 @@ OWL_fnc_initClientServer = {
 		false remoteExec ["OWL_fnc_warlordInitCallback", _owner];
 	};
 	
+	private _uid = _clientUserInfo # 2;
+	private _name = _clientUserInfo # 3;
 	private _player = _clientUserInfo # 10;
+	
 	if (isNull _player) exitWith {
 		[format ["Player entity of client is null. UserInfo: %1", _clientUserInfo]] call OWL_fnc_log;
-		[format ["Kicking out %1 (Failed handshake)", _clientUserInfo # 3]] call OWL_fnc_log;
-		if (isMultiplayer && {_owner >= 3}) then {
-			serverCommand format ["#kick ""%1""", _clientUserInfo#1];
-		}
-		else {
-			false remoteExec ["OWL_fnc_warlordInitCallback", _owner];
+		false remoteExec ["OWL_fnc_warlordInitCallback", _owner];
+		if (_owner >= 3) then {
+			[_uid, _name, "Failed handshake"] call OWL_fnc_kickPlayer;
 		};
 	};
 	
 	if (isNull group _player || {side group _player == sideUnknown}) exitWith {
 		[format ["Could not determine side of the player. UserInfo: %1", _clientUserInfo]] call OWL_fnc_log;
-		[format ["Kicking out %1 (Failed handshake)", _clientUserInfo # 3]] call OWL_fnc_log;
-		if (isMultiplayer && {_owner >= 3}) then {
-			serverCommand format ["#kick ""%1""", _clientUserInfo#1];
-		}
-		else {
-			false remoteExec ["OWL_fnc_warlordInitCallback", _owner];
+		false remoteExec ["OWL_fnc_warlordInitCallback", _owner];
+		if (_owner >= 3) then {
+			[_uid, _name, "Failed handshake"] call OWL_fnc_kickPlayer;
 		};
 	};
 	
-	if ( !((_clientUserInfo#2) call OWL_fnc_tryRemoveFromNonHandshakedClients) ) exitWith {
+	if ( !(_uid call OWL_fnc_tryRemoveFromNonHandshakedClients) ) exitWith {
 		[format ["Could not find client in OWL_nonHandshakedClients array. UserInfo: %1", _clientUserInfo]] call OWL_fnc_log;
-		[format ["Kicking out %1 (Failed handshake)", _clientUserInfo # 3]] call OWL_fnc_log;
-		if (isMultiplayer && {_owner >= 3}) then {
-			serverCommand format ["#kick ""%1""", _clientUserInfo#1];
-		}
-		else {
-			false remoteExec ["OWL_fnc_warlordInitCallback", _owner];
+		false remoteExec ["OWL_fnc_warlordInitCallback", _owner];
+		if (_owner >= 3) then {
+			[_uid, _name, "Failed handshake"] call OWL_fnc_kickPlayer;
 		};
 	};
 	// At this point handshake request should be considered valid
 	
-	private _success = [_owner, _player] call OWL_fnc_tryInitNewWarlord;
+	private _success = [_owner, _uid, _player] call OWL_fnc_tryInitNewWarlord;
 	if (_success || {!((side group _player) in OWL_playableSides)}) then {
 		true remoteExec ["OWL_fnc_warlordInitCallback", _owner];
 	}
@@ -66,10 +60,11 @@ OWL_fnc_initClientServer = {
 
 if (!isMultiplayer) then {
 	OWL_fnc_initClientServer = {
-		[0, player] call OWL_fnc_tryInitNewWarlord;
+		[0, getPlayerUID player, player] call OWL_fnc_tryInitNewWarlord;
 		true remoteExec ["OWL_fnc_warlordInitCallback", 0];
 	};
 };
+
 
 // when a player votes for a sector
 OWL_sectorVoteTable = [createHashMap,createHashMap];

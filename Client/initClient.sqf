@@ -160,7 +160,7 @@ waitUntil { alive player };
 remoteExec ["OWL_fnc_initClientServer", 2];
 waitUntil { OWL_serverInitializedMe };
 
-// If client's side is not in playable sides send handshake and skip initialization of stuff required for warlord player
+// If client's side is not in playable sides skip initializing stuff required for warlord player
 if (!(playerSide in OWL_playableSides)) exitWith {
 	["Player side is not in warlords playable sides"] call OWL_fnc_log;
 };
