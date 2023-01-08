@@ -4,17 +4,6 @@ OWL_fnc_updateIncome = compileFinal preprocessFileLineNumbers "Server\updateInco
 OWL_fnc_updateSpawnPoints = compileFinal preprocessFileLineNumbers "Server\updateSpawnPoints.sqf";
 OWL_fnc_handleSectorSelected = compileFinal preprocessFileLineNumbers "Server\handleSectorSelected.sqf";
 
-OWL_fnc_popNonitializedPlayerId = {
-	// Returns true if provided owner id was found and deleted from noninitialized ids array, otherwise false
-	
-	private _arrIndex = OWL_nonitializedPlayersIds find _this;
-	if (_arrIndex != -1) exitWith {
-		OWL_nonitializedPlayersIds deleteAt _arrIndex;
-		true
-	};
-	false
-};
-
 
 OWL_fnc_tryRemoveFromNonHandshakedClients = {
 	// Returns true if client with provided UID was found and removed from OWL_nonHandshakedClients array

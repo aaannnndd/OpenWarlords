@@ -131,7 +131,7 @@ if (HANDSHAKE_TIMEOUT > 0 && {isMultiplayer}) then {
 [] spawn compileFinal preprocessFileLineNumbers "Server\playersProcessingLoop.sqf";
 call compileFinal preprocessFileLineNumbers "Server\initREFunctionsServer.sqf";
 
-missionNamespace setVariable ["OWL_ServerInitialized", true, true];
+missionNamespace setVariable ["OWL_serverInitialized", true, true];
 ["Server initialization finished"] call OWL_fnc_log;
 
 /******************************************************

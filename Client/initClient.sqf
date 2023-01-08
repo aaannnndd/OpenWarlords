@@ -1,18 +1,11 @@
 ["Client initialization started"] call OWL_fnc_log;
 
-waitUntil { missionNamespace getVariable ["OWL_ServerInitialized", false] };
+call compileFinal preprocessFileLineNumbers "Client\initFunctionsClient.sqf";
+
+waitUntil { missionNamespace getVariable ["OWL_serverInitialized", false] };
 waitUntil { !isNull player };
 waitUntil { local player };
 
-// Send handshake and skip warlords specific initialization if client's side is not in playable sides
-if (!(playerSide in OWL_playableSides)) exitWith {
-	waitUntil { playerSide == side group player };
-	waitUntil { alive player };
-	remoteExec ["OWL_fnc_initClientServer", 2];
-	["Player side is not in warlords playable sides"] call OWL_fnc_log;
-};
-
-call compileFinal preprocessFileLineNumbers "Client\initFunctionsClient.sqf";
 
 /******************************************************
 ***********		Init Clientside Globals		***********
@@ -162,13 +155,15 @@ call compileFinal preprocessFileLineNumbers "Client\initREFunctionsClient.sqf";
 
 waitUntil { !isNull (findDisplay 46) };
 waitUntil { playerSide == side group player };
-// Waiting for respawn (after joining player can be alive for a brief moment)
-waitUntil { alive player };
-sleep 3;
+waitUntil { missionNamespace getVariable ["OWL_respawnedAtLeastOnce", false] };
 waitUntil { alive player };
 remoteExec ["OWL_fnc_initClientServer", 2];
 waitUntil { OWL_serverInitializedMe };
 
+// If client's side is not in playable sides send handshake and skip initialization of stuff required for warlord player
+if (!(playerSide in OWL_playableSides)) exitWith {
+	["Player side is not in warlords playable sides"] call OWL_fnc_log;
+};
 
 /******************************************************
 ***********		Check the game state		***********
