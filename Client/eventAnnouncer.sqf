@@ -4,7 +4,7 @@ params ["_sound"];
 
 // Add option to enable announcer?... just exitWith nothing here.
 
-private _delayTimestamp = missionNamespace getVariable ["OWL_soundQueueDelay", GET_TIME];
+private _delayTimestamp = missionNamespace getVariable ["OWL_soundQueueDelay", time];
 private _diffTime = _delayTimestamp - time;
 private _length = getNumber (configFile >> "CfgSounds" >> _sound >> "duration");
 if (_length == 0) then {_length = 2};

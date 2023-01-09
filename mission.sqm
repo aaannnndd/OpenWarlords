@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=9;
+		nextID=10;
 	};
 	class Camera
 	{
-		pos[]={4568.5537,585.24976,9739.0986};
-		dir[]={-0.8469795,-0.48716989,-0.21283853};
-		up[]={-0.47248083,0.87330526,-0.11873016};
-		aside[]={-0.24371417,-1.0769872e-007,0.96984994};
+		pos[]={4644.0132,648.17615,9710.2314};
+		dir[]={-0.42903593,-0.51891422,0.73936212};
+		up[]={-0.2604422,0.85482633,0.4488228};
+		aside[]={0.8649267,-1.4901161e-008,0.50189841};
 	};
 };
 binarizationWanted=0;
@@ -3835,7 +3835,7 @@ class Mission
 		class Item146
 		{
 			dataType="Trigger";
-			position[]={16252.4,16.862637,17130};
+			position[]={16296.517,21.727045,17196.51};
 			class Attributes
 			{
 				sizeA=400;
@@ -3851,7 +3851,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={16252.4,16.213417,17120};
+				position[]={16299.569,20.683809,17183.348};
+				angles[]={6.1742845,0,0.043971907};
 			};
 			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Telos Complex""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 40];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=520;
@@ -3885,7 +3886,7 @@ class Mission
 		class Item150
 		{
 			dataType="Trigger";
-			position[]={15196.5,17.916002,17318.4};
+			position[]={15220.177,17.950001,17288.877};
 			class Attributes
 			{
 				sizeA=200;
@@ -3901,7 +3902,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15196.5,17.924131,17308.4};
+				position[]={15211.32,17.950001,17298.439};
 			};
 			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Airfield Compound""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=524;
@@ -3936,7 +3937,7 @@ class Mission
 		class Item154
 		{
 			dataType="Trigger";
-			position[]={14488.5,20.915617,17670.6};
+			position[]={14432.533,18.736189,17662.197};
 			class Attributes
 			{
 				sizeA=175;
@@ -3952,7 +3953,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14488.5,20.982149,17660.6};
+				position[]={14445.228,18.878414,17671.504};
+				angles[]={0.0093286335,0,0.054611389};
 			};
 			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Gravia""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=528;
@@ -4037,7 +4039,7 @@ class Mission
 		class Item162
 		{
 			dataType="Trigger";
-			position[]={12358.7,23.912498,15674.8};
+			position[]={12358.048,25.104191,15631.105};
 			class Attributes
 			{
 				sizeA=200;
@@ -4053,12 +4055,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={12358.7,24.222521,15664.8};
+				position[]={12368.404,24.962872,15627.294};
+				angles[]={0.021328852,0,6.2778478};
 			};
 			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Lakka""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=536;
 			type="Logic";
-			atlOffset=-1.9073486e-006;
 		};
 		class Item164
 		{
@@ -4394,7 +4396,7 @@ class Mission
 		class Item190
 		{
 			dataType="Trigger";
-			position[]={3553.8301,8.7102919,13000.4};
+			position[]={3631.7195,15.265697,12873.483};
 			class Attributes
 			{
 				sizeA=250;
@@ -4410,7 +4412,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3553.8301,8.6954384,12990.4};
+				position[]={3636.1772,15.498936,12872.102};
+				angles[]={6.2595501,0,0.091056958};
 			};
 			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Kavala""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", true];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=564;
@@ -4419,7 +4422,7 @@ class Mission
 		class Item192
 		{
 			dataType="Trigger";
-			position[]={3823,17.05407,13711.7};
+			position[]={3882.918,22.601618,13777.537};
 			class Attributes
 			{
 				sizeA=250;
@@ -4435,12 +4438,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3823,16.668034,13701.7};
+				position[]={3888.2468,22.889624,13783.187};
+				angles[]={6.1954122,0,0.061257254};
 			};
 			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Aggelochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=566;
 			type="Logic";
-			atlOffset=-1.9073486e-006;
 		};
 		class Item194
 		{
@@ -4646,7 +4649,7 @@ class Mission
 		class Item210
 		{
 			dataType="Trigger";
-			position[]={12724.2,59.631893,16516.199};
+			position[]={12731.631,71.735306,16553.717};
 			class Attributes
 			{
 				sizeA=300;
@@ -4662,12 +4665,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={12724.2,57.432209,16506.199};
+				position[]={12733.272,65.132355,16528.285};
+				angles[]={5.9471049,0,0.25436765};
 			};
 			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""Lakka Factory""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 30];" \n "this setVariable [""OWL_sectorParam_hasHarbour"", false];" \n "this setVariable [""OWL_sectorParam_hasHelipad"", false];" \n "this setVariable [""OWL_sectorParam_hasRunway"", false];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200];" \n "";
 			id=584;
 			type="Logic";
-			atlOffset=-3.8146973e-006;
 		};
 		class Item212
 		{
