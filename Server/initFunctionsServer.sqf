@@ -55,7 +55,7 @@ OWL_fnc_tryInitNewWarlord = {
 		if (OWL_persistentDataEnabled) then {
 			private _persistentWarlordData = OWL_persistentWarlordsData get _uid;
 			if (!isNil "_persistentWarlordData") then {
-				_persistentWarlordData params ["_dsTime", "_savedSide", "_savedFunds"];
+				_persistentWarlordData params ["_dcTime", "_savedSide", "_savedFunds"];
 				if (_side == _savedSide) then {
 					_takenFunds = _savedFunds;
 					[format ["Loaded saved warlord data of %1", name _player]] call OWL_fnc_log;
@@ -96,7 +96,7 @@ OWL_fnc_tryDeinitWarlord = {
 				private _funds = GET_WARLORD_FUNDS(_warlordData);
 				if (_funds > 0) then {
 					// Create persistent warlord data
-					private _persistentWarlordData = [time, GET_WARLORD_SIDE(_warlordData), _funds];
+					private _persistentWarlordData = [GET_TIME, GET_WARLORD_SIDE(_warlordData), _funds];
 					// Save it to hashmap
 					OWL_persistentWarlordsData set [_uid, _persistentWarlordData];
 				};

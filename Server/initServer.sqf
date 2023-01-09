@@ -67,7 +67,7 @@ OWL_EH_onPlayerConnected = {
 	};
 	
 	_uid call OWL_fnc_tryRemoveFromNonHandshakedClients;
-	OWL_nonHandshakedClients pushBack [_uid, time + HANDSHAKE_TIMEOUT, _owner, _name];
+	OWL_nonHandshakedClients pushBack [_uid, GET_TIME + HANDSHAKE_TIMEOUT, _owner, _name];
 };
 
 OWL_EH_onPlayerDisconnected = {
@@ -107,7 +107,7 @@ if (isMultiplayer) then {
 	(getUserInfo _x) params ["_playerID", "_ownerId", "_playerUID", "_profileName", "_displayName", "_steamName", "_clientState", "_isHC", "_adminState", "_networkInfo", "_unit"];
 	
 	_playerUID call OWL_fnc_tryRemoveFromNonHandshakedClients;
-	OWL_nonHandshakedClients pushBack [_playerUID, time + HANDSHAKE_TIMEOUT, _ownerId, _profileName];
+	OWL_nonHandshakedClients pushBack [_playerUID, GET_TIME + HANDSHAKE_TIMEOUT, _ownerId, _profileName];
 } forEach allUsers;
 
 
@@ -117,7 +117,7 @@ if (HANDSHAKE_TIMEOUT > 0 && {isMultiplayer}) then {
 		{
 			_x params ["_uid", "_kickTime", "_owner", "_name"];
 			
-			if (time > _kickTime) then {
+			if (GET_TIME > _kickTime) then {
 				[format ["Handshake timed out for %1", _name]] call OWL_fnc_log;
 				if (_owner >= 3) then {
 					[_uid, _name, "Handshake timed out"] call OWL_fnc_kickPlayer;
@@ -129,7 +129,7 @@ if (HANDSHAKE_TIMEOUT > 0 && {isMultiplayer}) then {
 	};};
 };
 
-[] spawn compileFinal preprocessFileLineNumbers "Server\playersProcessingLoop.sqf";
+[] spawn compileFinal preprocessFileLineNumbers "Server\playerProcessingLoop.sqf";
 call compileFinal preprocessFileLineNumbers "Server\initREFunctionsServer.sqf";
 
 missionNamespace setVariable ["OWL_serverInitialized", true, true];

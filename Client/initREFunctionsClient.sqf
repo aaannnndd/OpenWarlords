@@ -1,3 +1,4 @@
+#include "..\defines.hpp"
 
 OWL_fnc_warlordInitCallback = {
 	if (isMultiplayer && {remoteExecutedOwner != 2}) exitWith {};

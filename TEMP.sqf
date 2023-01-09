@@ -60,7 +60,7 @@ OWL_CursorIsOverSector = false;
 				(_x getVariable "OWL_sectorArea") # 0,
 				40,
 				40,
-				(time * 20) % 360,
+				(GET_TIME * 20) % 360,
 				"",
 				1,
 				0.1,
