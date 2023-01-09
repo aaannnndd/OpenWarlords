@@ -79,12 +79,12 @@ OWL_fnc_clientRequestVoteForSector = {
 
 	// If this is the first vote - begin the countdown timer.
 	if (count _voteTable == 0) then {
-		OWL_sectorVoteStartTime set [_sideIdx, GET_TIME + OWL_sectorVoteTimer];
+		OWL_sectorVoteStartTime set [_sideIdx, (call OWL_fnc_syncedTime) + OWL_sectorVoteTimer];
 		publicVariable "OWL_sectorVoteStartTime";
 		remoteExec ["OWL_fnc_sectorVoteBegin", OWL_competingSides # _sideIdx];
 
 		_sideIdx spawn {
-			while {(OWL_sectorVoteStartTime # _this) >= GET_TIME} do {sleep 1;};
+			while {(OWL_sectorVoteStartTime # _this) >= (call OWL_fnc_syncedTime)} do {sleep 1;};
 
 			_mostVoted = -1;
 			_voteCount = 0;

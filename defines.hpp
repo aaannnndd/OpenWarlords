@@ -13,5 +13,3 @@
 #define SET_WARLORD_PLAYER(DATA_ARRAY,NEW_VALUE) (DATA_ARRAY set [1,NEW_VALUE])
 #define SET_WARLORD_SIDE(DATA_ARRAY,NEW_VALUE) (DATA_ARRAY set [2,NEW_VALUE])
 #define SET_WARLORD_FUNDS(DATA_ARRAY,NEW_VALUE) (DATA_ARRAY set [3,NEW_VALUE])
-
-#define GET_TIME (if (!isMultiplayer) then {time} else {serverTime})

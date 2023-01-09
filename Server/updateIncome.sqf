@@ -23,7 +23,7 @@
 /* Check disconected players, if they've been gone for a certain period of time add their command points to the bank.
 {
 	_x params ["_transactionID", "_side", "_amount", "_timestamp"];
-	if (_timestamp <= GET_TIME) then {
+	if (_timestamp <= time) then {
 		missionNamespace setVariable [format ["OWL_bankValue_%1", _side], _amount + (missionNamespace getVariable [format ["OWL_bankValue_%1", _side], 0]), TRUE];
 		OWL_disconnectedFunds = OWL_disconnectedFunds - [_x];
 	};
@@ -31,7 +31,7 @@
 
 {
 	_y params ["_timeStamp", "_side", "_funds"];
-	if (_timeStamp > GET_TIME) then {
+	if (_timeStamp > time) then {
 		missionNamespace setVariable [format ["OWL_bankValue_%1", _side], _funds + (missionNamespace getVariable [format ["OWL_bankValue_%1", _side], 0]), TRUE];
 		OWL_persistentWarlordsData deleteAt _x;
 		/* If we hold other persistent data other than funds.

@@ -16,6 +16,13 @@ OWL_fnc_log = {
 	diag_log _msg;
 };
 
+if (isMultiplayer) then {
+  OWL_fnc_syncedTime = { serverTime };
+}
+else {
+  OWL_fnc_syncedTime = { time };
+};
+
 
 /******************************************************
 ***********		Init Common Globals			***********

@@ -96,7 +96,7 @@ OWL_fnc_tryDeinitWarlord = {
 				private _funds = GET_WARLORD_FUNDS(_warlordData);
 				if (_funds > 0) then {
 					// Create persistent warlord data
-					private _persistentWarlordData = [GET_TIME, GET_WARLORD_SIDE(_warlordData), _funds];
+					private _persistentWarlordData = [time, GET_WARLORD_SIDE(_warlordData), _funds];
 					// Save it to hashmap
 					OWL_persistentWarlordsData set [_uid, _persistentWarlordData];
 				};
@@ -154,4 +154,9 @@ OWL_fnc_kickPlayer = {
 		};
 	};
 	_succeeded
+};
+
+OWL_fnc_handleUnitsInSector = {
+	params ["_inSectorArr", "_sector"];
+
 };
