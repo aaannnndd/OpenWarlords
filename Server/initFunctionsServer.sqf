@@ -4,6 +4,7 @@ OWL_fnc_getIncomePayout = compileFinal preprocessFileLineNumbers "Server\getInco
 OWL_fnc_updateIncome = compileFinal preprocessFileLineNumbers "Server\updateIncome.sqf";
 OWL_fnc_updateSpawnPoints = compileFinal preprocessFileLineNumbers "Server\updateSpawnPoints.sqf";
 OWL_fnc_handleSectorSelected = compileFinal preprocessFileLineNumbers "Server\handleSectorSelected.sqf";
+OWL_fcn_sectorSeizingCheck = compileFinal preprocessFileLineNumbers "Server\sectorSeizingCheck.sqf";
 
 
 OWL_fnc_tryRemoveFromNonHandshakedClients = {
@@ -154,9 +155,4 @@ OWL_fnc_kickPlayer = {
 		};
 	};
 	_succeeded
-};
-
-OWL_fnc_handleUnitsInSector = {
-	params ["_inSectorArr", "_sector"];
-
 };

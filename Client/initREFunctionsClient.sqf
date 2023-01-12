@@ -31,3 +31,9 @@ OWL_fnc_sectorSelected = {
 	format ["SECTOR SELECTED: %1", toUpper (_newSector getVariable "OWL_sectorName")] spawn BIS_fnc_WLSmoothText;
 	{_x setMarkerAlpha 0;} forEach (_newSector getVariable "OWL_sectorBorderMarkers");
 };
+
+OWL_inRestrictedArea = {
+	params ["_timeStamp"];
+
+	systemChat format ["Time Until Death: %1", _timeStamp - serverTime];
+};
