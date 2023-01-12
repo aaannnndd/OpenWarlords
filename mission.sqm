@@ -8,22 +8,22 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=799;
+		nextID=800;
 	};
 	class MarkerIDProvider
 	{
-		nextID=3;
+		nextID=4;
 	};
 	class LayerIndexProvider
 	{
-		nextID=10;
+		nextID=12;
 	};
 	class Camera
 	{
-		pos[]={4644.0132,648.17615,9710.2314};
-		dir[]={-0.42903593,-0.51891422,0.73936212};
-		up[]={-0.2604422,0.85482633,0.4488228};
-		aside[]={0.8649267,-1.4901161e-008,0.50189841};
+		pos[]={11721.524,117.55405,13327.677};
+		dir[]={-0.78490835,-0.28113544,-0.55216098};
+		up[]={-0.22993945,0.95966804,-0.16175593};
+		aside[]={-0.57536656,0,0.81789553};
 	};
 };
 binarizationWanted=0;
@@ -4406,6 +4406,7 @@ class Mission
 			};
 			id=563;
 			type="EmptyDetector";
+			atlOffset=0.17915821;
 		};
 		class Item191
 		{
@@ -6834,11 +6835,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=160;
+			nextID=161;
 		};
 		class Links
 		{
-			items=160;
+			items=161;
 			class Item0
 			{
 				linkID=0;
@@ -8434,6 +8435,16 @@ class Mission
 				linkID=159;
 				item0=578;
 				item1=584;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item160
+			{
+				linkID=160;
+				item0=526;
+				item1=524;
 				class CustomData
 				{
 					type="Sync";

@@ -1,6 +1,15 @@
 #include "..\defines.hpp"
 
-OWL_fnc_initClientServer = {
+// initClientServer
+OWL_fnc_ICS = {
+	if (!isMultiplayer) exitWith {
+		//[0, getPlayerUID player, player] call OWL_fnc_tryInitNewWarlord;
+		//[true] remoteExecCall ["OWL_fnc_WIC", 0];
+		
+		["DON'T RUN THIS SCENARIO IN SP IT WON'T WORK!"] call OWL_fnc_log;
+		[false] remoteExecCall ["OWL_fnc_WIC", 0];
+	};
+	
 	private _owner = remoteExecutedOwner;
 	if (!isRemoteExecuted || {_owner < 2}) exitWith {
 		[format ["Handshake sanity check failed [isRemoteExecuted: %1, Owner ID: %2]", isRemoteExecuted, _owner]] call OWL_fnc_log;
@@ -17,51 +26,109 @@ OWL_fnc_initClientServer = {
 	
 	if (count _clientUserInfo == 0) exitWith {
 		[format ["Failed to retrieve client's info [Owner ID: %1]", _owner]] call OWL_fnc_log;
-		false remoteExec ["OWL_fnc_warlordInitCallback", _owner];
+		[false] remoteExecCall ["OWL_fnc_WIC", _owner];
 	};
 	
 	private _uid = _clientUserInfo # 2;
-	private _name = _clientUserInfo # 3;
 	private _player = _clientUserInfo # 10;
 	
 	if (isNull _player) exitWith {
 		[format ["Player entity of client is null. UserInfo: %1", _clientUserInfo]] call OWL_fnc_log;
-		false remoteExec ["OWL_fnc_warlordInitCallback", _owner];
-		if (_owner >= 3) then {
-			[_uid, _name, "Failed handshake"] call OWL_fnc_kickPlayer;
-		};
+		[false] remoteExecCall ["OWL_fnc_WIC", _owner];
+		if (_owner >= 3) then { [_uid, "Failed handshake"] call OWL_fnc_kickPlayer; };
 	};
 	
-	if (isNull group _player || {side group _player == sideUnknown}) exitWith {
+	private _side = side group _player;
+	
+	if (isNull group _player || {_side == sideUnknown}) exitWith {
 		[format ["Could not determine side of the player. UserInfo: %1", _clientUserInfo]] call OWL_fnc_log;
-		false remoteExec ["OWL_fnc_warlordInitCallback", _owner];
-		if (_owner >= 3) then {
-			[_uid, _name, "Failed handshake"] call OWL_fnc_kickPlayer;
-		};
+		[false] remoteExecCall ["OWL_fnc_WIC", _owner];
+		if (_owner >= 3) then { [_uid, "Failed handshake"] call OWL_fnc_kickPlayer; };
 	};
 	
 	if ( !(_uid call OWL_fnc_tryRemoveFromNonHandshakedClients) ) exitWith {
 		[format ["Could not find client in OWL_nonHandshakedClients array. UserInfo: %1", _clientUserInfo]] call OWL_fnc_log;
-		false remoteExec ["OWL_fnc_warlordInitCallback", _owner];
-		if (_owner >= 3) then {
-			[_uid, _name, "Failed handshake"] call OWL_fnc_kickPlayer;
-		};
+		[false] remoteExecCall ["OWL_fnc_WIC", _owner];
+		if (_owner >= 3) then { [_uid, "Failed handshake"] call OWL_fnc_kickPlayer; };
 	};
-	// At this point handshake request should be considered valid
 	
-	private _success = [_owner, _uid, _player] call OWL_fnc_tryInitNewWarlord;
-	if (_success || {!((side group _player) in OWL_playableSides)}) then {
-		true remoteExec ["OWL_fnc_warlordInitCallback", _owner];
+	private _handshakeIsValid = false;
+	private _initializedAsWarlord = false;
+	
+	if (_side in OWL_playableSides) then {
+		_initializedAsWarlord = [_owner, _uid, _player] call OWL_fnc_tryInitNewWarlord;
+		_handshakeIsValid = _initializedAsWarlord;
+		if (!_initializedAsWarlord) then {
+			[format ["Could not initialize new warlord. UserInfo: %1", _clientUserInfo]] call OWL_fnc_log;
+			if (_owner >= 3) then { [_uid, "Failed handshake"] call OWL_fnc_kickPlayer; };
+		};
 	}
 	else {
-		false remoteExec ["OWL_fnc_warlordInitCallback", _owner];
+		_handshakeIsValid = true;
 	};
-};
-
-if (!isMultiplayer) then {
-	OWL_fnc_initClientServer = {
-		[0, getPlayerUID player, player] call OWL_fnc_tryInitNewWarlord;
-		true remoteExec ["OWL_fnc_warlordInitCallback", 0];
+	
+	if (!_handshakeIsValid) exitWith { [false] remoteExecCall ["OWL_fnc_WIC", _owner]; };
+	
+	
+	// HERE WE ARE BUILDING THE DATA ARRAY WHICH WE SEND TO THE NEW CLIENT
+	//  ||
+	//  ||
+	//  \/
+	
+	isNil {
+		private _jipData = [];
+		
+		// Gathering public data about sectors
+		private _sectorsData = [];
+		{
+			_sectorsData pushBack [
+				_x getVariable "OWL_sectorSide"
+			];
+		} forEach OWL_allSectors;
+		_jipData pushBack _sectorsData;
+		
+		// Gathering public data about sides (targeted sector)
+		private _publicSidesData = [];
+		{
+			private _sideInfo = OWL_competingSidesInfo get _side;
+			_publicSidesData pushBack [
+				_sideInfo get "OWL_targetedSector"
+			];
+		} forEach OWL_competingSides;
+		_jipData pushBack _publicSidesData;
+		
+		if (_initializedAsWarlord) then {
+			// Gathering side specific private data
+			private _sideSpecificData = [];
+			
+			private _sideInfo = OWL_competingSidesInfo get _side;
+			
+			private _scanStartTime = _sideInfo get "OWL_scanStartTime";
+			if (_scanStartTime != -1) then {
+				_sideSpecificData pushBack [_scanStartTime, _sideInfo get "OWL_scanDuration"];
+			}
+			else {
+				_sideSpecificData pushBack [_scanStartTime];
+			};
+			
+			private _votingStartTime = _sideInfo get "OWL_votingStartTime";
+			if (_votingStartTime != -1) then {
+				_sideSpecificData pushBack [_votingStartTime, _sideInfo get "OWL_sectorVotes"];
+			}
+			else {
+				_sideSpecificData pushBack [_votingStartTime];
+			};
+			
+			_jipData pushBack _sideSpecificData;
+			
+			// Gathering player specific data
+			private _warlordInfo = _owner call OWL_fnc_getWarlordDataByOwnerId;
+			_jipData pushBack [GET_WARLORD_FUNDS(_warlordInfo)];
+		};
+		
+		// We ended up with
+		// _jipData = [ [sectors data], [public data about each side], [side specific data: [scan start, scan duration], [voting start, [votes for each sector]]], [player specific data] ]
+		[_handshakeIsValid, _jipData] remoteExecCall ["OWL_fnc_WIC", _owner];
 	};
 };
 
@@ -118,5 +185,5 @@ OWL_fnc_clientRequestVoteForSector = {
 	_voteList pushBackUnique _clientId;
 	_voteTable set [_sectorId, _voteList];
 	publicVariable "OWL_sectorVoteTable";
-	remoteExec ["OWL_fnc_sectorVoteTableUpdate", OWL_competingSides # _sideIdx];
+	remoteExecCall ["OWL_fnc_sectorVoteTableUpdate", OWL_competingSides # _sideIdx];
 };
