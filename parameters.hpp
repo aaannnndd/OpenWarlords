@@ -14,16 +14,16 @@ class Params
 		texts[] = {"WEST vs EAST", "WEST vs RESISTANCE", "EAST vs RESISTANCE"};
 		default = 0;
 	};
-	class FogOfWarSectors
+	class DefendersPlayable
 	{
-		title = "Fog of War";
+		title = "Defenders Playable";
 		values[] = {0, 1};
 		texts[] = {"Disabled", "Enabled"};
 		default = 0;
 	};
-	class DefendersPlayable
+	class DefendersCanAttack	// Turns the game into WEST vs EAST vs RESISTANCE :P
 	{
-		title = "Defenders Playable";
+		title = "Defenders Can Attack Sectors";
 		values[] = {0, 1};
 		texts[] = {"Disabled", "Enabled"};
 		default = 0;
@@ -48,9 +48,9 @@ class Params
 		texts[] = {"Disabled", "Enabled"};
 		default = 1;
 	};
-	class PersistentSaveSystem
+	class SaveFunds
 	{
-		title = "Persistent Save System";
+		title = "CP Saving";
 		values[] = {0, 1};
 		texts[] = {"Disabled", "Enabled"};
 		default = 1;

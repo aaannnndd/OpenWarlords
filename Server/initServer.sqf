@@ -27,12 +27,9 @@ if (!isMultiplayer) then {
 ***********		Init Serverside Globals		***********
 ******************************************************/
 
-// [ ["_transactionID", "_side", "_amount", "_timestamp"], ... ]
-OWL_disconnectedFunds = [];
-
-OWL_StartingFunds = (["StartingFunds"] call BIS_fnc_getParamValue);
+OWL_startingFunds = (["StartingFunds"] call BIS_fnc_getParamValue);
 OWL_useVanillaIncomeCalculation = (["IncomeCalculation"] call BIS_fnc_getParamValue) == 1;
-OWL_persistentDataEnabled = (["PersistentSaveSystem"] call BIS_fnc_getParamValue) == 1;
+OWL_saveWarlordFunds = (["SaveFunds"] call BIS_fnc_getParamValue) == 1;
 
 OWL_maxPlayersForSide = log 0;
 {
@@ -45,10 +42,8 @@ OWL_maxPlayersForSide = log 0;
 OWL_allWarlordsData = [];
 OWL_ownerToDataIndexMap = createHashMap;
 OWL_nonHandshakedClients = [];
-if (OWL_persistentDataEnabled) then {
-	// [ UID: [disconnectionTime, side, funds], ... ]
-	OWL_persistentWarlordsData = createHashMap;
-};
+// [ UID: [disconnectionTime, side, funds], ... ]
+OWL_persistentWarlordsData = createHashMap;
 
 /******************************************************
 ***********	Init Serverside Event Handlers	***********
@@ -102,6 +97,20 @@ if (isMultiplayer) then {
 ***********			Finishing up 			***********
 ******************************************************/
 
+OWL_competingSidesInfo = createHashMap;
+{
+	private _sideInfo = createHashMap;
+	_sideInfo set ["OWL_targetedSector", -1];
+	_sideInfo set ["OWL_scanStartTime", -1];
+	_sideInfo set ["OWL_scanDuration", -1];
+	//_sideInfo set ["OWL_votingIsActive", false];
+	_sideInfo set ["OWL_votingStartTime", -1];
+	//_sideInfo set ["OWL_votingDuration", -1];
+	_sideInfo set ["OWL_sectorVotes", []];
+	
+	OWL_competingSidesInfo set [_x, _sideInfo];
+} forEach OWL_competingSides;
+
 // In case there are players that joined before event handlers were added
 {
 	(getUserInfo _x) params ["_playerID", "_ownerId", "_playerUID", "_profileName", "_displayName", "_steamName", "_clientState", "_isHC", "_adminState", "_networkInfo", "_unit"];
@@ -112,7 +121,7 @@ if (isMultiplayer) then {
 
 
 if (HANDSHAKE_TIMEOUT > 0 && {isMultiplayer}) then {
-	// Kick timed out clients loop
+	// Kick clients that don't send handshake loop
 	[] spawn { while {true} do {
 		{
 			_x params ["_uid", "_kickTime", "_owner", "_name"];
@@ -120,7 +129,7 @@ if (HANDSHAKE_TIMEOUT > 0 && {isMultiplayer}) then {
 			if (time > _kickTime) then {
 				[format ["Handshake timed out for %1", _name]] call OWL_fnc_log;
 				if (_owner >= 3) then {
-					[_uid, _name, "Handshake timed out"] call OWL_fnc_kickPlayer;
+					[_uid, "Handshake timed out"] call OWL_fnc_kickPlayer;
 				};
 				_uid call OWL_fnc_tryRemoveFromNonHandshakedClients;
 			};

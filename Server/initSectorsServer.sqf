@@ -15,7 +15,7 @@ OWL_sectorParam_useLocationName
 
 OWL_sectorParam_side
 	Indicates who owns the sector at the start of the game
-	0 - Unclaimed (civilian side)
+	0 - Unclaimed
 	1 - Competing side 1
 	2 - Competing side 2
 	3 - Defending side
@@ -45,9 +45,10 @@ OWL_allSectors = [];
 		_triggerArea deleteAt 4;
 		_x setPosATL [_triggerPos#0, _triggerPos#1, 0];
 		_x setVariable ["OWL_sectorArea", [_triggerPos] + _triggerArea, true];
-		_x setVariable ["OWL_sectorSide",
-			[CIVILIAN, OWL_competingSides#0, OWL_competingSides#1, OWL_defendingSide] # (_x getVariable ["OWL_sectorParam_side", 0]),
-		true];
+		private _sectorSide = [sideEmpty, OWL_competingSides#0, OWL_competingSides#1, OWL_defendingSide] # (_x getVariable ["OWL_sectorParam_side", 0]);
+		_x setVariable ["OWL_sectorSide", _sectorSide, false];
+		
+		//_x setVariable ["OWL_previousOwners", [_sectorSide], true];
 		
 		private _sectorIncome = _x getVariable "OWL_sectorParam_income";
 		if (isNil "_sectorIncome") then {
@@ -58,64 +59,69 @@ OWL_allSectors = [];
 		_x setVariable ["OWL_sectorIncome", _sectorIncome, true];
 		_x setVariable ["OWL_sectorFastTravelEnabled", _x getVariable ["OWL_sectorParam_fastTravelEnabled", true], true];
 		
-		_x setVariable ["OWL_sectorProtected", true];
+		_x setVariable ["OWL_sectorProtected", true, true];
 		
 		_x enableSimulationGlobal false;
 		
-		OWL_allSectors pushBack _x;
+		private _sectorID = OWL_allSectors pushBack _x;
+		_x setVariable ["OWL_sectorID", _sectorID, false];
 	};
 } forEach (entities "Logic");
+
+OWL_mainBases = [];
 
 if (["BaseLocation"] call BIS_fnc_getParamValue == 1) then {
 	// Choose random base location
 	
-	private _possibleBases = [[],[]];
+	private _possibleBases = [];
+	{ _possibleBases pushBack []; } forEach OWL_competingSides;
 	
 	{
 		if (_x getVariable ["OWL_sectorParam_canBeBase", 0] >= 1) then {
-			switch (_x getVariable ["OWL_sectorParam_side", 0]) do {
-				case 1: { (_possibleBases#0) pushBack _x; };
-				case 2: { (_possibleBases#1) pushBack _x; };
-				default { ["Bases can only be owned by competing sides!"] call OWL_fnc_log; };
-			};
+			private _index = OWL_competingSides find (_x getVariable ["OWL_sectorSide", 0]);
+			if (_index != -1) then {
+				(_possibleBases # _index) pushBack _x;
+			}
+			else {
+				["Bases can only be owned by competing sides!"] call OWL_fnc_log;
+			}
 		};
 	} forEach OWL_allSectors;
 	
-	for "_i" from 0 to 1 do {
-		if (count (_possibleBases # _i) == 0) then {
-			[format ["There are no bases to choose from for side %1!", _i]] call OWL_fnc_log;
-			throw "[OWL] Bases init error";
+	{
+		if (count _x == 0) then {
+			[format ["There are no bases to choose from for side %1!", OWL_competingSides # _forEachIndex]] call OWL_fnc_log;
+			endMission "[OWL] Initialization error";
 		};
-	};
-	
-	OWL_mainBases = [ selectRandom (_possibleBases#0), selectRandom (_possibleBases#1) ];
+		OWL_mainBases pushBack selectRandom _x;
+	} forEach _possibleBases;
 }
 else {
 	// Find default bases
 	
-	OWL_mainBases = [objNull, objNull];
+	{ OWL_mainBases pushBack objNull; } forEach OWL_competingSides;
 	
 	{
 		if (_x getVariable ["OWL_sectorParam_canBeBase", 0] == 2) then {
-			private _side = _x getVariable ["OWL_sectorParam_side", 0];
-			if (_side != 1 && {_side != 2}) then {
-				["Bases can only be owned by competing sides!"] call OWL_fnc_log;
-				continue;
-			};
-			_side = _side - 1;
-			if (isNull (OWL_mainBases # _side)) then {
-				OWL_mainBases set [_side, _x];
+			private _index = OWL_competingSides find (_x getVariable ["OWL_sectorSide", 0]);
+			if (_index != -1) then {
+				if (isNull (OWL_mainBases # _index)) then {
+					OWL_mainBases set [_index, _x];
+				}
+				else {
+					[format ["There are more than one default base for side %1!", OWL_competingSides # _index]] call OWL_fnc_log;
+				};
 			}
 			else {
-				[format ["There are more than one default base for side %1!", _side]] call OWL_fnc_log;
+				["Bases can only be owned by competing sides!"] call OWL_fnc_log;
 			};
 		};
 	} forEach OWL_allSectors;
 	
 	{
 		if (isNull _x) then {
-			[format ["No base found for side %1!", _forEachIndex]] call OWL_fnc_log;
-			throw "[OWL] Bases init error";
+			[format ["No base found for side %1!", OWL_competingSides # _forEachIndex]] call OWL_fnc_log;
+			endMission "[OWL] Initialization error";
 		};
 	} forEach OWL_mainBases;
 };

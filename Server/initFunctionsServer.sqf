@@ -6,6 +6,16 @@ OWL_fnc_updateSpawnPoints = compileFinal preprocessFileLineNumbers "Server\updat
 OWL_fnc_handleSectorSelected = compileFinal preprocessFileLineNumbers "Server\handleSectorSelected.sqf";
 
 
+OWL_fnc_changeSectorSide = {
+	// I made this function mainly for testing the new sync system
+	params ["_sectorID", "_newSide"];
+	
+	private _sector = OWL_allSectors # _sectorID;
+	_sector setVariable ["OWL_sectorSide", _newSide];
+	[_sectorID, _newSide] remoteExec ["OWL_fnc_USS", 0];
+};
+
+
 OWL_fnc_tryRemoveFromNonHandshakedClients = {
 	// Returns true if client with provided UID was found and removed from OWL_nonHandshakedClients array
 	// Params: UID - string
@@ -49,10 +59,10 @@ OWL_fnc_tryInitNewWarlord = {
 		SET_WARLORD_OWNER_ID(_newData, _owner);
 		SET_WARLORD_PLAYER(_newData, _player);
 		SET_WARLORD_SIDE(_newData, _side);
-		private _takenFunds = OWL_StartingFunds;
+		private _takenFunds = OWL_startingFunds;
 		
 		// Loading up persistent data save
-		if (OWL_persistentDataEnabled) then {
+		if (OWL_saveWarlordFunds) then {
 			private _persistentWarlordData = OWL_persistentWarlordsData get _uid;
 			if (!isNil "_persistentWarlordData") then {
 				_persistentWarlordData params ["_dcTime", "_savedSide", "_savedFunds"];
@@ -90,7 +100,7 @@ OWL_fnc_tryDeinitWarlord = {
 		if (!isNil "_dataArrIndex") then {
 			OWL_ownerToDataIndexMap deleteAt _owner;
 			
-			if (OWL_persistentDataEnabled && {_uid != ""}) then {
+			if (OWL_saveWarlordFunds && {_uid != ""}) then {
 				private _warlordData = OWL_allWarlordsData # _dataArrIndex;
 				[format ["Saving warlord data of %1", name GET_WARLORD_PLAYER(_warlordData)]] call OWL_fnc_log;
 				private _funds = GET_WARLORD_FUNDS(_warlordData);
@@ -137,23 +147,41 @@ OWL_fnc_getWarlordDataByOwnerId = {
 OWL_fnc_ownerIsValidWarlordPlayer = {
 	// Params: ownerID
 	
-	!isNil { OWL_ownerToDataIndexMap get _this };
+	_this in OWL_ownerToDataIndexMap
 };
 
 
 OWL_fnc_kickPlayer = {
-	params ["_uid", "_name", "_reason"];
+	params ["_uid", ["_reason", "", [""]]];
 	
-	private _succeeded = false;
-	if (_name == "") then { _name = _uid; };
+	private _kicked = false;
+	private _name = "";
+	
+	private _playerUserInfo = [];
+	{
+		private _userInfo = getUserInfo _x;
+		if (_userInfo#2 isEqualTo _uid) then {
+			_playerUserInfo = _userInfo;
+			break;
+		};
+	} forEach allUsers;
+	
+	if (count _playerUserInfo > 0) then {
+		_name = _playerUserInfo # 3;
+	};
+	
+	if (_name == "") then { _name = format ["(UID: %1)", _uid]; };
+	if (_reason == "") then { _reason = "no reason provided"; };
+	
 	[format ["Kicking out %1 (%2)", _name, _reason]] call OWL_fnc_log;
+	
 	if (isMultiplayer) then {
-		_succeeded = serverCommand format ["#kick ""%1""", _uid];
-		if (!_succeeded) then {
-			[format ["Failed to kick %1", _name, _reason]] call OWL_fnc_log;
+		_kicked = serverCommand format ["#kick ""%1""", _uid];
+		if (!_kicked) then {
+			[format ["Failed to kick %1", _name]] call OWL_fnc_log;
 		};
 	};
-	_succeeded
+	_kicked
 };
 
 OWL_fnc_handleUnitsInSector = {
